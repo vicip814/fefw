@@ -68,6 +68,10 @@ for line in raw.splitlines():
     n,t,s,w,c,p=line.split('|'); data.append(dict(name=n,tier=t,strong=s,weak=w,target=c,routes=[m.get(n,'N/A') for m in maps],url='https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/'+p))
 assert len(data)==50 and len(set(d['name'] for d in data))==50
 assert [len(m) for m in maps]==[41,44,44,42]
+avatars=json.loads((root/'avatar-positions.json').read_text(encoding='utf-8'))
+assert set(avatars)=={u['name'] for u in data}
+for unit in data:
+    unit['avatar']=avatars[unit['name']]
 (root/'characters.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
 jobs=[]
 for line in (root/'classes.txt').read_text(encoding='utf-8').splitlines():
