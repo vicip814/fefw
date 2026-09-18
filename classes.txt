@@ -1,0 +1,32 @@
+Diviner|占卜師|初階|白魔法D、黑魔法D（次）|無列出|Magic Basics：魔力／魔防+1|4|魔力1、魔防1|HP5、力量-5、魔力15、技巧5、防禦-5、魔防10|624050
+Gladiator|角鬥士|初階|拳D、斧D、劍D（次）|無列出|Attack Basics：力量+1|4|HP1、力量1|HP10、力量10|624054
+Hunter|獵人|初階|弓D、劍D（次）|無列出|Hunting Basics：技巧／速度+1|4|速度1、技巧1|HP10、速度10、技巧10|624053
+Ornius Rider|奧尼烏斯騎兵|初階|騎術E+（主）；斧D、槍D（次）|Mount/Dismount：可上／下坐騎|Offense Basics：力量／魔力+1|5|速度3、技巧2、幸運1|HP10、速度10、技巧5、魔防5、幸運5|624051
+Soldier|士兵|初階|斧D、槍D（次）|無列出|Defense Basics：防禦+1|4|力量1、防禦1|HP10、力量5、速度-5、技巧5、防禦10|624052
+Archer|弓箭手|專門|弓C（主）|Combat Arts +1：可裝備戰技數+1；Bow Hit +5：持弓命中+5|Crescendo：擊倒敵人後命中+3至地圖結束，上限+30|5|速度2、技巧2、防禦1|HP10、力量5、速度10、技巧10、防禦5、幸運5、魅力5|624046
+Armored Knight|重甲騎士|專門|重甲E+（主）；斧C、槍C（次）|Strike-Last Def +3：敵人先攻時，本次交戰物理防護Prt+3；Combat Arts +1：可裝備戰技數+1|Great Counter：敵人先攻時，本次交戰攻擊+3|4|HP2、力量1、速度-2、防禦4|HP10、力量10、魔力-5、速度-5、技巧5、防禦25、魔防-5、魅力5|624049
+Armored Ornius Rider|重裝奧尼烏斯騎兵|專門|騎術D（主）；斧C、槍C（次）|Mount/Dismount：可上／下坐騎|Sense Threat：敵人對自身有特效傷害時，本次交戰迴避+20|7|HP1、速度2、防禦2|HP10、魔力-5、速度10、技巧5、防禦10、幸運5、魅力5|624041
+Brigand|山賊|專門|斧C、劍C（次）|Combat Arts +1：可裝備戰技數+1；Axe Hit +3：持斧命中+3|Regroup：敵人迴避自身攻擊時，本次交戰迴避+20|5|HP3、力量2、防禦1、魔防-1|HP15、力量15、魔力-5、速度5、防禦5、魅力5|624048
+Charioteer|戰車兵|專門|騎術D、弓C（主）|Chariot Armor：Shield+5，但不能迴避攻擊；Charioteer Tactics：可上／下坐騎及使用Charge；Charioteer's Path：成長率隨等級提高，公式未列|Charger：使用Charge後，物理防護Prt+10至自身下個階段|6|HP3、力量1、速度-2、技巧3、防禦3、魅力1|HP10、力量5、魔力-5、速度-5、技巧15、防禦10、幸運5、魅力10|624047
+Light Cavalry|輕騎兵|專門|騎術D（主）；槍C、劍C（次）|Mount/Dismount：可上／下坐騎|Bolster Health：HP上限+3|6|HP1、力量1、速度1、防禦2、魅力1|HP10、力量5、魔力-5、速度5、防禦5、幸運5、魅力10|624045
+Myrmidon|劍士|專門|劍C（主）|Combat Arts +1：可裝備戰技數+1；Sword Crit +3：持劍必殺+3|Ravaging Arts：造成必殺時傷害+6|5|HP1、速度2、魔防-1|HP10、速度15、技巧10、幸運5、魅力5|624044
+Priest|祭司|專門|白魔法C（主）|White-Magic Seeker：白魔法使用次數×2；Magic Heal +5：用魔法治療盟友時多回5HP|Piety：幸運+3|6|魔力1、魔防3、幸運2、魅力1|HP5、力量-5、魔力10、速度5、技巧5、防禦-10、魔防15、幸運15、魅力10|624039
+Pugilist|拳鬥士|專門|拳C（主）|Combat Arts +1：可裝備戰技數+1；Brawl Avo +3：名稱為拳迴避+3，詳細條件TBD|Attack, Get Back：使用戰技時，本次交戰迴避+10|5|HP2、力量1、速度1、防禦2、魔防-1|HP15、力量10、魔力-5、速度10、技巧5、防禦10、魅力5|624029
+Rogue|盜賊|專門|弓C、劍C（次）|Combat Arts +1：可裝備戰技數+1；Locktouch：無鑰匙也能開寶箱；Search：搜索較容易獲得Perfect|In Shadow：擊倒敵人後，至自身下一次交戰迴避+10|6|速度3、技巧1、魔防1、幸運1、魅力-1|HP10、速度15、技巧10、魔防5、幸運5|624043
+Shaman|巫師|專門|黑魔法C（主）|Black-Magic Seeker：黑魔法使用次數×2；Magic Hit +3：持魔法命中+3|Bind Dexterity：鄰接敵人技巧-3|6|魔力2、速度1、技巧1、魔防2、魅力-1|HP5、力量-5、魔力15、速度10、技巧10、防禦-10、魔防10、幸運10|624042
+Wing Soldier|飛翼士兵|專門|飛行D（主）；槍C、劍C（次）；限女性|Mount/Dismount：可上／下坐騎|Protecting Wings：魔防+3|6|速度4、技巧1、防禦1、魔防2、魅力1|HP10、魔力5、技巧5、防禦5、魔防5、幸運5、魅力10|624038
+Bardinger|巴爾丁騎士|高階|騎術C（主）；槍C、劍B（次）|Combat Arts +2：可裝備戰技數+2；Mount/Dismount：可上／下坐騎|Aegis：受到魔法攻擊時20%機率傷害減半|6|HP3、技巧1、防禦1、魅力3|HP10、力量10、魔力-5、速度5、防禦5、魔防10、幸運5、魅力10|624033
+Bishop|主教|高階|白魔法B（主）|White-Magic Seeker：白魔法使用次數×2；Magic Heal +10：用魔法治療盟友時多回10HP|Barrier：鄰接盟友魔防+3|5|HP1、魔力3、技巧1、魔防5、幸運3、魅力3|HP10、力量-5、魔力15、速度5、防禦-10、魔防20、幸運20、魅力10|624031
+Caladrius|卡拉德里烏斯|高階|騎術D、黑魔法B（主）|Mount/Dismount：可上／下坐騎；Black-Magic Seeker：黑魔法次數×2；Combat Arts +1：可裝備戰技數+1|Overtake：效果待核實|待核實|待核實|待核實|620256
+Cataphract|鐵甲騎兵|高階|來源未列|TBD|TBD|待核實|待核實|待核實|620256
+Dragoon|龍騎兵|高階|飛行C（主）；斧B、槍B（次）|Mount/Dismount：可上／下坐騎；Combat Arts +1：可裝備戰技數+1|Besieger：效果待核實|待核實|待核實|待核實|620256
+Dreadnought|重裝勇士|高階|重甲D（主）；斧B、槍B（次）|Strike-Last Def +5：敵人先攻時，本次交戰物理防護Prt+5；Combat Arts +2：可裝備戰技數+2|Focused Counter：敵人先攻時，本次交戰命中+10|4|HP5、力量3、技巧-5、防禦9、魔防-1|HP15、力量15、魔力-5、速度5、技巧-10、防禦30、魔防-10、魅力5|624034
+Elephant Rider|象騎兵|高階|來源未列|TBD|TBD|待核實|待核實|待核實|620256
+Forest Knight|森林騎士|高階|騎術D、弓B（主）|Mount/Dismount：可上／下坐騎；Combat Arts +1：可裝備戰技數+1；Bow Hit +5：持弓命中+5|Hunter's Eye：持弓追擊時攻擊+3|7|HP1、速度2、技巧5、防禦1|HP10、力量5、速度15、技巧10、防禦5、魔防5、幸運5、魅力5|624035
+Guardian|守護者|高階|來源未列|Combat Arts +2：可裝備戰技數+2；Magic Heal +10：魔法治療額外10HP|來源未列|待核實|待核實|待核實|620256
+Ovate|卜者|高階|黑魔法B（主）|Black-Magic Seeker：黑魔法次數×2；Magic Hit +5：持魔法命中+5|Bind Speed：鄰接敵人速度-3|5|HP1、魔力4、速度4、技巧3、魔防4、魅力-1|HP10、力量-5、魔力20、速度15、技巧5、防禦-10、魔防15、幸運10|624032
+Shido|志道劍士|高階|劍B（主）|Combat Arts +2：可裝備戰技數+2；Sword Crit +5：持劍必殺+5|Ever Vigilant：以必殺攻擊擊倒敵人後回少量HP，數值未列|6|HP3、速度7、技巧3|HP10、力量5、魔力15、速度15、技巧10、魔防-5、幸運5、魅力5|624030
+Sniper|狙擊手|高階|弓B（主）|Combat Arts +2：可裝備戰技數+2；Bow Hit +10：持弓命中+10|Marksmanship：持弓命中+15|6|HP1、速度5、技巧5|HP10、力量5、速度10、技巧20、防禦5、魔防5、幸運5、魅力5|624036
+Troubadour|吟遊詩人|高階|來源等級／聲望留白|TBD|TBD|待核實|待核實|待核實|620256
+War Monk|戰僧|高階|來源未列|TBD|TBD|待核實|待核實|待核實|620256
+Warrior|戰士|高階|拳B、斧B、劍B（次）|Combat Arts +2：可裝備戰技數+2；Axe Hit +5：持斧命中+5；Brawl Hit +5：持拳套命中+5|Practiced Art：TBD|6|HP4、力量4、速度1|HP20、力量20、魔力-5、防禦5、魔防-5、魅力5|624037
