@@ -1,0 +1,510 @@
+{
+  "Cai": {
+    "zh": "凱伊",
+    "personal": "移動力+1",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有20%幾率發動，命中+20"
+      },
+      {
+        "label": "血印2",
+        "effect": "攻擊時有25%幾率發動，攻擊力+3"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Dietrich": {
+    "zh": "迪托利希",
+    "personal": "主動發起戰鬥時，必殺+5",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有10%幾率發動，為自身中幅恢復HP"
+      },
+      {
+        "label": "血印2",
+        "effect": "攻擊時有25%幾率發動，攻擊力+3"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Theodora": {
+    "zh": "賽奧朵拉",
+    "personal": "受到攻擊時有30%幾率發動，所受傷害減半",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有25%幾率發動，攻擊力+3"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Leda": {
+    "zh": "蕾達",
+    "personal": "主動發起戰鬥時有5%幾率發動，使敵人無法反擊",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有3%幾率發動，攻擊力+7"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Esmeralda": {
+    "zh": "艾絲梅拉爾達",
+    "personal": "自身裝備的武器和裝備重量降至80%",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有3%幾率發動，造成的傷害變為1.5倍"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Fianna": {
+    "zh": "菲亞娜",
+    "personal": "使用魔法為友軍恢復時，以幸運%的幾率發動，不消耗該魔法的使用次數",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有20%幾率發動，為自身小幅恢復HP"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Bonaventure": {
+    "zh": "波拿帕爾特",
+    "personal": "相鄰友軍的技巧+3",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Peter": {
+    "zh": "皮特魯",
+    "personal": "使用弓類戰技時，射程+1",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Lilian": {
+    "zh": "莉利安",
+    "personal": "戰鬥時，若敵人無法反擊，命中+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Mu": {
+    "zh": "穆",
+    "personal": "升級時，基礎能力更容易成長",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Diego": {
+    "zh": "迪雅各",
+    "personal": "相鄰友軍戰鬥時有5%幾率發動，使該友軍不會被追擊",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Dante": {
+    "zh": "丹提",
+    "personal": "周圍2格內的友軍戰鬥時，以該友軍（魅力÷2）%的幾率發動，使其必殺迴避+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Ninae": {
+    "zh": "妮涅",
+    "personal": "戰鬥時，若敵人使用魔法，命中、迴避+10",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有10%幾率發動，命中+30"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Nezha": {
+    "zh": "哪吒",
+    "personal": "主動攻擊時有50%幾率發動，攻擊力+3",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Io": {
+    "zh": "伊歐",
+    "personal": "【騎兵】主動發起戰鬥時，防禦力+3、必殺迴避+30",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Catania": {
+    "zh": "卡塔妮雅",
+    "personal": "戰鬥時，若自身攻速比敵人高3以上，命中+20",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Alexandra": {
+    "zh": "亞歷山卓",
+    "personal": "每有1名相鄰友軍，自身命中、迴避+5",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Goliath": {
+    "zh": "哥萊亞斯",
+    "personal": "無法轉職為騎兵或飛行兵種；體格+5",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Ludia": {
+    "zh": "魯魯迪婭",
+    "personal": "主動發起戰鬥時，攻速+3",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Seteth": {
+    "zh": "西提司",
+    "personal": "敵方階段中，首次戰鬥時有50%幾率發動，由自身先攻",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有3%幾率發動，使敵人無法反擊"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Halvin": {
+    "zh": "哈爾溫",
+    "personal": "戰鬥後，命中+2（最多+30，持續至地圖結束）",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Ursula": {
+    "zh": "烏修拉",
+    "personal": "包括自身在內，周圍2格內的友軍可使用道具袋",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有5%幾率發動，造成的傷害變為1.2倍"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Peppe": {
+    "zh": "佩佩",
+    "personal": "敵方階段戰鬥時，若敵人已受傷，則有30%幾率發動，由自身先攻",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Dadao": {
+    "zh": "大刀",
+    "personal": "戰鬥時，若雙方均無法追擊，自身攻擊力+5",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Loretta": {
+    "zh": "羅蕾塔",
+    "personal": "戰鬥時，若自身HP不低於一半，迴避+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Kiroc": {
+    "zh": "基羅伊卡",
+    "personal": "戰鬥時，若敵人處於異常狀態，攻擊力+3、必殺+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Jester": {
+    "zh": "傑斯塔",
+    "personal": "使用“交換”後，防禦+3（持續至自身下個階段）",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Nuzzuo": {
+    "zh": "努佐",
+    "personal": "調查中",
+    "personalStatus": "investigating",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Sofia": {
+    "zh": "索緋雅",
+    "personal": "使用魔法為友軍恢復時，恢復量+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Nydine": {
+    "zh": "努蒂奴",
+    "personal": "【騎兵】可以穿過敵人所在格移動（自身為大型單位時無效）",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Guzran": {
+    "zh": "古紮嵐",
+    "personal": "戰鬥時，命中、迴避或必殺中的一項+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Simon": {
+    "zh": "希蒙",
+    "personal": "自身HP不低於2，受到會使HP歸零的傷害時，以幸運%的幾率發動，使HP保留1點",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Sha Lan": {
+    "zh": "沙蘭",
+    "personal": null,
+    "personalStatus": "omitted",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Tialla": {
+    "zh": "媞雅拉",
+    "personal": "可對友軍使用的戰技射程+1",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Gaitz": {
+    "zh": "",
+    "personal": null,
+    "personalStatus": "character_missing",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Lysander": {
+    "zh": "萊桑達",
+    "personal": "主動發起戰鬥時，迴避+15",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Mikaela": {
+    "zh": "米迦艾拉",
+    "personal": "與相鄰敵人戰鬥時，命中+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Ultand": {
+    "zh": "烏爾坦德",
+    "personal": null,
+    "personalStatus": "omitted",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Sirocco": {
+    "zh": "西洛可",
+    "personal": "戰鬥後，自身恢復5點HP",
+    "personalStatus": "documented",
+    "crests": [
+      {
+        "label": "血印",
+        "effect": "攻擊時有25%幾率發動，攻擊力+3"
+      }
+    ],
+    "crestStatus": "documented",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Tobias": {
+    "zh": "托比亞斯",
+    "personal": "使用戰技攻擊時，攻擊力+3",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Buccar": {
+    "zh": "巴卡尼亞",
+    "personal": "受到攻擊時，所受傷害降至90%",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Fabio": {
+    "zh": "法畢歐",
+    "personal": "相鄰敵人的必殺迴避-5",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Olympia": {
+    "zh": "奧琳琵婭",
+    "personal": "裝備魔法時，必殺+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Benditz": {
+    "zh": "班迪茲",
+    "personal": "【騎兵】自身職業為“戰車兵”時，命中+20",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Noctula": {
+    "zh": "諾克裘拉",
+    "personal": "戰鬥後，迴避+3（持續至自身下個階段）",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Yang Jie": {
+    "zh": "楊界",
+    "personal": "擊敗敵人時，以（幸運÷2）%的幾率發動，恢復自身等同於最大HP的HP",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Majide": {
+    "zh": "馬吉迪",
+    "personal": "裝備斧時，力量+3",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Zarcone": {
+    "zh": "劄可捏",
+    "personal": "裝備斧時，命中+10",
+    "personalStatus": "documented",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Jasmine": {
+    "zh": "",
+    "personal": null,
+    "personalStatus": "character_missing",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  },
+  "Inyoni": {
+    "zh": "易尼奧尼",
+    "personal": "調查中",
+    "personalStatus": "investigating",
+    "crests": [],
+    "crestStatus": "not_listed",
+    "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
+    "checked": "2026-09-18"
+  }
+}

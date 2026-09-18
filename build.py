@@ -72,6 +72,34 @@ avatars=json.loads((root/'avatar-positions.json').read_text(encoding='utf-8'))
 assert set(avatars)=={u['name'] for u in data}
 for unit in data:
     unit['avatar']=avatars[unit['name']]
+personal=json.loads((root/'personal-skills.json').read_text(encoding='utf-8'))
+assert set(personal)=={u['name'] for u in data}
+for unit in data:
+    unit['personalInfo']=personal[unit['name']]
+# Align older tier-page summaries with the newly requested skill-effect source.
+corrections={
+    'Cai': ('strong','劍、槍、騎術、白魔法；力量／技巧／速度均45%，個人技移動+1'),
+    'Leda': ('strong','弓；速度65%，主動交戰時5%機率封鎖反擊'),
+    'Fabio': ('strong','黑魔法、指揮；魔力50%，鄰接敵人必殺迴避-5（非普通迴避）'),
+    'Dante': ('strong','黑魔法；魔力45%、幸運45%，周圍2格盟友交戰時可機率提高必殺迴避'),
+    'Nezha': ('strong','劍、步兵；速度45%、技巧50%，主動攻擊時50%機率攻擊力+3'),
+    'Io': ('strong','騎術、槍、斧；技巧45%，騎兵主動交戰時防禦力+3、必殺迴避+30'),
+    'Seteth': ('strong','槍、斧、指揮；速度40%、技巧45%，敌方階段首次交戰50%機率先攻'),
+    'Buccar': ('strong','槍、斧；HP50%、防禦45%，受擊傷害降至90%（即減傷10%，依Entertainment14）'),
+    'Kiroc': ('strong','弓；力量40%、技巧50%、速度55%，對異常狀態敵人攻擊力+3、必殺+10'),
+    'Loretta': ('strong','劍；速度55%，HP不低於一半時迴避+10（含恰好一半）'),
+    'Peppe': ('strong','弓、步兵；速度60%，敵方階段對已受傷敵人30%機率先攻'),
+}
+for unit in data:
+    if unit['name'] in corrections:
+        field,value=corrections[unit['name']]; unit[field]=value.replace('敌','敵')
+    if unit['name']=='Cai': unit['weak']='來源未列弱點；騎術亦為新來源列出的專長，仍需升至考試門檻'
+    if unit['name']=='Fabio': unit['weak']='技巧40%、速度35%；個人技只削鄰接敵人的必殺迴避，不直接補普通命中或魔攻'
+    if unit['name']=='Dante': unit['weak']='個人技依賴2格範圍及盟友魅力÷2%的機率，增益為必殺迴避，並非普通迴避'
+    if unit['name']=='Io': unit['weak']='速度35%；個人技限騎兵主動交戰，必殺迴避不同於普通迴避'
+    if unit['name']=='Buccar': unit['weak']='Game8减傷敘述矛盾；本頁個人技能按新來源記為傷害×90%。重甲專長亦存在來源差異，考試前核對'.replace('减','減')
+    if unit['name']=='Loretta': unit['weak']='技巧40%、幸運30%；HP低於一半才失去個人技增益'
+    if unit['name']=='Kiroc': unit['weak']='僅弓專長；個人技依賴異常狀態，增益為必殺而非命中'
 (root/'characters.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
 jobs=[]
 for line in (root/'classes.txt').read_text(encoding='utf-8').splitlines():
