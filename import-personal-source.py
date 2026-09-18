@@ -78,7 +78,8 @@ for unit in units:
     personal=fields.get('個人技能') if fields is not None else None
     status='documented' if personal and personal!='調查中' else 'investigating' if personal=='調查中' else 'omitted' if fields is not None else 'character_missing'
     crests=[dict(label=label,effect=fields[label]) for label in ['血印','血印2'] if fields and fields.get(label)]
-    result[name]=dict(zh=zh,personal=personal,personalStatus=status,crests=crests,crestStatus='documented' if crests else 'not_listed',source=source,checked='2026-09-18')
+    proficiencies=fields.get('擅長技能') if fields is not None else None
+    result[name]=dict(zh=zh,personal=personal,personalStatus=status,crests=crests,crestStatus='documented' if crests else 'not_listed',proficiencies=proficiencies,source=source,checked='2026-09-18')
 assert len(result)==50
 assert sum(v['personalStatus']=='documented' for v in result.values())==44
 assert sum(bool(v['crests']) for v in result.values())==10

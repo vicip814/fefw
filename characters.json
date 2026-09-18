@@ -3,7 +3,6 @@
     "name": "Cai",
     "tier": "Lord",
     "strong": "劍、槍、騎術、白魔法；力量／技巧／速度均45%，個人技移動+1",
-    "weak": "來源未列弱點；騎術亦為新來源列出的專長，仍需升至考試門檻",
     "target": "Bardinger",
     "routes": [
       "初始",
@@ -31,15 +30,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "劍術、槍術、騎術、白魔術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "騎術亦為新來源列出的專長，仍需升至考試門檻",
+    "proficiencies": "劍術、槍術、騎術、白魔術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Dietrich",
     "tier": "Lord",
     "strong": "劍、步兵；速度50%、技巧60%、幸運50%，先手必殺+5",
-    "weak": "來源未列弱點；迴避仍非必定免傷",
     "target": "Shido",
     "routes": [
       "N/A",
@@ -67,15 +70,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "劍術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "迴避仍非必定免傷",
+    "proficiencies": "劍術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Theodora",
     "tier": "Lord",
     "strong": "槍、指揮；HP70%、防禦40%，30%機率減半傷害",
-    "weak": "減傷需機率觸發，不能作必定生存保證",
     "target": "Bardinger",
     "routes": [
       "N/A",
@@ -99,15 +106,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "槍術、白魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "減傷需機率觸發，不能作必定生存保證",
+    "proficiencies": "槍術、白魔術、指揮術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Leda",
     "tier": "Lord",
     "strong": "弓；速度65%，主動交戰時5%機率封鎖反擊",
-    "weak": "來源未列弱點；封反擊條件應以遊戲說明為準",
     "target": "Sniper",
     "routes": [
       "N/A",
@@ -131,15 +142,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "劍術、弓術、白魔術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "封反擊條件應以遊戲說明為準",
+    "proficiencies": "劍術、弓術、白魔術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Esmeralda",
     "tier": "S",
     "strong": "槍、斧、重甲；HP55%、防禦45%，減輕武器及配件重量",
-    "weak": "來源未列弱點；重甲路線需留意法術敵人（編者提醒）",
     "target": "Dreadnought",
     "routes": [
       "R7S3",
@@ -163,15 +178,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "槍術、斧術、重裝術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "重甲路線需留意法術敵人（編者提醒）",
+    "proficiencies": "槍術、斧術、重裝術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Fianna",
     "tier": "S",
     "strong": "白／黑魔法；魔力55%、魔防45%，治療有機率不耗次數",
-    "weak": "節省次數屬機率效果，仍需管理法術資源",
     "target": "Bishop",
     "routes": [
       "R8S3",
@@ -195,15 +214,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "白魔術、黑魔術、騎術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "節省次數屬機率效果，仍需管理法術資源",
+    "proficiencies": "白魔術、黑魔術、騎術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Bonaventure",
     "tier": "A",
     "strong": "黑魔法；魔力45%、技巧50%、速度40%，鄰接盟友技巧增益",
-    "weak": "來源未列專屬弱點；增益依賴站位",
     "target": "Ovate",
     "routes": [
       "N/A",
@@ -222,15 +245,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、白魔術、黑魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "增益依賴站位",
+    "proficiencies": "劍術、白魔術、黑魔術、指揮術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Peter",
     "tier": "A",
     "strong": "弓、步兵；技巧60%，弓戰技射程增益",
-    "weak": "射程優勢指弓戰技，勿當所有普通攻擊加射程",
     "target": "Sniper",
     "routes": [
       "初始",
@@ -249,15 +276,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "弓術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "射程優勢指弓戰技，勿當所有普通攻擊加射程",
+    "proficiencies": "弓術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Lilian",
     "tier": "A",
     "strong": "弓、步兵；技巧55%，攻擊不能反擊的敵人時命中增益",
-    "weak": "個人技依賴敵人無法反擊",
     "target": "Sniper",
     "routes": [
       "R8S2",
@@ -276,15 +307,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "弓術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技依賴敵人無法反擊",
+    "proficiencies": "弓術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Mu",
     "tier": "A",
     "strong": "拳、劍、斧；個人技強化成長，多項物理能力均衡",
-    "weak": "來源未列弱點；需投入等級才能兌現成長優勢",
     "target": "Warrior",
     "routes": [
       "R9S3",
@@ -303,15 +338,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、斧術、格鬥術、白魔術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "需投入等級才能兌現成長優勢",
+    "proficiencies": "劍術、斧術、格鬥術、白魔術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Diego",
     "tier": "A",
     "strong": "劍；速度45%、技巧60%，可阻止鄰接盟友被追擊",
-    "weak": "保護效果依賴鄰接站位",
     "target": "Shido",
     "routes": [
       "R10S3",
@@ -330,15 +369,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、弓術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "保護效果依賴鄰接站位",
+    "proficiencies": "劍術、弓術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Dante",
     "tier": "A",
     "strong": "黑魔法；魔力45%、幸運45%，周圍2格盟友交戰時可機率提高必殺迴避",
-    "weak": "個人技依賴2格範圍及盟友魅力÷2%的機率，增益為必殺迴避，並非普通迴避",
     "target": "Ovate",
     "routes": [
       "R10S3",
@@ -357,15 +400,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "白魔術、指揮術、黑魔術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技依賴2格範圍及盟友魅力÷2%的機率，增益為必殺迴避，並非普通迴避",
+    "proficiencies": "白魔術、指揮術、黑魔術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Ninae",
     "tier": "A",
     "strong": "白魔法；魔防45%，對魔法敵人時命中及迴避增益",
-    "weak": "魔力35%；個人技限對魔法使用者",
     "target": "Bishop",
     "routes": [
       "R6S3",
@@ -389,15 +436,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "槍術、白魔術、騎術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "魔力35%；個人技限對魔法使用者",
+    "proficiencies": "槍術、白魔術、騎術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Nezha",
     "tier": "A",
     "strong": "劍、步兵；速度45%、技巧50%，主動攻擊時50%機率攻擊力+3",
-    "weak": "個人技加攻限先手",
     "target": "Shido",
     "routes": [
       "R6S3",
@@ -416,15 +467,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、格鬥術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技加攻限先手",
+    "proficiencies": "劍術、格鬥術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Io",
     "tier": "A",
     "strong": "騎術、槍、斧；技巧45%，騎兵主動交戰時防禦力+3、必殺迴避+30",
-    "weak": "速度35%；個人技限騎兵主動交戰，必殺迴避不同於普通迴避",
     "target": "Bardinger",
     "routes": [
       "R10S3",
@@ -443,15 +498,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "槍術、斧術、騎術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "速度35%；個人技限騎兵主動交戰，必殺迴避不同於普通迴避",
+    "proficiencies": "槍術、斧術、騎術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Catania",
     "tier": "A",
     "strong": "劍；速度55%、技巧50%、幸運40%",
-    "weak": "個人技命中增益需要攻速比敵人高至少3",
     "target": "Shido",
     "routes": [
       "R10S3",
@@ -470,15 +529,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、槍術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技命中增益需要攻速比敵人高至少3",
+    "proficiencies": "劍術、槍術、飛行術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Alexandra",
     "tier": "A",
     "strong": "劍；速度55%、技巧45%、幸運50%，鄰接盟友時命中／迴避增益",
-    "weak": "個人技依賴鄰接盟友",
     "target": "Shido",
     "routes": [
       "R7S2",
@@ -497,15 +560,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、槍術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技依賴鄰接盟友",
+    "proficiencies": "劍術、槍術、飛行術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Goliath",
     "tier": "A",
     "strong": "斧、重甲；HP55%、防禦50%，個人技提高體格",
-    "weak": "不可使用騎乘或飛行職業",
     "target": "Dreadnought",
     "routes": [
       "R7S3",
@@ -524,15 +591,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、重裝術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "不可使用騎乘或飛行職業",
+    "proficiencies": "斧術、重裝術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Ludia",
     "tier": "A",
     "strong": "劍、步兵；速度55%、技巧45%，先手攻速+3",
-    "weak": "個人技攻速加成限先手",
     "target": "Shido",
     "routes": [
       "R9S3",
@@ -551,15 +622,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、槍術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技攻速加成限先手",
+    "proficiencies": "劍術、槍術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Seteth",
     "tier": "A",
     "strong": "槍、斧、指揮；速度40%、技巧45%，敵方階段首次交戰50%機率先攻",
-    "weak": "先攻效果不是整個敵方階段持續生效",
     "target": "Dragoon",
     "routes": [
       "R6S3",
@@ -583,15 +658,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "槍術、斧術、指揮術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "先攻效果不是整個敵方階段持續生效",
+    "proficiencies": "槍術、斧術、指揮術、飛行術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Halvin",
     "tier": "A",
     "strong": "弓、騎術；技巧60%、速度45%，交戰後命中可累積至地圖結束",
-    "weak": "命中增益需要先有交戰累積",
     "target": "Forest Knight",
     "routes": [
       "R9S3",
@@ -610,15 +689,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "弓術、騎術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "命中增益需要先有交戰累積",
+    "proficiencies": "弓術、騎術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Ursula",
     "tier": "B",
     "strong": "劍、弓；幸運40%、魅力45%，可對2格內盟友使用庫存道具",
-    "weak": "魔力35%，不擅白魔法；道具技不直接增傷／治療量",
     "target": "Sniper",
     "routes": [
       "R10S3",
@@ -642,15 +725,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "劍術、弓術、格鬥術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "魔力35%，不擅白魔法；道具技不直接增傷／治療量",
+    "proficiencies": "劍術、弓術、格鬥術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Peppe",
     "tier": "B",
     "strong": "弓、步兵；速度60%，敵方階段對已受傷敵人30%機率先攻",
-    "weak": "力量35%，追擊未必有足夠傷害；先行不穩定",
     "target": "Sniper",
     "routes": [
       "R9S1",
@@ -669,15 +756,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、弓術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "力量35%，追擊未必有足夠傷害；先行不穩定",
+    "proficiencies": "劍術、弓術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Dadao",
     "tier": "B",
     "strong": "斧、重甲；HP50%、防禦45%，雙方均不能追擊時加攻",
-    "weak": "遇快速敵人時個人技失效；坦度成長不及頂級坦克",
     "target": "Dreadnought",
     "routes": [
       "R7S3",
@@ -696,15 +787,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、重裝術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "遇快速敵人時個人技失效；坦度成長不及頂級坦克",
+    "proficiencies": "斧術、重裝術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Loretta",
     "tier": "B",
     "strong": "劍；速度55%，HP不低於一半時迴避+10（含恰好一半）",
-    "weak": "技巧40%、幸運30%；HP低於一半才失去個人技增益",
     "target": "Shido",
     "routes": [
       "R7S3",
@@ -723,15 +818,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、槍術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "技巧40%、幸運30%；HP低於一半才失去個人技增益",
+    "proficiencies": "劍術、槍術、飛行術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Kiroc",
     "tier": "B",
     "strong": "弓；力量40%、技巧50%、速度55%，對異常狀態敵人攻擊力+3、必殺+10",
-    "weak": "僅弓專長；個人技依賴異常狀態，增益為必殺而非命中",
     "target": "Sniper",
     "routes": [
       "R8S3",
@@ -750,15 +849,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "弓術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "僅弓專長；個人技依賴異常狀態，增益為必殺而非命中",
+    "proficiencies": "弓術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Jester",
     "tier": "B",
     "strong": "弓、步兵；速度60%，使用Swap後防禦增加",
-    "weak": "力量35%；個人技不能補足輸出",
     "target": "Sniper",
     "routes": [
       "R10S3",
@@ -777,15 +880,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、步兵術、弓術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "力量35%；個人技不能補足輸出",
+    "proficiencies": "劍術、步兵術、弓術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Nuzzuo",
     "tier": "B",
     "strong": "弓；力量50%、技巧45%、速度55%，特效傷害時增攻",
-    "weak": "個人技只對能造成特效傷害的目標生效",
     "target": "Sniper",
     "routes": [
       "R6S2",
@@ -804,15 +911,19 @@
       "personalStatus": "investigating",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、弓術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技只對能造成特效傷害的目標生效",
+    "proficiencies": "劍術、弓術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Sofia",
     "tier": "B",
     "strong": "白魔法；魔力45%、魔防40%，個人技增加治療量",
-    "weak": "魔防／幸運遜於其他魔法坦克；技能不增傷或生存",
     "target": "Bishop",
     "routes": [
       "R9S3",
@@ -831,15 +942,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "弓術、白魔術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "魔防／幸運遜於其他魔法坦克；技能不增傷或生存",
+    "proficiencies": "弓術、白魔術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Nydine",
     "tier": "B",
     "strong": "斧、騎術、飛行；力量40%、技巧40%、速度45%，騎乘可穿過敵方格",
-    "weak": "Game8推Bardinger但缺劍／槍專長；需要額外培養",
     "target": "Dragoon*",
     "routes": [
       "R6S1",
@@ -858,15 +973,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、黑魔術、飛行術、騎術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "Game8推Bardinger但缺劍／槍專長；需要額外培養",
+    "proficiencies": "斧術、黑魔術、飛行術、騎術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Guzran",
     "tier": "B",
     "strong": "劍、拳、步兵；速度50%、技巧45%、幸運45%",
-    "weak": "個人技隨機選命中／迴避／必殺+10，不能依賴指定增益",
     "target": "Shido",
     "routes": [
       "自動",
@@ -885,15 +1004,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、格鬥術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "個人技隨機選命中／迴避／必殺+10，不能依賴指定增益",
+    "proficiencies": "劍術、格鬥術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Simon",
     "tier": "B",
     "strong": "劍、斧、步兵；力量50%，可機率保留1HP免於致命傷",
-    "weak": "速度35%；保命依幸運觸發，不可靠",
     "target": "Warrior",
     "routes": [
       "R8S3",
@@ -912,15 +1035,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、斧術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "速度35%；保命依幸運觸發，不可靠",
+    "proficiencies": "劍術、斧術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Sha Lan",
     "tier": "B",
     "strong": "槍、白魔法、指揮；魔力45%、魔防45%",
-    "weak": "需先使用Draw Back才能觸發個人技支援魔法效果",
     "target": "Bishop",
     "routes": [
       "N/A",
@@ -939,15 +1066,19 @@
       "personalStatus": "omitted",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "槍術、白魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "需先使用Draw Back才能觸發個人技支援魔法效果",
+    "proficiencies": "槍術、白魔術、指揮術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Tialla",
     "tier": "B",
     "strong": "黑／白魔法、指揮；魔力45%、幸運50%、魅力45%，對盟友戰技射程+1",
-    "weak": "射程效果非直接提高治療量，普通治療不等同盟友戰技",
     "target": "Bishop",
     "routes": [
       "初始",
@@ -966,15 +1097,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "黑魔術、白魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "射程效果非直接提高治療量，普通治療不等同盟友戰技",
+    "proficiencies": "黑魔術、白魔術、指揮術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Gaitz",
     "tier": "B",
     "strong": "槍、斧、騎術；HP50%、防禦45%，鄰接盟友防禦+3",
-    "weak": "缺重甲專長；個人技不增加自身防禦",
     "target": "Bardinger*",
     "routes": [
       "N/A",
@@ -993,15 +1128,19 @@
       "personalStatus": "character_missing",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": null,
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "缺重甲專長；個人技不增加自身防禦",
+    "proficiencies": null,
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Lysander",
     "tier": "B",
     "strong": "槍、斧、騎術；速度50%，先手迴避+15",
-    "weak": "力量40%、技巧35%；個人技不補命中及火力",
     "target": "Bardinger",
     "routes": [
       "R8S3",
@@ -1020,15 +1159,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "槍術、斧術、騎術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "力量40%、技巧35%；個人技不補命中及火力",
+    "proficiencies": "槍術、斧術、騎術、飛行術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Mikaela",
     "tier": "B",
     "strong": "斧、弓、步兵；力量45%，近接命中+10",
-    "weak": "技巧35%；遠距弓攻無法享受近接命中加成",
     "target": "Warrior",
     "routes": [
       "R5S3",
@@ -1047,15 +1190,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、弓術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "技巧35%；遠距弓攻無法享受近接命中加成",
+    "proficiencies": "斧術、弓術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Ultand",
     "tier": "B",
     "strong": "槍、白魔法；魔力40%、魔防45%，戰後為鄰接盟友少量回血",
-    "weak": "治療量較低，戰後回血範圍小且依賴站位",
     "target": "Bishop",
     "routes": [
       "Ch6",
@@ -1074,15 +1221,19 @@
       "personalStatus": "omitted",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "槍術、白魔術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "治療量較低，戰後回血範圍小且依賴站位",
+    "proficiencies": "槍術、白魔術、飛行術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Sirocco",
     "tier": "B",
     "strong": "劍、黑／白魔法；魔力40%、技巧50%、速度45%，戰後回5HP",
-    "weak": "魔力較專門輸出法師低；回血不提高火力",
     "target": "Ovate",
     "routes": [
       "R9S3",
@@ -1106,15 +1257,19 @@
         }
       ],
       "crestStatus": "documented",
+      "proficiencies": "劍術、黑魔術、白魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "魔力較專門輸出法師低；回血不提高火力",
+    "proficiencies": "劍術、黑魔術、白魔術、指揮術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Tobias",
     "tier": "B",
     "strong": "斧、騎術；力量60%，戰技攻擊+3",
-    "weak": "技巧30%、速度25%，命中及追擊差；普通攻擊不享戰技增攻",
     "target": "Warrior",
     "routes": [
       "N/A",
@@ -1133,15 +1288,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、騎術、重裝術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "技巧30%、速度25%，命中及追擊差；普通攻擊不享戰技增攻",
+    "proficiencies": "斧術、騎術、重裝術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Buccar",
     "tier": "B",
     "strong": "槍、斧；HP50%、防禦45%，受擊傷害降至90%（即減傷10%，依Entertainment14）",
-    "weak": "Game8減傷敘述矛盾；本頁個人技能按新來源記為傷害×90%。重甲專長亦存在來源差異，考試前核對",
     "target": "Dreadnought*",
     "routes": [
       "N/A",
@@ -1160,15 +1319,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "槍術、斧術、騎術、重裝術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "Game8減傷敘述矛盾；本頁個人技能按新來源記為傷害×90%。重甲專長亦存在來源差異，考試前核對",
+    "proficiencies": "槍術、斧術、騎術、重裝術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Fabio",
     "tier": "B",
     "strong": "黑魔法、指揮；魔力50%，鄰接敵人必殺迴避-5（非普通迴避）",
-    "weak": "技巧40%、速度35%；個人技只削鄰接敵人的必殺迴避，不直接補普通命中或魔攻",
     "target": "Ovate*",
     "routes": [
       "N/A",
@@ -1187,15 +1350,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "黑魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "技巧40%、速度35%；個人技只削鄰接敵人的必殺迴避，不直接補普通命中或魔攻",
+    "proficiencies": "黑魔術、指揮術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Olympia",
     "tier": "C",
     "strong": "斧、白魔法；魔力65%，持魔法時必殺增益",
-    "weak": "技巧35%、速度35%；缺黑魔法專長，魔力高不等於黑魔法成型快",
     "target": "Bishop*",
     "routes": [
       "R8S3",
@@ -1214,15 +1381,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、白魔術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "技巧35%、速度35%；缺黑魔法專長，魔力高不等於黑魔法成型快",
+    "proficiencies": "斧術、白魔術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Benditz",
     "tier": "C",
     "strong": "弓、騎術；技巧50%，戰車職業個人技命中+20",
-    "weak": "力量35%、速度35%；轉Forest Knight後戰車個人技不再生效",
     "target": "Forest Knight",
     "routes": [
       "R9S3",
@@ -1241,15 +1412,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "弓術、指揮術、騎術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "力量35%、速度35%；轉Forest Knight後戰車個人技不再生效",
+    "proficiencies": "弓術、指揮術、騎術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Noctula",
     "tier": "C",
     "strong": "斧、拳；易培養物理戰士",
-    "weak": "力量45%、技巧40%、速度45%不突出；戰後迴避+3不增輸出",
     "target": "Warrior",
     "routes": [
       "R4S1",
@@ -1268,15 +1443,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、格鬥術、步兵術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "力量45%、技巧40%、速度45%不突出；戰後迴避+3不增輸出",
+    "proficiencies": "斧術、格鬥術、步兵術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Yang Jie",
     "tier": "C",
     "strong": "斧、白魔法；可擔任治療",
-    "weak": "魔力／魔防／幸運均40%；擊殺後才觸發治療個人技，穩定性低",
     "target": "Bishop*",
     "routes": [
       "R3S2",
@@ -1295,15 +1474,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、白魔術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "魔力／魔防／幸運均40%；擊殺後才觸發治療個人技，穩定性低",
+    "proficiencies": "斧術、白魔術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Majide",
     "tier": "C",
     "strong": "力量50%，斧個人技力量+3",
-    "weak": "技巧30%、速度20%；加力量不能補命中及追擊缺陷",
     "target": "Warrior*",
     "routes": [
       "R5S2",
@@ -1322,15 +1505,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、格鬥術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "技巧30%、速度20%；加力量不能補命中及追擊缺陷",
+    "proficiencies": "斧術、格鬥術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Zarcone",
     "tier": "C",
     "strong": "斧；技巧60%，個人技命中+10，可疊Warrior斧命中+5",
-    "weak": "力量30%、速度35%、HP40%、防禦30%；易命中但輸出及坦度弱",
     "target": "Warrior",
     "routes": [
       "R8S3",
@@ -1349,15 +1536,19 @@
       "personalStatus": "documented",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "劍術、斧術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "力量30%、速度35%、HP40%、防禦30%；易命中但輸出及坦度弱",
+    "proficiencies": "劍術、斧術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Jasmine",
     "tier": "C",
     "strong": "槍、斧、重甲；反擊命中+20",
-    "weak": "力量40%、HP50%、防禦45%不突出；反擊命中不增傷及防禦",
     "target": "Dreadnought*",
     "routes": [
       "R8S1",
@@ -1376,15 +1567,19 @@
       "personalStatus": "character_missing",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": null,
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "力量40%、HP50%、防禦45%不突出；反擊命中不增傷及防禦",
+    "proficiencies": null,
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   },
   {
     "name": "Inyoni",
     "tier": "C",
     "strong": "斧、弓；力量50%，弓攻擊威力增益",
-    "weak": "技巧40%、速度35%；個人技不補命中及速度",
     "target": "Sniper",
     "routes": [
       "R8S3",
@@ -1403,8 +1598,13 @@
       "personalStatus": "investigating",
       "crests": [],
       "crestStatus": "not_listed",
+      "proficiencies": "斧術、弓術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
       "checked": "2026-09-18"
-    }
+    },
+    "combatNotes": "技巧40%、速度35%；個人技不補命中及速度",
+    "proficiencies": "斧術、弓術",
+    "weakSkills": null,
+    "weakSkillsStatus": "not_provided"
   }
 ]

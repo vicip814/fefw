@@ -100,6 +100,12 @@ for unit in data:
     if unit['name']=='Buccar': unit['weak']='Game8减傷敘述矛盾；本頁個人技能按新來源記為傷害×90%。重甲專長亦存在來源差異，考試前核對'.replace('减','減')
     if unit['name']=='Loretta': unit['weak']='技巧40%、幸運30%；HP低於一半才失去個人技增益'
     if unit['name']=='Kiroc': unit['weak']='僅弓專長；個人技依賴異常狀態，增益為必殺而非命中'
+for unit in data:
+    unit['combatNotes']=unit.pop('weak').replace('來源未列專屬弱點；','').replace('來源未列弱點；','')
+    unit['proficiencies']=unit['personalInfo'].get('proficiencies')
+    # The requested source lists strengths only. Missing strengths are not weaknesses.
+    unit['weakSkills']=None
+    unit['weakSkillsStatus']='not_provided'
 (root/'characters.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
 jobs=[]
 for line in (root/'classes.txt').read_text(encoding='utf-8').splitlines():
