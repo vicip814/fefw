@@ -1,4 +1,5 @@
 check.js
+__pycache__/
 output/
 .playwright-cli/
 source-entertainment14.html

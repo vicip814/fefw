@@ -1,63 +1,173 @@
-[
-  {
-    "name": "飛駝兵",
-    "zh": "飛駝兵",
-    "tier": "初級",
-    "req": "馬術 / 級別：E+ ＋ （槍術 / 級別：D ／ 斧術 / 級別：D，任一）",
-    "unlock": "推薦 Lv.5；名聲 Lv.1；初級考試證",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。",
-    "master": "攻勢基礎：力量、魔力各 +1。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "攻勢基礎",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "力量、魔力各 +1。"
-      }
-    ],
-    "move": "5",
-    "bonus": "速度+3、技巧+1、幸運+1",
-    "growth": "HP+10、速度+10、技巧+5、魔防+5、幸運+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "馬術",
-      "飛行術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "槍術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "馬術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "飛行術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "飛駝兵",
-      "飛駝兵",
-      "Ornius Rider"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/bird_rider/",
-    "source": "Redfreshet",
-    "redfreshet": {
+{
+  "source_index_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/",
+  "retrieved_at": "2026-09-22T04:32:17.464980+00:00",
+  "record_count": 60,
+  "field_notes": {
+    "language": "Source text is preserved in Japanese to avoid mistranslating game-specific names.",
+    "movement": "Source value; may be an absolute movement value or a class modifier such as 補正 +2.",
+    "qualification.requirements_raw": "Hierarchy-flattened source text. すべての条件 means AND; いずれかの条件 introduces OR alternatives.",
+    "stats.*.growth_modifier": "Growth-rate modifier shown by the source.",
+    "stats.*.ability_modifier": "Immediate stat modifier while in the class.",
+    "class_skills_and_master_rewards.level_requirement": "The class page provides class/master status but no numeric skill level requirement; therefore null.",
+    "route_and_other_info": "The site often explicitly says fixed routes/base stats/caps are 未収録 (not recorded); those notices are retained."
+  },
+  "missing_data_summary": {
+    "numeric_skill_level_requirements": {
+      "affected_skill_rows": 193,
+      "note": "Class detail pages identify class skills versus mastery rewards, but provide no numeric acquisition level; level_requirement is null."
+    },
+    "class_qualification_requirements": {
+      "missing_class_count": 2,
+      "missing_classes": [
+        "平民",
+        "貴族"
+      ],
+      "note": "The base classes 平民 and 貴族 show no qualification requirements."
+    },
+    "recommended_level": {
+      "missing_class_count": 10,
+      "missing_classes": [
+        "平民",
+        "貴族",
+        "ザ・ブレイド",
+        "ジ・アプサラス",
+        "ジ・エターナル",
+        "ザ・ゴッドハンド",
+        "ザ・カラミティ",
+        "ザ・トライデント",
+        "ザ・キャバリアー",
+        "ジ・アヴァタール"
+      ],
+      "note": "A source dash is stored as null."
+    },
+    "fame_level": {
+      "missing_class_count": 30,
+      "missing_classes": [
+        "平民",
+        "貴族",
+        "ドラグーン",
+        "トルバドール",
+        "戦象兵",
+        "バトルマスター",
+        "マスターアーチ",
+        "シャドウシーカー",
+        "ホーリーランサー",
+        "フォートレス",
+        "オリハルディア",
+        "ドラゴンマスター",
+        "ドルイド",
+        "ワイズマン",
+        "バトルモンク",
+        "聖天翼兵",
+        "グレートナイト",
+        "ソードマスター",
+        "ハイエピタフ",
+        "ボウナイト",
+        "ヴァルキュリウム",
+        "ザ・ブレイド",
+        "ジ・アプサラス",
+        "ジ・エターナル",
+        "ザ・ゴッドハンド",
+        "ザ・カラミティ",
+        "ザ・トライデント",
+        "ザ・キャバリアー",
+        "ジ・アヴァタール",
+        "鍛冶師"
+      ],
+      "note": "A source dash is stored as null."
+    },
+    "stat_modifier_dashes": {
+      "growth_modifier_cells": 10,
+      "ability_modifier_cells": 324,
+      "note": "Source dashes remain available in *_raw; numeric fields use null rather than guessing zero."
+    },
+    "skill_effect_dashes": {
+      "affected_rows": 17,
+      "items": [
+        {
+          "class_ja": "闘士",
+          "skill_ja": "なし"
+        },
+        {
+          "class_ja": "兵士",
+          "skill_ja": "なし"
+        },
+        {
+          "class_ja": "呪い師",
+          "skill_ja": "なし"
+        },
+        {
+          "class_ja": "猟兵",
+          "skill_ja": "なし"
+        },
+        {
+          "class_ja": "平民",
+          "skill_ja": "なし"
+        },
+        {
+          "class_ja": "貴族",
+          "skill_ja": "なし"
+        },
+        {
+          "class_ja": "トルバドール",
+          "skill_ja": "勇気の呪歌"
+        },
+        {
+          "class_ja": "レンジャー",
+          "skill_ja": "上級探索術"
+        },
+        {
+          "class_ja": "マスターアーチ",
+          "skill_ja": "スカイハンター"
+        },
+        {
+          "class_ja": "シャドウシーカー",
+          "skill_ja": "落影の刃"
+        },
+        {
+          "class_ja": "オリハルディア",
+          "skill_ja": "騎士烈槍"
+        },
+        {
+          "class_ja": "バトルモンク",
+          "skill_ja": "格闘回避+7"
+        },
+        {
+          "class_ja": "バトルモンク",
+          "skill_ja": "ブロー＆ヒール"
+        },
+        {
+          "class_ja": "聖天翼兵",
+          "skill_ja": "飛行回避+7"
+        },
+        {
+          "class_ja": "ソードマスター",
+          "skill_ja": "流星"
+        },
+        {
+          "class_ja": "ボウナイト",
+          "skill_ja": "ハンタークロス"
+        },
+        {
+          "class_ja": "ヴァルキュリウム",
+          "skill_ja": "静心の呪歌"
+        }
+      ]
+    },
+    "base_stats_and_stat_caps": "All detail pages currently mark these as 未収録; the notices are retained per class.",
+    "fixed_class_routes": "All detail pages currently say fixed routes are not recorded; use the qualification tree and unlock conditions.",
+    "exclusive_character_restrictions": "The detail pages generally mark this unrecorded. Related-character data is retained separately when present."
+  },
+  "validation": {
+    "index_class_count": 60,
+    "parsed_class_count": 60,
+    "unique_name_count": 60,
+    "unique_source_url_count": 60,
+    "class_pages_with_9_stat_rows": 60,
+    "class_skill_and_mastery_rows": 193
+  },
+  "classes": [
+    {
       "name": "飛駝兵",
       "name_ja": "飛駝兵",
       "name_zh_tw": "飛駝兵",
@@ -274,62 +384,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/bird_rider/"
-    }
-  },
-  {
-    "name": "軽騎兵",
-    "zh": "輕騎兵",
-    "tier": "中級",
-    "req": "馬術 / 級別：D ＋ （槍術 / 級別：C ／ 劍術 / 級別：C，任一）",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。",
-    "master": "体力強化：最大 HP +3。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "体力強化",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "最大 HP +3。"
-      }
-    ],
-    "move": "6",
-    "bonus": "HP+1、力量+1、速度+1、防禦+2、魅力+1",
-    "growth": "HP+10、力量+5、魔力-5、速度+5、防禦+5、幸運+5、魅力+10",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "馬術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "槍術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "馬術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "軽騎兵",
-      "輕騎兵",
-      "Light Cavalry"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/light_cavalry/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "軽騎兵",
       "name_ja": "軽騎兵",
       "name_zh_tw": "輕騎兵",
@@ -540,76 +596,8 @@
         "related_characters_note": "2資料一致の0を採用。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/light_cavalry/"
-    }
-  },
-  {
-    "name": "バーディンガー",
-    "zh": "巴丁格騎兵",
-    "tier": "上級",
-    "req": "馬術 / 級別：C ＋ （槍術 / 級別：B ／ 劍術 / 級別：B，任一）",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+2：戰技裝備欄 +2。",
-    "master": "聖盾：受到魔法攻擊時，有 20% 機率使傷害減半。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "聖盾",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "受到魔法攻擊時，有 20% 機率使傷害減半。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "HP+3、速度+1、防禦+1、魅力+3",
-    "growth": "HP+10、力量+10、魔力-5、防禦+5、魔防+10、幸運+5、魅力+10",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "馬術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "槍術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "斧術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "馬術",
-        "bonus": "+3"
-      }
-    ],
-    "aliases": [
-      "バーディンガー",
-      "巴丁格騎兵",
-      "Bardinger"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/bardinger/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "バーディンガー",
       "name_ja": "バーディンガー",
       "name_zh_tw": "巴丁格騎兵",
@@ -839,66 +827,8 @@
         "related_characters_note": "2資料一致の0を採用。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/bardinger/"
-    }
-  },
-  {
-    "name": "剣士",
-    "zh": "劍士",
-    "tier": "中級",
-    "req": "劍術 / 級別：C",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "戰技裝備+1：戰技裝備欄 +1。；劍必殺+3：裝備劍時，必殺 +3。",
-    "master": "技巧精進：發動必殺的攻擊，傷害 +6。",
-    "skills": [
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "劍必殺+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備劍時，必殺 +3。"
-      },
-      {
-        "name": "技巧精進",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "發動必殺的攻擊，傷害 +6。"
-      }
-    ],
-    "move": "5",
-    "bonus": "HP+1、速度+2、魔防-1",
-    "growth": "HP+10、速度+15、技巧+10、幸運+5、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "剣士",
-      "劍士",
-      "Myrmidon"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/swordsman/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "剣士",
       "name_ja": "剣士",
       "name_zh_tw": "劍士",
@@ -1081,70 +1011,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/swordsman/"
-    }
-  },
-  {
-    "name": "シドー",
-    "zh": "西多",
-    "tier": "上級",
-    "req": "劍術 / 級別：B",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "戰技裝備+2：戰技裝備欄 +2。；劍必殺+5：裝備劍時，必殺 +5。",
-    "master": "残心：以必殺擊破敵人後回復少量 HP；回復公式未收錄。",
-    "skills": [
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "劍必殺+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備劍時，必殺 +5。"
-      },
-      {
-        "name": "残心",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "以必殺擊破敵人後回復少量 HP；回復公式未收錄。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "HP+3、速度+7、技巧+3",
-    "growth": "HP+10、力量+5、速度+15、魔防-5、幸運+5",
-    "weapons": [
-      "劍術",
-      "槍術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+3"
-      },
-      {
-        "skill": "槍術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "シドー",
-      "西多",
-      "Shido"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/sido/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "シドー",
       "name_ja": "シドー",
       "name_zh_tw": "西多",
@@ -1331,64 +1199,8 @@
         "related_characters_note": "2資料一致の10/5を採用。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/sido/"
-    }
-  },
-  {
-    "name": "スナイパー",
-    "zh": "狙擊手",
-    "tier": "上級",
-    "req": "弓術 / 級別：B",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "戰技裝備+2：戰技裝備欄 +2。；弓命中+10：裝備弓時，命中 +10。",
-    "master": "射擊達人：裝備弓時，命中 +15。",
-    "skills": [
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "弓命中+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備弓時，命中 +10。"
-      },
-      {
-        "name": "射擊達人",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "裝備弓時，命中 +15。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "HP+1、速度+5、技巧+5",
-    "growth": "HP+10、力量+5、速度+10、技巧+20、防禦+5、魔防+5、幸運+5、魅力+5",
-    "weapons": [
-      "弓術"
-    ],
-    "usableSkills": [
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "弓術",
-        "bonus": "+3"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "スナイパー",
-      "狙擊手",
-      "Sniper"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/sniper/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "スナイパー",
       "name_ja": "スナイパー",
       "name_zh_tw": "狙擊手",
@@ -1567,75 +1379,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/sniper/"
-    }
-  },
-  {
-    "name": "ヘヴィアーマー",
-    "zh": "重甲兵",
-    "tier": "上級",
-    "req": "重裝術 / 級別：D ＋ （槍術 / 級別：B ／ 斧術 / 級別：B，任一）",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "戰技裝備+2：戰技裝備欄 +2。；後攻守備+5：後手戰鬥時，物理耐性 +5。",
-    "master": "集中反擊：後手戰鬥時，命中 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "後攻守備+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "後手戰鬥時，物理耐性 +5。"
-      },
-      {
-        "name": "集中反擊",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "後手戰鬥時，命中 +10。"
-      }
-    ],
-    "move": "補正 +0",
-    "bonus": "HP+5、力量+3、速度-5、防禦+9、魔防-1",
-    "growth": "HP+15、力量+15、魔力-5、速度-10、技巧+5、防禦+30、魔防-10、魅力+5",
-    "weapons": [
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "槍術",
-      "斧術",
-      "步兵術",
-      "重裝術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "槍術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "斧術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "重装術",
-        "bonus": "+3"
-      }
-    ],
-    "aliases": [
-      "ヘヴィアーマー",
-      "重甲兵",
-      "Dreadnought"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/heavy_armor/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ヘヴィアーマー",
       "name_ja": "ヘヴィアーマー",
       "name_zh_tw": "重甲兵",
@@ -1863,80 +1608,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/heavy_armor/"
-    }
-  },
-  {
-    "name": "ビショップ",
-    "zh": "主教",
-    "tier": "上級",
-    "req": "白魔術 / 級別：B",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "白魔術探求：白魔法可用次數變為 2 倍。；魔法回復+10：對友軍施放回復魔法時，回復量 +10。",
-    "master": "結界：相鄰友軍的魔防 +3。",
-    "skills": [
-      {
-        "name": "白魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "魔法回復+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +10。"
-      },
-      {
-        "name": "結界",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "相鄰友軍的魔防 +3。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "HP+1、魔力+3、速度+1、魔防+5、幸運+3、魅力+3",
-    "growth": "HP+10、力量-5、魔力+15、技巧+5、防禦-10、魔防+20、幸運+20、魅力+10",
-    "weapons": [
-      "斧術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "斧術",
-      "格鬥術",
-      "黑魔術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "斧術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "格闘術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "黒魔術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "白魔術",
-        "bonus": "+3"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "ビショップ",
-      "主教",
-      "Bishop"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/bishop/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ビショップ",
       "name_ja": "ビショップ",
       "name_zh_tw": "主教",
@@ -2135,80 +1808,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/bishop/"
-    }
-  },
-  {
-    "name": "ウァテス",
-    "zh": "瓦特斯",
-    "tier": "上級",
-    "req": "黑魔術 / 級別：B",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "黑魔術探求：黑魔法可用次數變為 2 倍。；魔法命中+5：裝備魔法時，命中 +5。",
-    "master": "速度咒縛：相鄰敵人的速度 -3。",
-    "skills": [
-      {
-        "name": "黑魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "黑魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "魔法命中+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備魔法時，命中 +5。"
-      },
-      {
-        "name": "速度咒縛",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "相鄰敵人的速度 -3。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "HP+1、魔力+4、速度+3、技巧+4、魔防+4、魅力-1",
-    "growth": "HP+10、力量-5、魔力+20、速度+5、技巧+15、防禦-10、魔防+15、幸運+10",
-    "weapons": [
-      "劍術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "格鬥術",
-      "黑魔術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "格闘術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "黒魔術",
-        "bonus": "+3"
-      },
-      {
-        "skill": "白魔術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "ウァテス",
-      "瓦特斯",
-      "Ovate"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/vates/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ウァテス",
       "name_ja": "ウァテス",
       "name_zh_tw": "瓦特斯",
@@ -2407,77 +2008,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/vates/"
-    }
-  },
-  {
-    "name": "ウォーリアー",
-    "zh": "戰士",
-    "tier": "上級",
-    "req": "（劍術 / 級別：B ／ 斧術 / 級別：B ／ 格鬥術 / 級別：B，任一）",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "戰技裝備+2：戰技裝備欄 +2。；斧命中+5：裝備斧時，命中 +5。；格鬥命中+5：裝備拳套時，命中 +5。",
-    "master": "熟練技：使用戰技攻擊時，命中 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "斧命中+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備斧時，命中 +5。"
-      },
-      {
-        "name": "格鬥命中+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備拳套時，命中 +5。"
-      },
-      {
-        "name": "熟練技",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "使用戰技攻擊時，命中 +10。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "HP+4、力量+4、速度+1",
-    "growth": "HP+20、力量+20、魔力-5、防禦+5、魔防-5、魅力+5",
-    "weapons": [
-      "—"
-    ],
-    "usableSkills": [
-      "—"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "斧術",
-        "bonus": "+3"
-      },
-      {
-        "skill": "格闘術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "ウォーリアー",
-      "戰士",
-      "Warrior"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/warrior/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ウォーリアー",
       "name_ja": "ウォーリアー",
       "name_zh_tw": "戰士",
@@ -2708,76 +2240,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/warrior/"
-    }
-  },
-  {
-    "name": "フォレストナイト",
-    "zh": "森林騎士",
-    "tier": "上級",
-    "req": "馬術 / 級別：D ＋ 弓術 / 級別：B",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；上級考試證",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+1：戰技裝備欄 +1。；弓命中+5：裝備弓時，命中 +5。",
-    "master": "狩人目：裝備弓時，追擊的攻擊力 +3。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "弓命中+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備弓時，命中 +5。"
-      },
-      {
-        "name": "狩人目",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "裝備弓時，追擊的攻擊力 +3。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "HP+1、速度+5、技巧+2、防禦+1",
-    "growth": "HP+10、力量+5、速度+10、防禦+5、魔防+5、幸運+5、魅力+5",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "馬術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "弓術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "馬術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "フォレストナイト",
-      "森林騎士",
-      "Forest Knight"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/forest_knight/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "フォレストナイト",
       "name_ja": "フォレストナイト",
       "name_zh_tw": "森林騎士",
@@ -2985,64 +2449,8 @@
         "related_characters_note": "2資料一致の10を採用。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/forest_knight/"
-    }
-  },
-  {
-    "name": "ブリガンド",
-    "zh": "山賊",
-    "tier": "中級",
-    "req": "（劍術 / 級別：C ／ 斧術 / 級別：C，任一）",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "戰技裝備+1：戰技裝備欄 +1。；斧命中+3：裝備斧時，命中 +3。",
-    "master": "重整態勢：攻擊落空的戰鬥中，自身迴避 +20。",
-    "skills": [
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "斧命中+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備斧時，命中 +3。"
-      },
-      {
-        "name": "重整態勢",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "攻擊落空的戰鬥中，自身迴避 +20。"
-      }
-    ],
-    "move": "5",
-    "bonus": "HP+3、力量+2、防禦+1、魔防-1",
-    "growth": "HP+15、力量+15、魔力-5、速度+5、防禦+5、魅力+5",
-    "weapons": [
-      "劍術",
-      "斧術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "斧術",
-      "格鬥術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "斧術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "ブリガンド",
-      "山賊",
-      "Brigand"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/brigand/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ブリガンド",
       "name_ja": "ブリガンド",
       "name_zh_tw": "山賊",
@@ -3250,76 +2658,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/brigand/"
-    }
-  },
-  {
-    "name": "ローグ",
-    "zh": "盜賊",
-    "tier": "中級",
-    "req": "（劍術 / 級別：C ／ 弓術 / 級別：C，任一）",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "戰技裝備+1：戰技裝備欄 +1。；開鎖：開啟寶箱時不消耗鑰匙。；探索術：編入部隊時，探索取得 PERFECT 的機率略增；數值未收錄。",
-    "master": "隱匿身影：擊破後迴避 +10，完成下一場戰鬥後解除。",
-    "skills": [
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "開鎖",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "開啟寶箱時不消耗鑰匙。"
-      },
-      {
-        "name": "探索術",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "編入部隊時，探索取得 PERFECT 的機率略增；數值未收錄。"
-      },
-      {
-        "name": "隱匿身影",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "擊破後迴避 +10，完成下一場戰鬥後解除。"
-      }
-    ],
-    "move": "5",
-    "bonus": "速度+3、技巧+1、魔防+1、幸運+1、魅力-1",
-    "growth": "HP+10、速度+15、技巧+10、魔防+5、幸運+5",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "弓術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "ローグ",
-      "盜賊",
-      "Rogue"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/rogue/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ローグ",
       "name_ja": "ローグ",
       "name_zh_tw": "盜賊",
@@ -3542,64 +2882,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/rogue/"
-    }
-  },
-  {
-    "name": "アーチャー",
-    "zh": "弓箭手",
-    "tier": "中級",
-    "req": "弓術 / 級別：C",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "戰技裝備+1：戰技裝備欄 +1。；弓命中+5：裝備弓時，命中 +5。",
-    "master": "好調：每次擊破使命中 +3，上限 30，地圖結束後清除。",
-    "skills": [
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "弓命中+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備弓時，命中 +5。"
-      },
-      {
-        "name": "好調",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "每次擊破使命中 +3，上限 30，地圖結束後清除。"
-      }
-    ],
-    "move": "5",
-    "bonus": "速度+2、技巧+2、防禦+1",
-    "growth": "HP+10、速度+10、技巧+15、防禦+5、幸運+5、魅力+5",
-    "weapons": [
-      "弓術"
-    ],
-    "usableSkills": [
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "弓術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "アーチャー",
-      "弓箭手",
-      "Archer"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/archer/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "アーチャー",
       "name_ja": "アーチャー",
       "name_zh_tw": "弓箭手",
@@ -3778,73 +3062,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/archer/"
-    }
-  },
-  {
-    "name": "重装歩兵",
-    "zh": "重裝步兵",
-    "tier": "中級",
-    "req": "重裝術 / 級別：E+ ＋ （槍術 / 級別：C ／ 斧術 / 級別：C，任一）",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "戰技裝備+1：戰技裝備欄 +1。；後攻守備+3：後手戰鬥時，物理耐性 +3。",
-    "master": "大反擊：後手戰鬥時，攻擊力 +3。",
-    "skills": [
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "後攻守備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "後手戰鬥時，物理耐性 +3。"
-      },
-      {
-        "name": "大反擊",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "後手戰鬥時，攻擊力 +3。"
-      }
-    ],
-    "move": "4",
-    "bonus": "HP+2、力量+1、速度-2、防禦+4",
-    "growth": "HP+10、力量+10、魔力-5、速度-5、技巧+5、防禦+25、魔防-5、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "步兵術",
-      "重裝術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "槍術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "斧術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "重装術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "重装歩兵",
-      "重裝步兵",
-      "Armored Knight"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/armored_infantry/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "重装歩兵",
       "name_ja": "重装歩兵",
       "name_zh_tw": "重裝步兵",
@@ -4072,71 +3291,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/armored_infantry/"
-    }
-  },
-  {
-    "name": "騎甲駝兵",
-    "zh": "騎甲駝兵",
-    "tier": "中級",
-    "req": "馬術 / 級別：D ＋ （槍術 / 級別：C ／ 斧術 / 級別：C，任一）",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。",
-    "master": "脅威察知：敵方攻擊對自身有效或特效時，迴避 +20。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "脅威察知",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "敵方攻擊對自身有效或特效時，迴避 +20。"
-      }
-    ],
-    "move": "6",
-    "bonus": "HP+1、速度+2、防禦+2",
-    "growth": "HP+10、魔力-5、防禦+10、幸運+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "馬術",
-      "飛行術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "槍術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "斧術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "馬術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "飛行術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "騎甲駝兵",
-      "騎甲駝兵",
-      "Armored Ornius Rider"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/armored_rider/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "騎甲駝兵",
       "name_ja": "騎甲駝兵",
       "name_zh_tw": "騎甲駝兵",
@@ -4357,72 +3513,8 @@
         "related_characters_note": "各項目で2資料一致値を採用。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/armored_rider/"
-    }
-  },
-  {
-    "name": "シャーマン",
-    "zh": "薩滿",
-    "tier": "中級",
-    "req": "黑魔術 / 級別：C",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "黑魔術探求：黑魔法可用次數變為 2 倍。；魔法命中+3：裝備魔法時，命中 +3。",
-    "master": "技呪縛：相鄰敵人的技巧 -3。",
-    "skills": [
-      {
-        "name": "黑魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "黑魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "魔法命中+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備魔法時，命中 +3。"
-      },
-      {
-        "name": "技呪縛",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "相鄰敵人的技巧 -3。"
-      }
-    ],
-    "move": "5",
-    "bonus": "魔力+2、速度+1、技巧+1、魔防+2、魅力-1",
-    "growth": "HP+5、力量-5、魔力+15、速度+10、技巧+10、防禦-10、魔防+10、幸運+10",
-    "weapons": [
-      "劍術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "格鬥術",
-      "黑魔術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "黒魔術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "白魔術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "シャーマン",
-      "薩滿",
-      "Shaman"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/shaman/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "シャーマン",
       "name_ja": "シャーマン",
       "name_zh_tw": "薩滿",
@@ -4613,72 +3705,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/shaman/"
-    }
-  },
-  {
-    "name": "プリースト",
-    "zh": "祭司",
-    "tier": "中級",
-    "req": "白魔術 / 級別：C",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "白魔術探求：白魔法可用次數變為 2 倍。；魔法回復+5：對友軍施放回復魔法時，回復量 +5。",
-    "master": "信仰心：幸運 +3。",
-    "skills": [
-      {
-        "name": "白魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "魔法回復+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +5。"
-      },
-      {
-        "name": "信仰心",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "幸運 +3。"
-      }
-    ],
-    "move": "5",
-    "bonus": "魔力+1、魔防+3、幸運+2、魅力+1",
-    "growth": "HP+5、力量-5、魔力+10、速度+5、技巧+5、防禦-10、魔防+15、幸運+15、魅力+10",
-    "weapons": [
-      "斧術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "斧術",
-      "格鬥術",
-      "黑魔術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "格闘術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "黒魔術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "白魔術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "プリースト",
-      "祭司",
-      "Priest"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/priest/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "プリースト",
       "name_ja": "プリースト",
       "name_zh_tw": "祭司",
@@ -4869,64 +3897,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/priest/"
-    }
-  },
-  {
-    "name": "セスタス",
-    "zh": "拳鬥士",
-    "tier": "中級",
-    "req": "格鬥術 / 級別：C",
-    "unlock": "推薦 Lv.20；名聲 Lv.4；中級考試證",
-    "ability": "戰技裝備+1：戰技裝備欄 +1。；格鬥回避+3：裝備拳套時，迴避 +3。",
-    "master": "打帶跑：使用戰技戰鬥時，迴避 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "格鬥回避+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備拳套時，迴避 +3。"
-      },
-      {
-        "name": "打帶跑",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "使用戰技戰鬥時，迴避 +10。"
-      }
-    ],
-    "move": "5",
-    "bonus": "HP+2、力量+1、速度+1、防禦+2、魔防-1",
-    "growth": "HP+15、力量+10、魔力-5、速度+10、技巧+5、防禦+10、魅力+5",
-    "weapons": [
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "格鬥術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "格闘術",
-        "bonus": "+2"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+2"
-      }
-    ],
-    "aliases": [
-      "セスタス",
-      "拳鬥士",
-      "Pugilist"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/cestus/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "セスタス",
       "name_ja": "セスタス",
       "name_zh_tw": "拳鬥士",
@@ -5105,66 +4077,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/cestus/"
-    }
-  },
-  {
-    "name": "闘士",
-    "zh": "鬥士",
-    "tier": "初級",
-    "req": "（劍術 / 級別：D ／ 斧術 / 級別：D ／ 格鬥術 / 級別：D，任一）",
-    "unlock": "推薦 Lv.5；名聲 Lv.1；初級考試證",
-    "ability": "無：未提供效果說明。",
-    "master": "攻擊基礎：力量 +1。",
-    "skills": [
-      {
-        "name": "無",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "攻擊基礎",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "力量 +1。"
-      }
-    ],
-    "move": "4",
-    "bonus": "HP+1、力量+1",
-    "growth": "HP+10、力量+10",
-    "weapons": [
-      "劍術",
-      "斧術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "斧術",
-      "格鬥術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "斧術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "格闘術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "闘士",
-      "鬥士",
-      "Gladiator"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/fighter/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "闘士",
       "name_ja": "闘士",
       "name_zh_tw": "鬥士",
@@ -5379,67 +4293,8 @@
         "related_characters_note": "2資料一致の0を採用。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/fighter/"
-    }
-  },
-  {
-    "name": "兵士",
-    "zh": "士兵",
-    "tier": "初級",
-    "req": "（槍術 / 級別：D ／ 斧術 / 級別：D，任一）",
-    "unlock": "推薦 Lv.5；名聲 Lv.1；初級考試證",
-    "ability": "無：未提供效果說明。",
-    "master": "防衛基礎：防守 +1。",
-    "skills": [
-      {
-        "name": "無",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "防衛基礎",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "防守 +1。"
-      }
-    ],
-    "move": "4",
-    "bonus": "力量+1、防禦+1",
-    "growth": "HP+10、力量+5、速度-5、技巧+5、防禦+10",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "步兵術",
-      "重裝術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "槍術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "斧術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "重装術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "兵士",
-      "士兵",
-      "Soldier"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/soldier/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "兵士",
       "name_ja": "兵士",
       "name_zh_tw": "士兵",
@@ -5646,64 +4501,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/soldier/"
-    }
-  },
-  {
-    "name": "呪い師",
-    "zh": "咒術師",
-    "tier": "初級",
-    "req": "（黑魔術 / 級別：D ／ 白魔術 / 級別：D，任一）",
-    "unlock": "推薦 Lv.5；名聲 Lv.1；初級考試證",
-    "ability": "無：未提供效果說明。",
-    "master": "魔道基礎：魔力、魔防各 +1。",
-    "skills": [
-      {
-        "name": "無",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "魔道基礎",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "魔力、魔防各 +1。"
-      }
-    ],
-    "move": "4",
-    "bonus": "魔力+1、魔防+1",
-    "growth": "HP+5、力量-5、魔力+15、技巧+5、防禦-5、魔防+10",
-    "weapons": [
-      "劍術",
-      "斧術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "斧術",
-      "格鬥術",
-      "黑魔術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "黒魔術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "白魔術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "呪い師",
-      "咒術師",
-      "Diviner"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/hexer/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "呪い師",
       "name_ja": "呪い師",
       "name_zh_tw": "咒術師",
@@ -5908,64 +4707,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/hexer/"
-    }
-  },
-  {
-    "name": "猟兵",
-    "zh": "獵兵",
-    "tier": "初級",
-    "req": "（劍術 / 級別：D ／ 弓術 / 級別：D，任一）",
-    "unlock": "推薦 Lv.5；名聲 Lv.1；初級考試證",
-    "ability": "無：未提供效果說明。",
-    "master": "狩猟基礎：技巧、速度各 +1。",
-    "skills": [
-      {
-        "name": "無",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "狩猟基礎",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "技巧、速度各 +1。"
-      }
-    ],
-    "move": "4",
-    "bonus": "速度+1、技巧+1",
-    "growth": "HP+10、速度+10、技巧+10",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [
-      {
-        "skill": "剣術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "弓術",
-        "bonus": "+1"
-      },
-      {
-        "skill": "歩兵術",
-        "bonus": "+1"
-      }
-    ],
-    "aliases": [
-      "猟兵",
-      "獵兵",
-      "Hunter"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/hunter/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "猟兵",
       "name_ja": "猟兵",
       "name_zh_tw": "獵兵",
@@ -6166,58 +4909,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/hunter/"
-    }
-  },
-  {
-    "name": "平民",
-    "zh": "平民",
-    "tier": "基礎",
-    "req": "無技能門檻（僅特殊解鎖）",
-    "unlock": "來源未列出",
-    "ability": "無：未提供效果說明。",
-    "master": "戰鬥基礎：命中、迴避各 +3。",
-    "skills": [
-      {
-        "name": "無",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "戰鬥基礎",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "命中、迴避各 +3。"
-      }
-    ],
-    "move": "補正 +0",
-    "bonus": "來源未列出",
-    "growth": "來源未列出",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "弓術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "弓術",
-      "格鬥術",
-      "白魔術",
-      "黑魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "平民",
-      "平民"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_810d42365409/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "平民",
       "name_ja": "平民",
       "name_zh_tw": "平民",
@@ -6372,58 +5065,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_810d42365409/"
-    }
-  },
-  {
-    "name": "貴族",
-    "zh": "貴族",
-    "tier": "基礎",
-    "req": "無技能門檻（僅特殊解鎖）",
-    "unlock": "來源未列出",
-    "ability": "無：未提供效果說明。",
-    "master": "戰鬥基礎：命中、迴避各 +3。",
-    "skills": [
-      {
-        "name": "無",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "戰鬥基礎",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "命中、迴避各 +3。"
-      }
-    ],
-    "move": "補正 +0",
-    "bonus": "來源未列出",
-    "growth": "來源未列出",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "弓術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "弓術",
-      "格鬥術",
-      "白魔術",
-      "黑魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "貴族",
-      "貴族"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_83a3e1d2d09f/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "貴族",
       "name_ja": "貴族",
       "name_zh_tw": "貴族",
@@ -6578,61 +5221,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_83a3e1d2d09f/"
-    }
-  },
-  {
-    "name": "戦車兵",
-    "zh": "戰車兵",
-    "tier": "中級",
-    "req": "馬術 / 級別：D ＋ 弓術 / 級別：C",
-    "unlock": "推薦 Lv.20；名聲 Lv.4",
-    "ability": "戰車裝甲：騎乘時防禦力 +5，但無法迴避。；戰車兵戰術：可上、下坐騎；騎乘時可使用「突進」。；戰車兵道：等級越高，成長值越高。",
-    "master": "突擊体勢：使用「突進」後物理耐性 +10，持續至下次己方階段。",
-    "skills": [
-      {
-        "name": "戰車裝甲",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "騎乘時防禦力 +5，但無法迴避。"
-      },
-      {
-        "name": "戰車兵戰術",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可上、下坐騎；騎乘時可使用「突進」。"
-      },
-      {
-        "name": "戰車兵道",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "等級越高，成長值越高。"
-      },
-      {
-        "name": "突擊体勢",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "使用「突進」後物理耐性 +10，持續至下次己方階段。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量+5、魔力-5、速度-5、技巧+15、防禦+10、幸運+5、魅力+10",
-    "weapons": [
-      "弓術"
-    ],
-    "usableSkills": [
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "戦車兵",
-      "戰車兵",
-      "Charioteer"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_eacdcd221123/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "戦車兵",
       "name_ja": "戦車兵",
       "name_zh_tw": "戰車兵",
@@ -6823,51 +5413,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_eacdcd221123/"
-    }
-  },
-  {
-    "name": "天翼兵",
-    "zh": "天翼兵",
-    "tier": "中級",
-    "req": "飛行術 / 級別：D ＋ （劍術 / 級別：C ／ 槍術 / 級別：C，任一）",
-    "unlock": "推薦 Lv.20；名聲 Lv.4",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。",
-    "master": "天馬護翼：魔防 +3。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "天馬護翼",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "魔防 +3。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+10、魔力+5、技巧+5、防禦+5、魔防+5、幸運+5、魅力+10",
-    "weapons": [
-      "劍術",
-      "槍術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "飛行術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "天翼兵",
-      "天翼兵",
-      "Wing Soldier"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_7da4409ab47a/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "天翼兵",
       "name_ja": "天翼兵",
       "name_zh_tw": "天翼兵",
@@ -7065,67 +5612,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_7da4409ab47a/"
-    }
-  },
-  {
-    "name": "カラドリオス",
-    "zh": "卡拉德里奧斯",
-    "tier": "上級",
-    "req": "馬術 / 級別：D ＋ 黑魔術 / 級別：B",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；條件：卡斯托爾的訓練Lv7「父親的秘密委託」並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；黑魔術探求：黑魔法可用次數變為 2 倍。；戰技裝備+1：戰技裝備欄 +1。",
-    "master": "疾馳：擊破敵人後移動力 +1，上限 3，持續至下一回合結束。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "黑魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "黑魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "疾馳",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "擊破敵人後移動力 +1，上限 3，持續至下一回合結束。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、魔力+10、速度+10、技巧+5、防禦+10、魔防+10、幸運+5、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "黑魔術",
-      "馬術",
-      "飛行術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "カラドリオス",
-      "卡拉德里奧斯",
-      "Caladrius"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_60e43b2d254d/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "カラドリオス",
       "name_ja": "カラドリオス",
       "name_zh_tw": "卡拉德里奧斯",
@@ -7342,55 +5830,8 @@
         "related_characters_note": "2資料一致の0を採用。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_60e43b2d254d/"
-    }
-  },
-  {
-    "name": "ガーディアン",
-    "zh": "守護者",
-    "tier": "上級",
-    "req": "槍術 / 級別：B",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；條件：迪托利希篇・名聲Lv6的挑戰書「徵求挑戰者！飛槍・伊爾伊拉」並通關；條件：賽奧朵拉篇・9章之前的完成全部戰備增強",
-    "ability": "戰技裝備+2：戰技裝備欄 +2。；魔法回復+10：對友軍施放回復魔法時，回復量 +10。",
-    "master": "振作：擊破敵人後物理耐性 +3，持續至下次己方階段結束。",
-    "skills": [
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "魔法回復+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +10。"
-      },
-      {
-        "name": "振作",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "擊破敵人後物理耐性 +3，持續至下次己方階段結束。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量+10、技巧+5、防禦+10、魔防+15、幸運+15、魅力+5",
-    "weapons": [
-      "槍術"
-    ],
-    "usableSkills": [
-      "槍術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ガーディアン",
-      "守護者"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_f82366ec255c/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ガーディアン",
       "name_ja": "ガーディアン",
       "name_zh_tw": "守護者",
@@ -7603,56 +6044,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_f82366ec255c/"
-    }
-  },
-  {
-    "name": "踊り子",
-    "zh": "舞者",
-    "tier": "上級",
-    "req": "（弓術 / 級別：B ／ 劍術 / 級別：B，任一）",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；條件：蕾達篇 第1部9章",
-    "ability": "戰技裝備+2：戰技裝備欄 +2。；舞蹈：可使用戰技「舞蹈」。",
-    "master": "特別舞蹈：被施放「舞蹈」的友軍技巧、速度 +3，僅該階段有效。",
-    "skills": [
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "舞蹈",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用戰技「舞蹈」。"
-      },
-      {
-        "name": "特別舞蹈",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "被施放「舞蹈」的友軍技巧、速度 +3，僅該階段有效。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、速度+25、技巧+10、魔防+5、幸運+10、魅力+20",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "踊り子",
-      "舞者"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_976322f32f17/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "踊り子",
       "name_ja": "踊り子",
       "name_zh_tw": "舞者",
@@ -7866,59 +6259,8 @@
         "related_characters_note": null
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_976322f32f17/"
-    }
-  },
-  {
-    "name": "ドラグーン",
-    "zh": "龍騎兵",
-    "tier": "上級",
-    "req": "飛行術 / 級別：C ＋ （斧術 / 級別：B ／ 槍術 / 級別：B，任一）",
-    "unlock": "推薦 Lv.35；條件：奧羅拉的訓練Lv8「母親的特別委託」並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+1：戰技裝備欄 +1。",
-    "master": "破城：與位於有利地形的敵人戰鬥時，命中 +20。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "破城",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "與位於有利地形的敵人戰鬥時，命中 +20。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、速度+5、防禦+10、魔防+10、幸運+10、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "飛行術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ドラグーン",
-      "龍騎兵",
-      "Dragoon"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_f17aa910db7f/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ドラグーン",
       "name_ja": "ドラグーン",
       "name_zh_tw": "龍騎兵",
@@ -8145,62 +6487,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_f17aa910db7f/"
-    }
-  },
-  {
-    "name": "トルバドール",
-    "zh": "遊吟騎士",
-    "tier": "上級",
-    "req": "馬術 / 級別：D ＋ （白魔術 / 級別：B ／ 黑魔術 / 級別：B，任一）",
-    "unlock": "推薦 Lv.35；條件：凱伊篇・名聲Lv10時，白髪鬼的委託並通關；條件：蕾達篇・興行「希望製作並展示新商品4」並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；魔法回復+5：對友軍施放回復魔法時，回復量 +5。；魔法命中+3：裝備魔法時，命中 +3。",
-    "master": "勇気呪歌：未提供效果說明。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "魔法回復+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +5。"
-      },
-      {
-        "name": "魔法命中+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備魔法時，命中 +3。"
-      },
-      {
-        "name": "勇気呪歌",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+10、魔力+15、技巧+5、防禦+5、魔防+15、幸運+15、魅力+10",
-    "weapons": [
-      "—"
-    ],
-    "usableSkills": [
-      "黑魔術",
-      "白魔術",
-      "馬術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "トルバドール",
-      "遊吟騎士",
-      "Troubadour"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_3244352f5563/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "トルバドール",
       "name_ja": "トルバドール",
       "name_zh_tw": "遊吟騎士",
@@ -8459,66 +6747,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_3244352f5563/"
-    }
-  },
-  {
-    "name": "カタフラクト",
-    "zh": "鐵甲騎兵",
-    "tier": "上級",
-    "req": "馬術 / 級別：D ＋ （斧術 / 級別：B ／ 槍術 / 級別：B，任一） ＋ 重裝術 / 級別：E+",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；條件：賽奧朵拉篇・8章之前的完成全部戰備增強",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+1：戰技裝備欄 +1。；後攻守備+3：後手戰鬥時，物理耐性 +3。",
-    "master": "大盾：受到物理攻擊時，有 20% 機率使傷害減半。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "後攻守備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "後手戰鬥時，物理耐性 +3。"
-      },
-      {
-        "name": "大盾",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "受到物理攻擊時，有 20% 機率使傷害減半。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+15、魔力-5、速度-10、防禦+10、魔防-5、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "馬術",
-      "重裝術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "カタフラクト",
-      "鐵甲騎兵",
-      "Cataphract"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_cbd0cf84a815/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "カタフラクト",
       "name_ja": "カタフラクト",
       "name_zh_tw": "鐵甲騎兵",
@@ -8783,62 +7013,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_cbd0cf84a815/"
-    }
-  },
-  {
-    "name": "レンジャー",
-    "zh": "遊俠",
-    "tier": "上級",
-    "req": "（弓術 / 級別：B ／ 劍術 / 級別：B，任一）",
-    "unlock": "推薦 Lv.35；名聲 Lv.8；條件：迪托利希篇・名聲Lv10的挑戰書「徵求挑戰者！必滅・歐科」並通關；條件：蕾達篇・興行「希望製作並展示新商品4」並通關",
-    "ability": "戰技裝備+2：戰技裝備欄 +2。；開鎖：開啟寶箱時不消耗鑰匙。；上級探索術：未提供效果說明。",
-    "master": "反擊射擊：裝備弓戰鬥時有 50% 機率可反擊相鄰敵人。",
-    "skills": [
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "開鎖",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "開啟寶箱時不消耗鑰匙。"
-      },
-      {
-        "name": "上級探索術",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "反擊射擊",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "裝備弓戰鬥時有 50% 機率可反擊相鄰敵人。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量+5、速度+15、技巧+15、魔防+10、幸運+15",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "レンジャー",
-      "遊俠"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_86dadaee1713/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "レンジャー",
       "name_ja": "レンジャー",
       "name_zh_tw": "遊俠",
@@ -9089,60 +7265,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_86dadaee1713/"
-    }
-  },
-  {
-    "name": "戦象兵",
-    "zh": "戰象兵",
-    "tier": "上級",
-    "req": "馬術 / 級別：C",
-    "unlock": "推薦 Lv.35；條件：救世篇 第1區段並通關",
-    "ability": "戰象兵戰術：可上、下坐騎；騎乘時可使用「重突進」。；戰象兵道：等級越高，成長值越高。；戰象裝脚：騎乘時，受到攻擊的傷害減半。",
-    "master": "戰象旗手：騎乘戰象時，命中 +10。",
-    "skills": [
-      {
-        "name": "戰象兵戰術",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可上、下坐騎；騎乘時可使用「重突進」。"
-      },
-      {
-        "name": "戰象兵道",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "等級越高，成長值越高。"
-      },
-      {
-        "name": "戰象裝脚",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "騎乘時，受到攻擊的傷害減半。"
-      },
-      {
-        "name": "戰象旗手",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "騎乘戰象時，命中 +10。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+20、力量+10、魔力-5、速度-10、技巧+20、防禦+15、魔防-5、幸運+5、魅力+10",
-    "weapons": [
-      "—"
-    ],
-    "usableSkills": [
-      "馬術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "戦象兵",
-      "戰象兵",
-      "Elephant Rider"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_9a59bb24d2fa/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "戦象兵",
       "name_ja": "戦象兵",
       "name_zh_tw": "戰象兵",
@@ -9350,64 +7474,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_9a59bb24d2fa/"
-    }
-  },
-  {
-    "name": "バトルマスター",
-    "zh": "戰鬥大師",
-    "tier": "最高級",
-    "req": "（格鬥術 / 級別：A ／ 斧術 / 級別：A ／ 劍術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；斧命中+7：裝備斧時，命中 +7。；格鬥命中+7：裝備拳套時，命中 +7。",
-    "master": "戰鬼一擊：造成傷害變為 1.5 倍。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "斧命中+7",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備斧時，命中 +7。"
-      },
-      {
-        "name": "格鬥命中+7",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備拳套時，命中 +7。"
-      },
-      {
-        "name": "戰鬼一擊",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "造成傷害變為 1.5 倍。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+25、力量+25、魔力-5、速度+5、技巧-5、防禦+10、魔防-5、幸運-5、魅力+5",
-    "weapons": [
-      "劍術",
-      "斧術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "斧術",
-      "格鬥術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "バトルマスター",
-      "戰鬥大師"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_717fc8a354cf/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "バトルマスター",
       "name_ja": "バトルマスター",
       "name_zh_tw": "戰鬥大師",
@@ -9645,54 +7713,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_717fc8a354cf/"
-    }
-  },
-  {
-    "name": "マスターアーチ",
-    "zh": "弓術大師",
-    "tier": "最高級",
-    "req": "弓術 / 級別：A",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；弓命中+15：裝備弓時，命中 +15。",
-    "master": "天空獵手：未提供效果說明。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "弓命中+15",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備弓時，命中 +15。"
-      },
-      {
-        "name": "天空獵手",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、速度+15、技巧+20、防禦+5、魔防+5、幸運+5、魅力+5",
-    "weapons": [
-      "弓術"
-    ],
-    "usableSkills": [
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "マスターアーチ",
-      "弓術大師"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_ac4f676a0c25/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "マスターアーチ",
       "name_ja": "マスターアーチ",
       "name_zh_tw": "弓術大師",
@@ -9876,62 +7898,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_ac4f676a0c25/"
-    }
-  },
-  {
-    "name": "シャドウシーカー",
-    "zh": "暗影追獵者",
-    "tier": "最高級",
-    "req": "（弓術 / 級別：A ／ 劍術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；開鎖：開啟寶箱時不消耗鑰匙。；最高級探索術：編入部隊時，探索更容易取得 PERFECT。",
-    "master": "落影刃：未提供效果說明。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "開鎖",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "開啟寶箱時不消耗鑰匙。"
-      },
-      {
-        "name": "最高級探索術",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "編入部隊時，探索更容易取得 PERFECT。"
-      },
-      {
-        "name": "落影刃",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、速度+25、技巧+15、魔防+10、幸運+15",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "シャドウシーカー",
-      "暗影追獵者"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_8e5238770c5a/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "シャドウシーカー",
       "name_ja": "シャドウシーカー",
       "name_zh_tw": "暗影追獵者",
@@ -10155,61 +8123,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_8e5238770c5a/"
-    }
-  },
-  {
-    "name": "ホーリーランサー",
-    "zh": "神聖槍兵",
-    "tier": "最高級",
-    "req": "槍術 / 級別：A",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；魔法回復+10：對友軍施放回復魔法時，回復量 +10。；白魔術探求：白魔法可用次數變為 2 倍。",
-    "master": "不退架勢：戰鬥時若 HP 全滿，防禦力 +5。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "魔法回復+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +10。"
-      },
-      {
-        "name": "白魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "不退架勢",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "戰鬥時若 HP 全滿，防禦力 +5。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+15、速度+5、技巧+5、防禦+10、魔防+15、幸運+5、魅力+5",
-    "weapons": [
-      "槍術"
-    ],
-    "usableSkills": [
-      "槍術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ホーリーランサー",
-      "神聖槍兵"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_d1f47af90ec5/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ホーリーランサー",
       "name_ja": "ホーリーランサー",
       "name_zh_tw": "神聖槍兵",
@@ -10406,57 +8321,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_d1f47af90ec5/"
-    }
-  },
-  {
-    "name": "フォートレス",
-    "zh": "要塞",
-    "tier": "最高級",
-    "req": "重裝術 / 級別：C ＋ （斧術 / 級別：A ／ 槍術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；後攻守備+7：後手戰鬥時，物理耐性 +7。",
-    "master": "遮断：減少受到攻擊時的傷害。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "後攻守備+7",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "後手戰鬥時，物理耐性 +7。"
-      },
-      {
-        "name": "遮断",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "減少受到攻擊時的傷害。"
-      }
-    ],
-    "move": "補正 +0",
-    "bonus": "來源未列出",
-    "growth": "HP+25、力量+20、魔力-5、速度-15、技巧+5、防禦+30、魔防-10、魅力+5",
-    "weapons": [
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "槍術",
-      "斧術",
-      "步兵術",
-      "重裝術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "フォートレス",
-      "要塞"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_773ca3853c51/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "フォートレス",
       "name_ja": "フォートレス",
       "name_zh_tw": "要塞",
@@ -10681,58 +8547,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_773ca3853c51/"
-    }
-  },
-  {
-    "name": "オリハルディア",
-    "zh": "奧利哈爾迪亞",
-    "tier": "最高級",
-    "req": "馬術 / 級別：B ＋ （槍術 / 級別：A ／ 劍術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+3：可裝備戰技數 +3。",
-    "master": "騎士烈槍：未提供效果說明。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "騎士烈槍",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +3",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+15、魔力-5、速度+5、防禦+5、魔防+5、幸運+5、魅力+10",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "馬術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "オリハルディア",
-      "奧利哈爾迪亞"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_06a42683c913/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "オリハルディア",
       "name_ja": "オリハルディア",
       "name_zh_tw": "奧利哈爾迪亞",
@@ -10959,58 +8775,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_06a42683c913/"
-    }
-  },
-  {
-    "name": "ドラゴンマスター",
-    "zh": "龍騎大師",
-    "tier": "最高級",
-    "req": "飛行術 / 級別：C ＋ （斧術 / 級別：A ／ 槍術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+2：戰技裝備欄 +2。",
-    "master": "襲擊：位於自身無法步行的地形時，攻擊力 +4。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "襲擊",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "位於自身無法步行的地形時，攻擊力 +4。"
-      }
-    ],
-    "move": "補正 +3",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、速度+5、防禦+10、魔防+10、幸運+10、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "飛行術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ドラゴンマスター",
-      "龍騎大師"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_db41ad015cfa/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ドラゴンマスター",
       "name_ja": "ドラゴンマスター",
       "name_zh_tw": "龍騎大師",
@@ -11237,57 +9003,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_db41ad015cfa/"
-    }
-  },
-  {
-    "name": "ドルイド",
-    "zh": "德魯伊",
-    "tier": "最高級",
-    "req": "黑魔術 / 級別：A",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "黑魔術探求：黑魔法可用次數變為 2 倍。；魔法命中+7：裝備魔法時，命中 +7。",
-    "master": "魔防呪縛：相鄰敵人的魔防 -3。",
-    "skills": [
-      {
-        "name": "黑魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "黑魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "魔法命中+7",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備魔法時，命中 +7。"
-      },
-      {
-        "name": "魔防呪縛",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "相鄰敵人的魔防 -3。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量-5、魔力+30、速度+10、技巧+15、防禦-10、魔防+20、幸運+10",
-    "weapons": [
-      "劍術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "格鬥術",
-      "黑魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ドルイド",
-      "德魯伊"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_fbd81e1d9b2c/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ドルイド",
       "name_ja": "ドルイド",
       "name_zh_tw": "德魯伊",
@@ -11477,55 +9194,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_fbd81e1d9b2c/"
-    }
-  },
-  {
-    "name": "ワイズマン",
-    "zh": "賢者",
-    "tier": "最高級",
-    "req": "白魔術 / 級別：A",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "白魔術探求：白魔法可用次數變為 2 倍。；魔法回復+15：對友軍施放回復魔法時，回復量 +15。",
-    "master": "魔力掌握：敵方使用魔法時，有 10% 機率不受反擊。",
-    "skills": [
-      {
-        "name": "白魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "魔法回復+15",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +15。"
-      },
-      {
-        "name": "魔力掌握",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "敵方使用魔法時，有 10% 機率不受反擊。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量-5、魔力+20、速度+5、防禦-10、魔防+25、幸運+20、魅力+10",
-    "weapons": [
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "格鬥術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ワイズマン",
-      "賢者"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_b016e3e248ed/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ワイズマン",
       "name_ja": "ワイズマン",
       "name_zh_tw": "賢者",
@@ -11711,62 +9381,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_b016e3e248ed/"
-    }
-  },
-  {
-    "name": "バトルモンク",
-    "zh": "戰鬥僧侶",
-    "tier": "最高級",
-    "req": "白魔術 / 級別：D ＋ 格鬥術 / 級別：B",
-    "unlock": "推薦 Lv.45；條件：救世篇 第2區段的剩餘1回合時發生的「奧羅拉的委託」並通關",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；白魔術探求：白魔法可用次數變為 2 倍。；格鬥回避+7：未提供效果說明。",
-    "master": "攻擊與治療：未提供效果說明。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "白魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "格鬥回避+7",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "攻擊與治療",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+10、速度+15、防禦+5、魔防+15、幸運+5、魅力+5",
-    "weapons": [
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "格鬥術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "バトルモンク",
-      "戰鬥僧侶",
-      "War Monk"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_8e465eae80df/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "バトルモンク",
       "name_ja": "バトルモンク",
       "name_zh_tw": "戰鬥僧侶",
@@ -11973,62 +9589,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_8e465eae80df/"
-    }
-  },
-  {
-    "name": "聖天翼兵",
-    "zh": "聖天翼兵",
-    "tier": "最高級",
-    "req": "飛行術 / 級別：C ＋ （槍術 / 級別：A ／ 劍術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第1區段並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+1：戰技裝備欄 +1。；飛行回避+7：未提供效果說明。",
-    "master": "迅雷風烈：主動攻擊且攻速高出敵方至少 10 時，可在反擊前追擊。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+1",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +1。"
-      },
-      {
-        "name": "飛行回避+7",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "未提供效果說明。"
-      },
-      {
-        "name": "迅雷風烈",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "主動攻擊且攻速高出敵方至少 10 時，可在反擊前追擊。"
-      }
-    ],
-    "move": "補正 +3",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、魔力-5、速度+10、技巧+5、防禦+5、魔防+15、幸運+15、魅力+10",
-    "weapons": [
-      "劍術",
-      "槍術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "飛行術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "聖天翼兵",
-      "聖天翼兵"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_3194df74200c/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "聖天翼兵",
       "name_ja": "聖天翼兵",
       "name_zh_tw": "聖天翼兵",
@@ -12262,65 +9824,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_3194df74200c/"
-    }
-  },
-  {
-    "name": "グレートナイト",
-    "zh": "大騎士",
-    "tier": "最高級",
-    "req": "重裝術 / 級別：D ＋ 馬術 / 級別：D ＋ （斧術 / 級別：A ／ 槍術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第3區段・クレール神殿修復後的委託並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+2：戰技裝備欄 +2。；後攻守備+5：後手戰鬥時，物理耐性 +5。",
-    "master": "猛盾：主動攻擊時有 50% 機率使該場戰鬥所受傷害減半。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "後攻守備+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "後手戰鬥時，物理耐性 +5。"
-      },
-      {
-        "name": "猛盾",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "主動攻擊時有 50% 機率使該場戰鬥所受傷害減半。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+20、力量+20、魔力-5、速度-10、防禦+15、魔防-10、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "斧術",
-      "馬術",
-      "重裝術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "グレートナイト",
-      "大騎士"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_b9d8c4866ade/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "グレートナイト",
       "name_ja": "グレートナイト",
       "name_zh_tw": "大騎士",
@@ -12570,56 +10075,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_b9d8c4866ade/"
-    }
-  },
-  {
-    "name": "ソードマスター",
-    "zh": "劍術大師",
-    "tier": "最高級",
-    "req": "劍術 / 級別：A",
-    "unlock": "推薦 Lv.45；條件：救世篇 第3區段・マーズ神殿修復後的委託並通關",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；劍必殺+7：裝備劍時，必殺 +7。",
-    "master": "流星：未提供效果說明。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "劍必殺+7",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備劍時，必殺 +7。"
-      },
-      {
-        "name": "流星",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +1",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+10、速度+20、技巧+15、幸運+5、魅力+5",
-    "weapons": [
-      "劍術",
-      "槍術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ソードマスター",
-      "劍術大師"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_70c4c8fb3df5/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ソードマスター",
       "name_ja": "ソードマスター",
       "name_zh_tw": "劍術大師",
@@ -12807,61 +10264,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_70c4c8fb3df5/"
-    }
-  },
-  {
-    "name": "ハイエピタフ",
-    "zh": "高階墓誌騎士",
-    "tier": "最高級",
-    "req": "馬術 / 級別：D ＋ 黑魔術 / 級別：D ＋ 劍術 / 級別：B",
-    "unlock": "推薦 Lv.45；條件：救世篇 第3區段・スミルノス神殿修復後的委託並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+2：戰技裝備欄 +2。；黑魔術探求：黑魔法可用次數變為 2 倍。",
-    "master": "暗月：攻擊時有 10% 機率按敵方一半防禦力計算。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "黑魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "黑魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "暗月",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "攻擊時有 10% 機率按敵方一半防禦力計算。"
-      }
-    ],
-    "move": "補正 +3",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量+15、魔力+15、速度+10、技巧+5、防禦+5、魔防+5、幸運+5、魅力+5",
-    "weapons": [
-      "劍術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "黑魔術",
-      "馬術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ハイエピタフ",
-      "高階墓誌騎士"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_2ccc26036957/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ハイエピタフ",
       "name_ja": "ハイエピタフ",
       "name_zh_tw": "高階墓誌騎士",
@@ -13078,62 +10482,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_2ccc26036957/"
-    }
-  },
-  {
-    "name": "ボウナイト",
-    "zh": "弓騎士",
-    "tier": "最高級",
-    "req": "馬術 / 級別：D ＋ 弓術 / 級別：A",
-    "unlock": "推薦 Lv.45；條件：救世篇 第3區段・カーラ神殿修復後的委託並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+2：戰技裝備欄 +2。；弓命中+10：裝備弓時，命中 +10。",
-    "master": "獵手交叉：未提供效果說明。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+2",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "戰技裝備欄 +2。"
-      },
-      {
-        "name": "弓命中+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備弓時，命中 +10。"
-      },
-      {
-        "name": "獵手交叉",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +3",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量+10、速度+15、技巧+10、防禦+5、幸運+5、魅力+5",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "馬術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ボウナイト",
-      "弓騎士"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_94848412012c/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ボウナイト",
       "name_ja": "ボウナイト",
       "name_zh_tw": "弓騎士",
@@ -13342,61 +10692,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_94848412012c/"
-    }
-  },
-  {
-    "name": "ヴァルキュリウム",
-    "zh": "女武神騎士",
-    "tier": "最高級",
-    "req": "馬術 / 級別：D ＋ （白魔術 / 級別：A ／ 黑魔術 / 級別：A，任一）",
-    "unlock": "推薦 Lv.45；條件：救世篇 第3區段・ジュラ神殿修復後的委託並通關",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；魔法回復+10：對友軍施放回復魔法時，回復量 +10。；魔法命中+5：裝備魔法時，命中 +5。",
-    "master": "静心呪歌：未提供效果說明。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "魔法回復+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +10。"
-      },
-      {
-        "name": "魔法命中+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備魔法時，命中 +5。"
-      },
-      {
-        "name": "静心呪歌",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "未提供效果說明。"
-      }
-    ],
-    "move": "補正 +3",
-    "bonus": "來源未列出",
-    "growth": "HP+10、魔力+15、速度+5、技巧+5、防禦+5、魔防+10、幸運+15、魅力+10",
-    "weapons": [
-      "—"
-    ],
-    "usableSkills": [
-      "黑魔術",
-      "白魔術",
-      "馬術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ヴァルキュリウム",
-      "女武神騎士"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_2d9cc28d8fb8/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ヴァルキュリウム",
       "name_ja": "ヴァルキュリウム",
       "name_zh_tw": "女武神騎士",
@@ -13628,56 +10925,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_2d9cc28d8fb8/"
-    }
-  },
-  {
-    "name": "ザ・ブレイド",
-    "zh": "神刃",
-    "tier": "神將",
-    "req": "劍術 / 級別：S",
-    "unlock": "條件：天冠神殿・歪形之間並取得考試道具",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；劍必殺+10：裝備劍時，必殺 +10。",
-    "master": "戰神：速度 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "劍必殺+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備劍時，必殺 +10。"
-      },
-      {
-        "name": "戰神",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "速度 +10。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+10、魔力+10、速度+20、技巧+20、防禦+5、魔防+5、幸運+5、魅力+10",
-    "weapons": [
-      "劍術",
-      "槍術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "槍術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ザ・ブレイド",
-      "神刃"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_c3e7862fd057/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ザ・ブレイド",
       "name_ja": "ザ・ブレイド",
       "name_zh_tw": "神刃",
@@ -13865,56 +11114,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_c3e7862fd057/"
-    }
-  },
-  {
-    "name": "ジ・アプサラス",
-    "zh": "阿普薩拉斯",
-    "tier": "神將",
-    "req": "弓術 / 級別：C ＋ 劍術 / 級別：A",
-    "unlock": "條件：天冠神殿・乙女之間並取得考試道具",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；舞蹈：可使用戰技「舞蹈」。",
-    "master": "神舞：魅力 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "舞蹈",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用戰技「舞蹈」。"
-      },
-      {
-        "name": "神舞",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "魅力 +10。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、魔力+10、速度+25、技巧+15、防禦+5、魔防+5、幸運+10、魅力+30",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ジ・アプサラス",
-      "阿普薩拉斯"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_41f534b815fe/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ジ・アプサラス",
       "name_ja": "ジ・アプサラス",
       "name_zh_tw": "阿普薩拉斯",
@@ -14112,64 +11313,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_41f534b815fe/"
-    }
-  },
-  {
-    "name": "ジ・エターナル",
-    "zh": "永恆者",
-    "tier": "神將",
-    "req": "（格鬥術 / 級別：S ／ 斧術 / 級別：S ／ 劍術 / 級別：S，任一）",
-    "unlock": "條件：天冠神殿・予言者之間並取得考試道具",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；斧命中+10：裝備斧時，命中 +10。；格鬥命中+10：裝備拳套時，命中 +10。",
-    "master": "戰神：速度 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "斧命中+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備斧時，命中 +10。"
-      },
-      {
-        "name": "格鬥命中+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備拳套時，命中 +10。"
-      },
-      {
-        "name": "戰神",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "速度 +10。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+30、力量+30、速度+10、防禦+15、魅力+10",
-    "weapons": [
-      "劍術",
-      "斧術",
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "斧術",
-      "格鬥術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ジ・エターナル",
-      "永恆者"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_0dcb148e0b01/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ジ・エターナル",
       "name_ja": "ジ・エターナル",
       "name_zh_tw": "永恆者",
@@ -14407,61 +11552,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_0dcb148e0b01/"
-    }
-  },
-  {
-    "name": "ザ・ゴッドハンド",
-    "zh": "神之手",
-    "tier": "神將",
-    "req": "白魔術 / 級別：C ＋ 格鬥術 / 級別：S",
-    "unlock": "條件：天冠神殿・追従者之間並取得考試道具",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；白魔術極限：白魔法使用次數變為 3 倍。；格鬥回避+10：裝備拳套時，迴避 +10。",
-    "master": "神裝：魔防 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "白魔術極限",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白魔法使用次數變為 3 倍。"
-      },
-      {
-        "name": "格鬥回避+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備拳套時，迴避 +10。"
-      },
-      {
-        "name": "神裝",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "魔防 +10。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+10、魔力+10、速度+15、技巧+5、防禦+10、魔防+15、幸運+5、魅力+10",
-    "weapons": [
-      "格鬥術"
-    ],
-    "usableSkills": [
-      "格鬥術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ザ・ゴッドハンド",
-      "神之手"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_9f17010733ed/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ザ・ゴッドハンド",
       "name_ja": "ザ・ゴッドハンド",
       "name_zh_tw": "神之手",
@@ -14668,62 +11760,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_9f17010733ed/"
-    }
-  },
-  {
-    "name": "ザ・カラミティ",
-    "zh": "災厄",
-    "tier": "神將",
-    "req": "（弓術 / 級別：S ／ 劍術 / 級別：S，任一）",
-    "unlock": "條件：天冠神殿・歪形之間並取得考試道具",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；開鎖：開啟寶箱時不消耗鑰匙。；超級探索術：編入部隊時，探索更容易取得 PERFECT。",
-    "master": "神命：幸運 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "開鎖",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "開啟寶箱時不消耗鑰匙。"
-      },
-      {
-        "name": "超級探索術",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "編入部隊時，探索更容易取得 PERFECT。"
-      },
-      {
-        "name": "神命",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "幸運 +10。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+5、魔力+15、速度+25、技巧+20、防禦+5、魔防+15、幸運+15、魅力+5",
-    "weapons": [
-      "劍術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "劍術",
-      "弓術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ザ・カラミティ",
-      "災厄"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_9fb457489eaa/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ザ・カラミティ",
       "name_ja": "ザ・カラミティ",
       "name_zh_tw": "災厄",
@@ -14947,61 +11985,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_9fb457489eaa/"
-    }
-  },
-  {
-    "name": "ザ・トライデント",
-    "zh": "三叉戟",
-    "tier": "神將",
-    "req": "槍術 / 級別：S",
-    "unlock": "條件：天冠神殿・追従者之間並取得考試道具",
-    "ability": "戰技裝備+3：可裝備戰技數 +3。；魔法回復+10：對友軍施放回復魔法時，回復量 +10。；白魔術極限：白魔法使用次數變為 3 倍。",
-    "master": "神壁：防守 +10。",
-    "skills": [
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "魔法回復+10",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +10。"
-      },
-      {
-        "name": "白魔術極限",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白魔法使用次數變為 3 倍。"
-      },
-      {
-        "name": "神壁",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "防守 +10。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+15、力量+15、魔力+5、速度+10、技巧+10、防禦+15、魔防+15、幸運+5、魅力+10",
-    "weapons": [
-      "槍術"
-    ],
-    "usableSkills": [
-      "槍術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ザ・トライデント",
-      "三叉戟"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_cfec049fbc4f/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ザ・トライデント",
       "name_ja": "ザ・トライデント",
       "name_zh_tw": "三叉戟",
@@ -15198,64 +12183,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_cfec049fbc4f/"
-    }
-  },
-  {
-    "name": "ザ・キャバリアー",
-    "zh": "神騎士",
-    "tier": "神將",
-    "req": "馬術 / 級別：A ＋ （斧術 / 級別：S ／ 槍術 / 級別：S ／ 劍術 / 級別：S，任一）",
-    "unlock": "條件：天冠神殿・天狼之間並取得考試道具",
-    "ability": "上／下坐騎：可使用上、下坐騎指令。；戰技裝備+3：可裝備戰技數 +3。；黃金騎行：免疫針對騎兵的有效與特效。",
-    "master": "神技：技巧 +10。",
-    "skills": [
-      {
-        "name": "上／下坐騎",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可使用上、下坐騎指令。"
-      },
-      {
-        "name": "戰技裝備+3",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "可裝備戰技數 +3。"
-      },
-      {
-        "name": "黃金騎行",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "免疫針對騎兵的有效與特效。"
-      },
-      {
-        "name": "神技",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "技巧 +10。"
-      }
-    ],
-    "move": "補正 +4",
-    "bonus": "來源未列出",
-    "growth": "HP+20、力量+15、魔力+5、速度+10、技巧+5、防禦+15、魔防+10、幸運+5、魅力+15",
-    "weapons": [
-      "槍術",
-      "劍術",
-      "斧術"
-    ],
-    "usableSkills": [
-      "槍術",
-      "劍術",
-      "斧術",
-      "馬術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ザ・キャバリアー",
-      "神騎士"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_4bb859333fe6/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ザ・キャバリアー",
       "name_ja": "ザ・キャバリアー",
       "name_zh_tw": "神騎士",
@@ -15503,58 +12432,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_4bb859333fe6/"
-    }
-  },
-  {
-    "name": "ジ・アヴァタール",
-    "zh": "化身",
-    "tier": "神將",
-    "req": "（白魔術 / 級別：S ／ 黑魔術 / 級別：S，任一）",
-    "unlock": "條件：天冠神殿・予言者之間並取得考試道具",
-    "ability": "全魔術極限：白、黑魔法使用次數變為 3 倍。；魔法回復+20：對友軍施放回復魔法時，回復量 +20。",
-    "master": "神法：魔力 +10。",
-    "skills": [
-      {
-        "name": "全魔術極限",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "白、黑魔法使用次數變為 3 倍。"
-      },
-      {
-        "name": "魔法回復+20",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "對友軍施放回復魔法時，回復量 +20。"
-      },
-      {
-        "name": "神法",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "魔力 +10。"
-      }
-    ],
-    "move": "補正 +2",
-    "bonus": "來源未列出",
-    "growth": "HP+10、力量-5、魔力+30、速度+10、技巧+5、防禦-5、魔防+30、幸運+20、魅力+10",
-    "weapons": [
-      "斧術",
-      "弓術"
-    ],
-    "usableSkills": [
-      "斧術",
-      "弓術",
-      "黑魔術",
-      "白魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "ジ・アヴァタール",
-      "化身"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_289ef8195da5/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "ジ・アヴァタール",
       "name_ja": "ジ・アヴァタール",
       "name_zh_tw": "化身",
@@ -15771,55 +12650,8 @@
         "related_characters_note": "初期兵種との対応は未収録です。"
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/class_289ef8195da5/"
-    }
-  },
-  {
-    "name": "鍛冶師",
-    "zh": "鍛造師",
-    "tier": "上級",
-    "req": "黑魔術 / 級別：D ＋ 斧術 / 級別：C",
-    "unlock": "推薦 Lv.35；條件：迪托利希篇中，強化戰技至少10次後，斯米爾諾斯神殿與櫃檯人員交談。",
-    "ability": "黑魔術探求：黑魔法可用次數變為 2 倍。；斧命中+5：裝備斧時，命中 +5。",
-    "master": "即席修理：使用戰技時有 10% 機率不消耗武器耐久。",
-    "skills": [
-      {
-        "name": "黑魔術探求",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "黑魔法可用次數變為 2 倍。"
-      },
-      {
-        "name": "斧命中+5",
-        "type": "職業技能",
-        "requirement": "轉職為該職業",
-        "effect": "裝備斧時，命中 +5。"
-      },
-      {
-        "name": "即席修理",
-        "type": "精通獎勵",
-        "requirement": "精通該職業",
-        "effect": "使用戰技時有 10% 機率不消耗武器耐久。"
-      }
-    ],
-    "move": "5",
-    "bonus": "HP+5、力量+1、魔力+1、速度+1、防禦+3、魔防+1",
-    "growth": "HP+15、力量+10、魔力+10、技巧+5、防禦+10、魔防+10、魅力+5",
-    "weapons": [
-      "斧術"
-    ],
-    "usableSkills": [
-      "斧術",
-      "黑魔術",
-      "步兵術"
-    ],
-    "skillExpBonuses": [],
-    "aliases": [
-      "鍛冶師",
-      "鍛造師"
-    ],
-    "url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/blacksmith/",
-    "source": "Redfreshet",
-    "redfreshet": {
+    },
+    {
       "name": "鍛冶師",
       "name_ja": "鍛冶師",
       "name_zh_tw": "鍛造師",
@@ -16016,5 +12848,5 @@
       },
       "source_url": "https://redfreshet.com/game-tools/fe-banshisenko/classes/blacksmith/"
     }
-  }
-]
+  ]
+}

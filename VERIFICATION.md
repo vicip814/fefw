@@ -25,3 +25,14 @@
 - 瀏覽器顯示50個個人技欄、52個血印區塊（40個缺資料區塊＋12項效果）、48個來源中文名。目視390px Cai卡：兩項血印分列且頭像正常。
 - 實測Gaitz未列角色提示、Nuzzuo調查中提示、中文名「努佐」搜尋及「必殺迴避-5」技能搜尋（只匹配Fabio）。
 - 320／390／768／1440px無頁面橫向溢出；瀏覽器console無error；內嵌JavaScript語法檢查通過。
+
+## Redfreshet 角色與職業完整資料 — 2026-09-22
+
+- `python build.py` 成功：Redfreshet 50/50名原角色配對完成，追加13名後期／隱藏角色，合計63名；第一部路線統計維持41／44／44／42。
+- 角色資料含287筆習得技能及245筆禮物反應；禮物名稱、反應、價格和獲得位置可全文搜尋。實測搜尋「菲娜漁村」匹配10名角色。
+- 追加／隱藏角色專用篩選顯示13/63人：Anatolia、Aswan、Bertrand、Centurion、Kiryk、Klapka、Kouka、Nathan、Orhel、Savior、Tahounia、Talimoon、Troia。
+- 實測展開Kiryk：顯示速度／力量／技巧傾向、劍術／馬術專長及蕾達、迪托利希兩線的第2部加入條件；條件中文清理後為「第1部完成『亡妹的飾品』，並在第2部第2章擊敗基里克」。
+- 60個職業全數載入；轉職要求保留AND／OR關係，並顯示推薦等級、名聲、考試證、特殊解鎖、固定能力、成長修正、193筆職業技能／精通獎勵。
+- 320／390／768／1440px的viewport、document client及document scroll寬度相同，頁面無橫向溢出；寬表格只在卡內橫向捲動。
+- Playwright實際瀏覽器console為0 error／0 warning；內嵌JavaScript通過`node --check`，`git diff --check`通過。
+- 新增13人沒有可靠tier或最終職業推薦來源，頁面標為「追加／未整理」，沒有套用原50人的Game8評級。

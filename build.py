@@ -1,4 +1,4 @@
-import json, pathlib, base64
+import json, pathlib, base64, re
 root=pathlib.Path(__file__).parent
 # name | tier | strengths/proficiencies | limitation | advanced target | page id
 raw='''Cai|Lord|劍、槍、白魔法；力量／技巧／速度均45%，個人技移動+1|來源未列弱點；騎術仍須另練|Bardinger|620167
@@ -106,14 +106,216 @@ for unit in data:
     # The requested source lists strengths only. Missing strengths are not weaknesses.
     unit['weakSkills']=None
     unit['weakSkillsStatus']='not_provided'
+
+def _records(payload, collection):
+    """Accept a list, a wrapped collection, or an English-name keyed object."""
+    if isinstance(payload, list):
+        return payload
+    if not isinstance(payload, dict):
+        return []
+    wrapped=payload.get(collection)
+    if isinstance(wrapped, list):
+        return wrapped
+    if isinstance(wrapped, dict):
+        return [dict(v, name=v.get('name') or k) for k,v in wrapped.items() if isinstance(v,dict)]
+    metadata_keys={'metadata','field_guide','missing_report','source_index_url','retrieved_at','record_count','field_notes','missing_data_summary'}
+    return [dict(v, name=v.get('name') or k) for k,v in payload.items() if k not in metadata_keys and isinstance(v,dict)]
+
+def _key(value):
+    return re.sub(r'[^a-z0-9]','',str(value or '').lower())
+
+def _char_condition_zh(value):
+    text=str(value or '')
+    exact={
+        '条件：第1部時タリムーン外伝完了，及，ストーリー時加入。':'條件：第1部完成塔利穆恩外傳，並於劇情中加入。',
+        '条件：「セントリオンから的救援要請」完了，，帝都時本人於話，かけ。':'條件：完成「森特里昂的救援請求」後，在帝都與本人對話。',
+        '条件：第1部時「亡き妹的装身具」完了，，第2部2章時キリーク倒す。':'條件：第1部完成「亡妹的飾品」，並在第2部第2章擊敗基里克。',
+        '条件：増援的ネイサンキリーク時擊破。他的キャラ時倒す及加入，ない。':'條件：增援出現時由內森或基里克擊破；若由其他角色擊倒則不會加入。',
+    }
+    if text in exact: return exact[text]
+    replacements={
+        '条件：':'條件：','支拂う':'支付','支拂いあり':'需要支付','完了':'完成','交渉難易度':'交涉難度',
+        '受注後':'接受委託後','入手':'取得','渡す':'交付','外伝':'外傳','ストーリー':'劇情',
+        'クリア':'通關','スカウト':'招募','すべて':'全部','選ぶ':'選擇','賴み':'委託',
+        'キャラ':'角色','話，かけ':'對話','倒す及加入，ない':'擊倒則不會加入','写，':'拓本',
+    }
+    for old,new in replacements.items(): text=text.replace(old,new)
+    return text.replace('，，','，').replace('，。','。')
+
+# Optional Redfreshet character details are merged without replacing route/tier/editorial data.
+# Preferred schema is {"characters": [{"name": "Cai", ...}]}; an object keyed by
+# English character name is also supported. `id`/slug is used when it is an English name.
+character_source=root/'redfreshet-characters.json'
+if character_source.exists():
+    prof_zh={'剣術':'劍術','槍術':'槍術','斧術':'斧術','弓術':'弓術','格闘術':'格鬥術','白魔術':'白魔術','黒魔術':'黑魔術','指揮術':'指揮術','歩兵術':'步兵術','馬術':'馬術','重装術':'重裝術','飛行術':'飛行術'}
+    red_payload=json.loads(character_source.read_text(encoding='utf-8'))
+    red_records=_records(red_payload,'characters')
+    for rec in red_records:
+        for row in rec.get('recruitment') or []:
+            if row.get('condition_zh'): row['condition_zh']=_char_condition_zh(row['condition_zh'])
+            if row.get('condition_items_zh'):
+                row['condition_items_zh']=[_char_condition_zh(x) for x in row['condition_items_zh']]
+    red_index={}
+    for rec in red_records:
+        for field in ('name','english_name','name_en','display_name_en','id','slug'):
+            if rec.get(field): red_index.setdefault(_key(rec[field]),rec)
+    for unit in data:
+        match=red_index.get(_key(unit['name']))
+        if match:
+            unit['redfreshet']=match
+            unit['recruitmentInfo']=match.get('recruitment')
+            quick=match.get('quick_zh') or {}
+            source_profs=match.get('skill_proficiencies') or []
+            strengths=[prof_zh.get(p.get('name'),p.get('name')) for p in source_profs if isinstance(p,dict) and p.get('trait')=='得意']
+            weaknesses=[prof_zh.get(p.get('name'),p.get('name')) for p in source_profs if isinstance(p,dict) and p.get('trait')=='苦手']
+            if strengths: unit['proficiencies']='、'.join(strengths)
+            if weaknesses:
+                unit['weakSkills']='、'.join(weaknesses)
+                unit['weakSkillsStatus']='documented'
+            unit['aptitudeTendency']=quick.get('aptitude_tendency') or match.get('aptitude_tendency')
+    matched_ids={id(u['redfreshet']) for u in data if 'redfreshet' in u}
+    def _route_array(rec):
+        routes=rec.get('routes') or rec.get('route_availability')
+        def route_value(value):
+            if isinstance(value,dict):
+                value=value.get('condition_zh_tw') or value.get('condition') or value.get('requirement_zh_tw') or value.get('requirement') or ('可加入' if value.get('available') else None)
+            return str(value or 'N/A')
+        if isinstance(routes,list) and len(routes)==4: return [route_value(x) for x in routes]
+        if isinstance(routes,dict):
+            return [route_value(routes.get(k) or routes.get(k.lower())) for k in ('Cai','Dietrich','Theodora','Leda')]
+        return ['N/A']*4
+    for rec in red_records:
+        if id(rec) in matched_ids: continue
+        name=rec.get('name_en') or rec.get('english_name') or rec.get('display_name_en') or rec.get('name') or rec.get('display_name_ja') or rec.get('id') or '未命名角色'
+        personal_skill=rec.get('personal_skill') or {}
+        profs=rec.get('skill_proficiencies') or []
+        recruitment=rec.get('recruitment') or rec.get('recruitment_conditions') or rec.get('route_and_recruitment') or rec.get('join_conditions')
+        quick=rec.get('quick_zh') or {}
+        personal_zh=quick.get('personal_skill') or {}
+        prof_text='、'.join(str(prof_zh.get(p.get('name'),p.get('name')) if isinstance(p,dict) else p) for p in profs if p and (not isinstance(p,dict) or p.get('trait')=='得意'))
+        data.append(dict(
+            name=name, tier=rec.get('tier') or '追加', strong=quick.get('aptitude_tendency') or quick.get('summary') or rec.get('aptitude_tendency') or '來源未列能力傾向',
+            target=rec.get('recommended_class') or rec.get('target_class') or '未整理', routes=_route_array(rec),
+            url=rec.get('source_url') or 'https://redfreshet.com/game-tools/fe-banshisenko/characters/', avatar=None,
+            personalInfo={'zh':rec.get('display_name_zh_tw') or rec.get('display_name_zh') or rec.get('display_name_ja') or '', 'personal':personal_zh.get('effect_zh') or personal_skill.get('effect_zh_tw') or personal_skill.get('effect'),
+                'personalStatus':'documented' if (personal_zh.get('effect_zh') or personal_skill.get('effect')) else 'omitted','crests':[],'crestStatus':'not_listed',
+                'proficiencies':prof_text or None,'source':rec.get('source_url') or character_source.name},
+            combatNotes=quick.get('combat_notes') or rec.get('combat_notes') or '來源追加角色；戰鬥評價尚未整理', proficiencies=quick.get('proficiencies') or prof_text or None,
+            weakSkills=None, weakSkillsStatus='not_provided', redfreshet=rec, sourceAdditional=True,
+            recruitmentInfo=recruitment, playable=rec.get('playable'), rosterGroup=rec.get('roster_group'), aptitudeTendency=quick.get('aptitude_tendency') or rec.get('aptitude_tendency'),
+        ))
+    missing=[u['name'] for u in data if 'redfreshet' not in u and not u.get('sourceAdditional')]
+    print(f'Redfreshet character merge: {50-len(missing)}/50 base matched; {len(data)-50} additional records'+(f'; base missing: {", ".join(missing)}' if missing else ''))
 (root/'characters.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
-jobs=[]
-for line in (root/'classes.txt').read_text(encoding='utf-8').splitlines():
-    n,z,t,r,a,m,v,b,g,p=line.split('|')
-    jobs.append(dict(name=n,zh=z,tier=t,req=r,ability=a,master=m,move=v,bonus=b,growth=g,url='https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/'+p))
-assert len(jobs)==32
+
+def _text_list(values):
+    return '；'.join(str(v) for v in (values or []) if v not in (None,'')) or '來源未列出'
+
+def _format_req_tree(node):
+    if not isinstance(node,dict): return ''
+    if node.get('type')=='requirement':
+        text=node.get('text_zh_tw') or node.get('text_ja') or ''
+        return '' if text.startswith(('條件：','条件：')) else text
+    parts=[_format_req_tree(x) for x in node.get('items',[])]
+    parts=[x for x in parts if x]
+    if not parts: return ''
+    if node.get('mode')=='any': return parts[0] if len(parts)==1 else '（'+' ／ '.join(parts)+'，任一）'
+    return ' ＋ '.join(parts)
+
+def _zh_text(value):
+    text=str(value)
+    replacements={
+        'カイ篇':'凱伊篇','ディートリヒ篇':'迪托利希篇','セオドラ篇':'賽奧朵拉篇','レダ篇':'蕾達篇',
+        '救世篇':'救世篇','カストールの稽古':'卡斯托爾的訓練','アウロラの稽古':'奧羅拉的訓練',
+        '父からの秘密の委託':'父親的秘密委託','母からの特別な委託':'母親的特別委託',
+        '挑戦者求む！':'徵求挑戰者！','挑戰者求む！':'徵求挑戰者！','新商品を作ってお披露目したい':'希望製作並展示新商品',
+        '戰備增強をすべて達成':'完成全部戰備增強','試驗アイテムを入手':'取得考試道具',
+        '神殿修復後の委託':'神殿修復後的委託','残り1ターンで發生する':'剩餘1回合時發生的',
+        '戰技強化を10回以上行い、':'強化戰技至少10次後，','受付に話しかける':'與櫃檯人員交談',
+        'を通關':'並通關','までの':'之前的','からの委託':'的委託','の間で':'之間並',
+        'の受付':'的櫃檯','の挑戰状':'的挑戰書','第1区分':'第1區段','第2区分':'第2區段','第3区分':'第3區段',
+        '天冠の神殿':'天冠神殿','アウロラの委託':'奧羅拉的委託','第2區段の':'第2區段的',
+        '飛槍のイル・イラ':'飛槍・伊爾伊拉','必滅のオウコ':'必滅・歐科',
+        '凱伊篇・名聲Lv10で':'凱伊篇・名聲Lv10時，','迪托利希篇で':'迪托利希篇中，',
+        'スミルノス神殿の與櫃檯人員交談':'斯米爾諾斯神殿與櫃檯人員交談',
+        '試験手形':'考試證','下級':'初級','中級':'中級','上級':'上級','最高級':'最高級',
+    }
+    for old,new in replacements.items(): text=text.replace(old,new)
+    return text
+
+def _skill_name_zh(value):
+    text=str(value or '未命名技能')
+    replacements={
+        '白魔術の極限':'白魔術極限','黒魔術の探求':'黑魔術探求','鍵開け':'開鎖','黄金騎走':'黃金騎行',
+        'なし':'無','不退構え':'不退架勢','引き締め':'振作','影晦まし':'隱匿身影','技冴え':'技巧精進',
+        '特別な踊り':'特別舞蹈','立て直し':'重整態勢','籠城崩し':'破城','速さ呪縛':'速度咒縛','駆け抜け':'疾馳',
+    }
+    for old,new in replacements.items(): text=text.replace(old,new)
+    text=text.replace('の','').replace('黒','黑').replace('剣','劍').replace('黄金','黃金')
+    return {'不退構え':'不退架勢','技冴え':'技巧精進','速さ呪縛':'速度咒縛'}.get(text,text)
+
+def _class_from_red(c):
+    q=c.get('qualification') or {}
+    stats=c.get('stats') or {}
+    skill_rows=c.get('class_skills_and_master_rewards') or c.get('skills') or []
+    skills=[]
+    for s in skill_rows:
+        if not isinstance(s,dict):
+            skills.append({'name':str(s),'type':'技能','requirement':'來源未列出','effect':'來源未列出'})
+            continue
+        skills.append({
+            'name':_skill_name_zh(s.get('name_zh_tw') or s.get('name') or s.get('skill_name')),
+            'type':s.get('type_zh_tw') or s.get('type') or s.get('kind') or '技能',
+            'requirement':s.get('level_requirement_zh_tw') or s.get('acquisition_requirement_zh_tw') or s.get('level_requirement') or s.get('requirement') or s.get('acquisition_requirement') or '來源未列等級',
+            'effect':s.get('effect_zh_tw') or s.get('description_zh_tw') or s.get('effect') or s.get('description') or '來源未列出',
+        })
+    stat_names={'力':'力量','速さ':'速度','技':'技巧','守備':'防禦','魔防':'魔防','幸運':'幸運','魅力':'魅力','魔力':'魔力','HP':'HP'}
+    fixed=[]; growth=[]
+    for stat,values in stats.items():
+        if not isinstance(values,dict): continue
+        av=values.get('ability_modifier')
+        gv=values.get('growth_modifier')
+        label=stat_names.get(stat,stat)
+        if av not in (None,0,'0'): fixed.append(f'{label}{int(av):+d}' if isinstance(av,(int,float)) else f'{label}{av}')
+        if gv not in (None,0,'0'): growth.append(f'{label}{int(gv):+d}' if isinstance(gv,(int,float)) else f'{label}{gv}')
+    unlock=[]
+    if q.get('recommended_level') is not None: unlock.append(f"推薦 Lv.{q['recommended_level']}")
+    if q.get('fame_level') is not None: unlock.append(f"名聲 Lv.{q['fame_level']}")
+    if q.get('exam_ticket_zh_tw') or q.get('exam_ticket'): unlock.append(_zh_text(q.get('exam_ticket_zh_tw') or q.get('exam_ticket')))
+    unlock.extend(_zh_text(x) for x in (q.get('unlock_conditions_zh_tw') or q.get('unlock_conditions') or []) if x)
+    class_name=c.get('english_name') or c.get('name_en') or c.get('display_name_en') or c.get('name') or '未命名職業'
+    display_name=c.get('name_zh_tw') or c.get('display_name_zh_tw') or c.get('display_name_zh') or c.get('name_zh') or c.get('display_name_ja') or (c.get('name') if c.get('name')!=class_name else '')
+    aliases=[x for x in (c.get('name'),c.get('display_name_ja'),c.get('name_zh_tw'),c.get('display_name_zh_tw'),c.get('display_name_zh'),c.get('english_name'),c.get('name_en')) if x]
+    class_en={'飛駝兵':'Ornius Rider','軽騎兵':'Light Cavalry','バーディンガー':'Bardinger','剣士':'Myrmidon','シドー':'Shido','スナイパー':'Sniper','ヘヴィアーマー':'Dreadnought','ビショップ':'Bishop','ウァテス':'Ovate','ウォーリアー':'Warrior','フォレストナイト':'Forest Knight','ブリガンド':'Brigand','ローグ':'Rogue','アーチャー':'Archer','重装歩兵':'Armored Knight','騎甲駝兵':'Armored Ornius Rider','シャーマン':'Shaman','プリースト':'Priest','セスタス':'Pugilist','闘士':'Gladiator','兵士':'Soldier','呪い師':'Diviner','猟兵':'Hunter','戦車兵':'Charioteer','天翼兵':'Wing Soldier','カラドリオス':'Caladrius','ドラグーン':'Dragoon','トルバドール':'Troubadour','カタフラクト':'Cataphract','戦象兵':'Elephant Rider','バトルモンク':'War Monk'}
+    if c.get('name') in class_en: aliases.append(class_en[c['name']])
+    return dict(
+        name=class_name, zh=display_name or '', tier=c.get('rank_zh_tw') or c.get('rank') or c.get('tier') or '未分類',
+        req=_format_req_tree(q.get('requirements_tree_zh_tw') or q.get('requirements_tree')) or '無技能門檻（僅特殊解鎖）',
+        unlock='；'.join(dict.fromkeys(unlock)) or '來源未列出',
+        ability='；'.join(f"{s['name']}：{s['effect']}" for s in skills if '精通' not in str(s['type']) and 'マスター' not in str(s['type'])) or '來源未列出',
+        master='；'.join(f"{s['name']}：{s['effect']}" for s in skills if '精通' in str(s['type']) or 'マスター' in str(s['type'])) or '來源未列出',
+        skills=skills, move=c.get('movement') or '來源未列出',
+        bonus='、'.join(fixed) or '來源未列出', growth='、'.join(growth) or '來源未列出',
+        weapons=c.get('equippable_weapons_zh_tw') or c.get('equippable_weapons') or [], usableSkills=c.get('usable_skills_zh_tw') or c.get('usable_skills') or [],
+        skillExpBonuses=c.get('skill_exp_bonuses') or [], aliases=aliases,
+        url=c.get('source_url') or c.get('url') or 'https://redfreshet.com/game-tools/fe-banshisenko/classes/',
+        source='Redfreshet', redfreshet=c,
+    )
+
+class_source=root/'redfreshet-classes.json'
+if class_source.exists():
+    class_payload=json.loads(class_source.read_text(encoding='utf-8'))
+    jobs=[_class_from_red(c) for c in _records(class_payload,'classes')]
+    if not jobs: raise ValueError('redfreshet-classes.json exists but contains no class records')
+    print(f'Redfreshet classes: {len(jobs)} loaded')
+else:
+    jobs=[]
+    for line in (root/'classes.txt').read_text(encoding='utf-8').splitlines():
+        n,z,t,r,a,m,v,b,g,p=line.split('|')
+        jobs.append(dict(name=n,zh=z,tier=t,req=r,unlock=('Lv.5／名聲1' if t=='初階' else 'Lv.20／名聲4' if t=='專門' else 'Lv.35／名聲8'),ability=a,master=m,skills=[],move=v,bonus=b,growth=g,url='https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/'+p,source='Game8'))
+    assert len(jobs)==32
 (root/'classes.json').write_text(json.dumps(jobs,ensure_ascii=False,indent=2),encoding='utf-8')
 template=(root/'template.html').read_text(encoding='utf-8')
 template=template.replace('src="recruitment.png"','src="data:image/png;base64,'+base64.b64encode((root/'recruitment.png').read_bytes()).decode('ascii')+'"')
 (root/'index.html').write_text(template.replace('/*DATA*/',json.dumps(data,ensure_ascii=False)).replace('/*CLASSES*/',json.dumps(jobs,ensure_ascii=False)),encoding='utf-8')
-print('Built 50 characters; route counts 41 / 44 / 44 / 42')
+print(f'Built {len(data)} characters (50 route-chart + {len(data)-50} source additions); route counts 41 / 44 / 44 / 42')
