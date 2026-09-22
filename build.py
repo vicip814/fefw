@@ -455,13 +455,16 @@ for unit in data:
         name=prof_name_fixes.get(skill.get('name_zh'),skill.get('name_zh'))
         key=(proficiency,level,skill.get('id') or name)
         row=prof_rows.setdefault(key,dict(
-            proficiency=proficiency, level=level, name=name or '中文名稱待整理',
+            proficiency=proficiency, type='技能', level=level, name=name or '中文名稱待整理',
             effect=skill.get('effect_zh') or '來源未列出', owners=[],
             url=f"https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/{prof_slugs.get(proficiency,'')}/",
         ))
         if owner not in row['owners']: row['owners'].append(owner)
 rank_order={'E':0,'E+':1,'D':2,'D+':3,'C':4,'C+':5,'B':6,'B+':7,'A':8,'A+':9,'S':10}
 proficiency_skills=sorted(prof_rows.values(),key=lambda x: (prof_order.index(x['proficiency']) if x['proficiency'] in prof_order else 99,rank_order.get(x['level'],99),x['name']))
+proficiency_source=root/'redfreshet-proficiencies.json'
+if proficiency_source.exists():
+    proficiency_skills=json.loads(proficiency_source.read_text(encoding='utf-8'))
 (root/'proficiency-skills.json').write_text(json.dumps(proficiency_skills,ensure_ascii=False,indent=2),encoding='utf-8')
 (root/'classes.json').write_text(json.dumps(jobs,ensure_ascii=False,indent=2),encoding='utf-8')
 template=(root/'template.html').read_text(encoding='utf-8')
