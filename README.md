@@ -5,7 +5,7 @@
 頁面顯示文字使用繁體中文，不顯示日文原名；角色保留英文名作辨識。來源JSON仍保留日文原文供追溯，建置時會產生清理後的中文顯示欄位。
 
 - 63 位角色：原招募圖50人保留第一部四線門檻、tier及培養建議，另加入Redfreshet收錄的13名追加／隱藏角色。第一部四線可用數仍為41 / 44 / 44 / 42，交集37人。
-- 搜尋、路線、tier、可招募與排序篩選；每人擅長提升的武器／技能、學習弱項、高階目標及建議培養鏈。學習弱項未有來源資料時標「未提供」，不以未列專長推斷；戰鬥短板／運用條件另列。
+- 搜尋、路線、tier、可招募與排序篩選；原50人列出 Game8 的 Boons（Preferred Skills）及 Banes（Non-Ideal Skills）、高階目標及建議培養鏈。Boons／Banes 是職業經驗學習適性，與能力成長率及一般戰鬥優缺點分開；Game8 沒列 Bane 時明示「沒有列出 Bane」。
 - 原50位角色卡均有44px小頭像，以招募圖的CSS局部顯示製作；新增13人使用文字頭像，避免冒用錯誤肖像。`avatar-positions.json`維護原50人的圖中位置。
 - Redfreshet逐頁資料含63人的能力成長傾向、擅長／不擅長技能、初始技能級別、287筆習得技能、245筆禮物反應與各線加入方法；追加角色清楚標為「追加／未整理」，不擅自評tier或推薦最終職業。
 - 個人技能與血印效果依指定Entertainment14角色資料文章：44人的個人技能有明確效果，10人有共12项血印；其餘缺欄／調查中／角色未列均明確標示，血印未列不推斷為無。6人的個人技缺口保留既有Game8摘要作另標來源的補充參考。
@@ -16,7 +16,7 @@
 
 ## 更新
 
-修改 `build.py`、`redfreshet-characters.json`、`redfreshet-classes.json` 或 `template.html`，執行：
+修改 `build.py`、`game8-skills.json`、`redfreshet-characters.json`、`redfreshet-classes.json` 或 `template.html`，執行：
 
 ```sh
 python build.py

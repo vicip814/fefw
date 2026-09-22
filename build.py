@@ -281,6 +281,29 @@ if character_source.exists():
         ))
     missing=[u['name'] for u in data if 'redfreshet' not in u and not u.get('sourceAdditional')]
     print(f'Redfreshet character merge: {50-len(missing)}/50 base matched; {len(data)-50} additional records'+(f'; base missing: {", ".join(missing)}' if missing else ''))
+
+# Game8 calls these Preferred Skills and Non-Ideal Skills. Its tier-list
+# explanation treats them as Class EXP learning affinities, so keep them
+# separate from stat growths and general combat strengths/weaknesses.
+game8_skill_source=root/'game8-skills.json'
+if game8_skill_source.exists():
+    game8_payload=json.loads(game8_skill_source.read_text(encoding='utf-8'))
+    game8_index={_key(x.get('name')):x for x in game8_payload.get('characters',[]) if isinstance(x,dict)}
+    game8_skill_zh={
+        'Sword':'劍術','Spear':'槍術','Axe':'斧術','Bow':'弓術','Gauntlet':'格鬥術',
+        'White Magic':'白魔術','Black Magic':'黑魔術','Authority':'指揮術',
+        'Infantry':'步兵術','Riding':'馬術','Heavy Armor':'重裝術','Flying':'飛行術',
+    }
+    matched=0
+    for unit in data:
+        rec=game8_index.get(_key(unit['name']))
+        if not rec:
+            continue
+        matched+=1
+        unit['game8Boons']=[game8_skill_zh.get(x,x) for x in rec.get('boons',[])]
+        unit['game8Banes']=[game8_skill_zh.get(x,x) for x in rec.get('banes',[])]
+        unit['game8SkillSource']=rec.get('source_url') or unit.get('url')
+    print(f'Game8 skill affinities: {matched}/{len(game8_index)} matched')
 (root/'characters.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
 
 def _text_list(values):

@@ -1,0 +1,580 @@
+{
+  "source_index_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624024",
+  "definition": {
+    "boons": "Preferred Skills: skills the character learns efficiently.",
+    "banes": "Non-Ideal Skills: skills the character learns inefficiently."
+  },
+  "record_count": 50,
+  "characters": [
+    {
+      "name": "Cai",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620167",
+      "boons": [
+        "White Magic",
+        "Riding",
+        "Spear",
+        "Sword"
+      ],
+      "banes": [
+        "Bow",
+        "Flying"
+      ]
+    },
+    {
+      "name": "Dietrich",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620168",
+      "boons": [
+        "Infantry",
+        "Sword"
+      ],
+      "banes": [
+        "White Magic"
+      ]
+    },
+    {
+      "name": "Theodora",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620411",
+      "boons": [
+        "Authority",
+        "White Magic",
+        "Spear"
+      ],
+      "banes": [
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Leda",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620437",
+      "boons": [
+        "Bow",
+        "White Magic",
+        "Infantry",
+        "Sword"
+      ],
+      "banes": [
+        "Spear"
+      ]
+    },
+    {
+      "name": "Esmeralda",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624005",
+      "boons": [
+        "Axe",
+        "Heavy Armor",
+        "Spear"
+      ],
+      "banes": [
+        "Sword"
+      ]
+    },
+    {
+      "name": "Fianna",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623995",
+      "boons": [
+        "White Magic",
+        "Black Magic"
+      ],
+      "banes": [
+        "Gauntlet",
+        "Sword"
+      ]
+    },
+    {
+      "name": "Bonaventure",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623614",
+      "boons": [
+        "Authority",
+        "White Magic",
+        "Black Magic",
+        "Sword"
+      ],
+      "banes": [
+        "Heavy Armor"
+      ]
+    },
+    {
+      "name": "Peter",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624004",
+      "boons": [
+        "Bow",
+        "Infantry"
+      ],
+      "banes": [
+        "Heavy Armor"
+      ]
+    },
+    {
+      "name": "Lilian",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624009",
+      "boons": [
+        "Bow",
+        "Infantry"
+      ],
+      "banes": [
+        "Gauntlet"
+      ]
+    },
+    {
+      "name": "Mu",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624010",
+      "boons": [
+        "Axe",
+        "Gauntlet",
+        "White Magic",
+        "Sword"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Diego",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624016",
+      "boons": [
+        "Bow",
+        "Infantry",
+        "Sword"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Dante",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624018",
+      "boons": [
+        "Authority",
+        "White Magic",
+        "Black Magic"
+      ],
+      "banes": [
+        "Gauntlet"
+      ]
+    },
+    {
+      "name": "Ninae",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623990",
+      "boons": [
+        "White Magic",
+        "Spear"
+      ],
+      "banes": [
+        "Bow"
+      ]
+    },
+    {
+      "name": "Nezha",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623977",
+      "boons": [
+        "Gauntlet",
+        "Infantry",
+        "Sword"
+      ],
+      "banes": [
+        "Spear"
+      ]
+    },
+    {
+      "name": "Io",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623980",
+      "boons": [
+        "Axe",
+        "Riding",
+        "Spear"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Catania",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623981",
+      "boons": [
+        "Spear",
+        "Sword"
+      ],
+      "banes": [
+        "Heavy Armor"
+      ]
+    },
+    {
+      "name": "Alexandra",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623983",
+      "boons": [
+        "Flying",
+        "Spear",
+        "Sword"
+      ],
+      "banes": [
+        "Axe",
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Goliath",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623976",
+      "boons": [
+        "Axe",
+        "Heavy Armor"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Ludia",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623992",
+      "boons": [
+        "Infantry",
+        "Sword"
+      ],
+      "banes": [
+        "Axe",
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Seteth",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623993",
+      "boons": [
+        "Authority",
+        "Axe",
+        "Spear"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Halvin",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623997",
+      "boons": [
+        "Bow",
+        "Riding"
+      ],
+      "banes": [
+        "Axe"
+      ]
+    },
+    {
+      "name": "Ursula",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624015",
+      "boons": [
+        "Bow",
+        "Sword"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Peppe",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624000",
+      "boons": [
+        "Bow",
+        "Infantry",
+        "Sword"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Dadao",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623998",
+      "boons": [
+        "Axe",
+        "Heavy Armor"
+      ],
+      "banes": [
+        "White Magic",
+        "Black Magic",
+        "Spear"
+      ]
+    },
+    {
+      "name": "Loretta",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623996",
+      "boons": [
+        "Spear",
+        "Sword"
+      ],
+      "banes": [
+        "Heavy Armor"
+      ]
+    },
+    {
+      "name": "Kiroc",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623994",
+      "boons": [
+        "Bow"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Jester",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623991",
+      "boons": [
+        "Bow",
+        "Infantry",
+        "Sword"
+      ],
+      "banes": [
+        "Axe"
+      ]
+    },
+    {
+      "name": "Nuzzuo",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623987",
+      "boons": [
+        "Bow",
+        "Sword"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Sofia",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623986",
+      "boons": [
+        "Bow",
+        "White Magic"
+      ],
+      "banes": [
+        "Axe"
+      ]
+    },
+    {
+      "name": "Nydine",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623979",
+      "boons": [
+        "Axe",
+        "Flying",
+        "Riding"
+      ],
+      "banes": [
+        "Gauntlet",
+        "Heavy Armor"
+      ]
+    },
+    {
+      "name": "Guzran",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623978",
+      "boons": [
+        "Gauntlet",
+        "Infantry",
+        "Sword"
+      ],
+      "banes": [
+        "White Magic",
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Simon",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624019",
+      "boons": [
+        "Axe",
+        "Infantry",
+        "Sword"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Sha Lan",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624017",
+      "boons": [
+        "Authority",
+        "White Magic",
+        "Spear"
+      ],
+      "banes": [
+        "Sword"
+      ]
+    },
+    {
+      "name": "Tialla",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623941",
+      "boons": [
+        "Authority",
+        "White Magic",
+        "Black Magic"
+      ],
+      "banes": [
+        "Sword"
+      ]
+    },
+    {
+      "name": "Gaitz",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624014",
+      "boons": [
+        "Axe",
+        "Riding",
+        "Spear"
+      ],
+      "banes": [
+        "White Magic",
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Lysander",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624002",
+      "boons": [
+        "Axe",
+        "Flying",
+        "Riding",
+        "Spear"
+      ],
+      "banes": [
+        "Gauntlet",
+        "Heavy Armor",
+        "Sword"
+      ]
+    },
+    {
+      "name": "Mikaela",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624008",
+      "boons": [
+        "Axe",
+        "Bow",
+        "Infantry"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Ultand",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624007",
+      "boons": [
+        "White Magic",
+        "Spear"
+      ],
+      "banes": [
+        "Sword"
+      ]
+    },
+    {
+      "name": "Sirocco",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624006",
+      "boons": [
+        "Authority",
+        "White Magic",
+        "Black Magic",
+        "Sword"
+      ],
+      "banes": [
+        "Heavy Armor"
+      ]
+    },
+    {
+      "name": "Tobias",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623758",
+      "boons": [
+        "Axe",
+        "Riding"
+      ],
+      "banes": [
+        "Sword"
+      ]
+    },
+    {
+      "name": "Buccar",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624003",
+      "boons": [
+        "Axe",
+        "Spear"
+      ],
+      "banes": [
+        "White Magic",
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Fabio",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623964",
+      "boons": [
+        "Authority",
+        "Black Magic"
+      ],
+      "banes": [
+        "Bow"
+      ]
+    },
+    {
+      "name": "Olympia",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624011",
+      "boons": [
+        "Axe",
+        "White Magic"
+      ],
+      "banes": [
+        "Spear"
+      ]
+    },
+    {
+      "name": "Benditz",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623982",
+      "boons": [
+        "Bow",
+        "Riding"
+      ],
+      "banes": []
+    },
+    {
+      "name": "Noctula",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623984",
+      "boons": [
+        "Axe",
+        "Gauntlet",
+        "Infantry"
+      ],
+      "banes": [
+        "Sword"
+      ]
+    },
+    {
+      "name": "Yang Jie",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623985",
+      "boons": [
+        "Axe",
+        "White Magic"
+      ],
+      "banes": [
+        "Riding",
+        "Sword"
+      ]
+    },
+    {
+      "name": "Majide",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623988",
+      "boons": [
+        "Axe",
+        "Gauntlet"
+      ],
+      "banes": [
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Zarcone",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623989",
+      "boons": [
+        "Axe",
+        "Sword"
+      ],
+      "banes": [
+        "White Magic",
+        "Black Magic"
+      ]
+    },
+    {
+      "name": "Jasmine",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623999",
+      "boons": [
+        "Axe",
+        "Heavy Armor",
+        "Spear"
+      ],
+      "banes": [
+        "Flying",
+        "Sword"
+      ]
+    },
+    {
+      "name": "Inyoni",
+      "source_url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624001",
+      "boons": [
+        "Axe",
+        "Bow"
+      ],
+      "banes": []
+    }
+  ],
+  "failures": []
+}

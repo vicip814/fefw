@@ -632,7 +632,18 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "力量・速度・技巧"
+    "aptitudeTendency": "力量・速度・技巧",
+    "game8Boons": [
+      "白魔術",
+      "馬術",
+      "槍術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "弓術",
+      "飛行術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620167"
   },
   {
     "name": "Dietrich",
@@ -1192,7 +1203,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・速度・魅力"
+    "aptitudeTendency": "技巧・速度・魅力",
+    "game8Boons": [
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "白魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620168"
   },
   {
     "name": "Theodora",
@@ -1720,7 +1739,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・力量"
+    "aptitudeTendency": "HP・力量",
+    "game8Boons": [
+      "指揮術",
+      "白魔術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620411"
   },
   {
     "name": "Leda",
@@ -2154,7 +2182,17 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度・技巧"
+    "aptitudeTendency": "速度・技巧",
+    "game8Boons": [
+      "弓術",
+      "白魔術",
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "槍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620437"
   },
   {
     "name": "Esmeralda",
@@ -2874,7 +2912,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・力量"
+    "aptitudeTendency": "HP・力量",
+    "game8Boons": [
+      "斧術",
+      "重裝術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624005"
   },
   {
     "name": "Fianna",
@@ -3479,7 +3526,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "魔力・魔法防禦"
+    "aptitudeTendency": "魔力・魔法防禦",
+    "game8Boons": [
+      "白魔術",
+      "黑魔術"
+    ],
+    "game8Banes": [
+      "格鬥術",
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623995"
   },
   {
     "name": "Bonaventure",
@@ -3939,7 +3995,17 @@
         "recruitable": false
       }
     ],
-    "aptitudeTendency": "技巧・魔力"
+    "aptitudeTendency": "技巧・魔力",
+    "game8Boons": [
+      "指揮術",
+      "白魔術",
+      "黑魔術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "重裝術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623614"
   },
   {
     "name": "Peter",
@@ -4397,7 +4463,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・速度"
+    "aptitudeTendency": "技巧・速度",
+    "game8Boons": [
+      "弓術",
+      "步兵術"
+    ],
+    "game8Banes": [
+      "重裝術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624004"
   },
   {
     "name": "Lilian",
@@ -4860,7 +4934,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・幸運"
+    "aptitudeTendency": "技巧・幸運",
+    "game8Boons": [
+      "弓術",
+      "步兵術"
+    ],
+    "game8Banes": [
+      "格鬥術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624009"
   },
   {
     "name": "Mu",
@@ -5290,7 +5372,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "力量・速度・技巧"
+    "aptitudeTendency": "力量・速度・技巧",
+    "game8Boons": [
+      "斧術",
+      "格鬥術",
+      "白魔術",
+      "劍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624010"
   },
   {
     "name": "Diego",
@@ -5721,7 +5811,14 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧"
+    "aptitudeTendency": "技巧",
+    "game8Boons": [
+      "弓術",
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624016"
   },
   {
     "name": "Dante",
@@ -6298,7 +6395,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "魔力・幸運"
+    "aptitudeTendency": "魔力・幸運",
+    "game8Boons": [
+      "指揮術",
+      "白魔術",
+      "黑魔術"
+    ],
+    "game8Banes": [
+      "格鬥術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624018"
   },
   {
     "name": "Ninae",
@@ -6852,7 +6958,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "幸運・魔法防禦"
+    "aptitudeTendency": "幸運・魔法防禦",
+    "game8Boons": [
+      "白魔術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "弓術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623990"
   },
   {
     "name": "Nezha",
@@ -7295,7 +7409,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・力量"
+    "aptitudeTendency": "技巧・力量",
+    "game8Boons": [
+      "格鬥術",
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "槍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623977"
   },
   {
     "name": "Io",
@@ -7810,7 +7933,14 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・HP"
+    "aptitudeTendency": "技巧・HP",
+    "game8Boons": [
+      "斧術",
+      "馬術",
+      "槍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623980"
   },
   {
     "name": "Catania",
@@ -8317,7 +8447,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度・技巧"
+    "aptitudeTendency": "速度・技巧",
+    "game8Boons": [
+      "槍術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "重裝術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623981"
   },
   {
     "name": "Alexandra",
@@ -8803,7 +8941,17 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度・幸運"
+    "aptitudeTendency": "速度・幸運",
+    "game8Boons": [
+      "飛行術",
+      "槍術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "斧術",
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623983"
   },
   {
     "name": "Goliath",
@@ -9421,7 +9569,13 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "防禦・力量"
+    "aptitudeTendency": "防禦・力量",
+    "game8Boons": [
+      "斧術",
+      "重裝術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623976"
   },
   {
     "name": "Ludia",
@@ -9887,7 +10041,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度・技巧"
+    "aptitudeTendency": "速度・技巧",
+    "game8Boons": [
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "斧術",
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623992"
   },
   {
     "name": "Seteth",
@@ -10350,7 +10513,14 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "魅力・力量"
+    "aptitudeTendency": "魅力・力量",
+    "game8Boons": [
+      "指揮術",
+      "斧術",
+      "槍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623993"
   },
   {
     "name": "Halvin",
@@ -10909,7 +11079,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・速度"
+    "aptitudeTendency": "技巧・速度",
+    "game8Boons": [
+      "弓術",
+      "馬術"
+    ],
+    "game8Banes": [
+      "斧術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623997"
   },
   {
     "name": "Ursula",
@@ -11443,7 +11621,13 @@
         "recruitable": false
       }
     ],
-    "aptitudeTendency": "速度・技巧"
+    "aptitudeTendency": "速度・技巧",
+    "game8Boons": [
+      "弓術",
+      "劍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624015"
   },
   {
     "name": "Peppe",
@@ -11853,7 +12037,14 @@
         "recruitable": false
       }
     ],
-    "aptitudeTendency": "速度"
+    "aptitudeTendency": "速度",
+    "game8Boons": [
+      "弓術",
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624000"
   },
   {
     "name": "Dadao",
@@ -12481,7 +12672,17 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "力量・防禦"
+    "aptitudeTendency": "力量・防禦",
+    "game8Boons": [
+      "斧術",
+      "重裝術"
+    ],
+    "game8Banes": [
+      "白魔術",
+      "黑魔術",
+      "槍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623998"
   },
   {
     "name": "Loretta",
@@ -12929,7 +13130,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度"
+    "aptitudeTendency": "速度",
+    "game8Boons": [
+      "槍術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "重裝術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623996"
   },
   {
     "name": "Kiroc",
@@ -13396,7 +13605,12 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度・技巧"
+    "aptitudeTendency": "速度・技巧",
+    "game8Boons": [
+      "弓術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623994"
   },
   {
     "name": "Jester",
@@ -13841,7 +14055,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度"
+    "aptitudeTendency": "速度",
+    "game8Boons": [
+      "弓術",
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "斧術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623991"
   },
   {
     "name": "Nuzzuo",
@@ -14240,7 +14463,13 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "力量・速度"
+    "aptitudeTendency": "力量・速度",
+    "game8Boons": [
+      "弓術",
+      "劍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623987"
   },
   {
     "name": "Sofia",
@@ -14761,7 +14990,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "魔力"
+    "aptitudeTendency": "魔力",
+    "game8Boons": [
+      "弓術",
+      "白魔術"
+    ],
+    "game8Banes": [
+      "斧術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623986"
   },
   {
     "name": "Nydine",
@@ -15228,7 +15465,17 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度・HP"
+    "aptitudeTendency": "速度・HP",
+    "game8Boons": [
+      "斧術",
+      "飛行術",
+      "馬術"
+    ],
+    "game8Banes": [
+      "格鬥術",
+      "重裝術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623979"
   },
   {
     "name": "Guzran",
@@ -15934,7 +16181,17 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度・力量"
+    "aptitudeTendency": "速度・力量",
+    "game8Boons": [
+      "格鬥術",
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "白魔術",
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623978"
   },
   {
     "name": "Simon",
@@ -16356,7 +16613,14 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・力量"
+    "aptitudeTendency": "HP・力量",
+    "game8Boons": [
+      "斧術",
+      "步兵術",
+      "劍術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624019"
   },
   {
     "name": "Sha Lan",
@@ -16769,7 +17033,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・魔力"
+    "aptitudeTendency": "技巧・魔力",
+    "game8Boons": [
+      "指揮術",
+      "白魔術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624017"
   },
   {
     "name": "Tialla",
@@ -17192,7 +17465,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "魔力・幸運"
+    "aptitudeTendency": "魔力・幸運",
+    "game8Boons": [
+      "指揮術",
+      "白魔術",
+      "黑魔術"
+    ],
+    "game8Banes": [
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623941"
   },
   {
     "name": "Gaitz",
@@ -17740,7 +18022,17 @@
         "recruitable": false
       }
     ],
-    "aptitudeTendency": "力量・防禦"
+    "aptitudeTendency": "力量・防禦",
+    "game8Boons": [
+      "斧術",
+      "馬術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "白魔術",
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624014"
   },
   {
     "name": "Lysander",
@@ -18175,7 +18467,19 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "速度"
+    "aptitudeTendency": "速度",
+    "game8Boons": [
+      "斧術",
+      "飛行術",
+      "馬術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "格鬥術",
+      "重裝術",
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624002"
   },
   {
     "name": "Mikaela",
@@ -18684,7 +18988,14 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・力量"
+    "aptitudeTendency": "HP・力量",
+    "game8Boons": [
+      "斧術",
+      "弓術",
+      "步兵術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624008"
   },
   {
     "name": "Ultand",
@@ -19112,7 +19423,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "幸運・魅力"
+    "aptitudeTendency": "幸運・魅力",
+    "game8Boons": [
+      "白魔術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624007"
   },
   {
     "name": "Sirocco",
@@ -19565,7 +19884,17 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧・幸運"
+    "aptitudeTendency": "技巧・幸運",
+    "game8Boons": [
+      "指揮術",
+      "白魔術",
+      "黑魔術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "重裝術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624006"
   },
   {
     "name": "Tobias",
@@ -19942,7 +20271,15 @@
         "recruitable": false
       }
     ],
-    "aptitudeTendency": "力量・HP"
+    "aptitudeTendency": "力量・HP",
+    "game8Boons": [
+      "斧術",
+      "馬術"
+    ],
+    "game8Banes": [
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623758"
   },
   {
     "name": "Buccar",
@@ -20526,7 +20863,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "力量・防禦"
+    "aptitudeTendency": "力量・防禦",
+    "game8Boons": [
+      "斧術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "白魔術",
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624003"
   },
   {
     "name": "Fabio",
@@ -20979,7 +21325,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "魔力・魔法防禦"
+    "aptitudeTendency": "魔力・魔法防禦",
+    "game8Boons": [
+      "指揮術",
+      "黑魔術"
+    ],
+    "game8Banes": [
+      "弓術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623964"
   },
   {
     "name": "Olympia",
@@ -21398,7 +21752,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "魔力"
+    "aptitudeTendency": "魔力",
+    "game8Boons": [
+      "斧術",
+      "白魔術"
+    ],
+    "game8Banes": [
+      "槍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624011"
   },
   {
     "name": "Benditz",
@@ -21950,7 +22312,13 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・技巧"
+    "aptitudeTendency": "HP・技巧",
+    "game8Boons": [
+      "弓術",
+      "馬術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623982"
   },
   {
     "name": "Noctula",
@@ -22394,7 +22762,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・力量"
+    "aptitudeTendency": "HP・力量",
+    "game8Boons": [
+      "斧術",
+      "格鬥術",
+      "步兵術"
+    ],
+    "game8Banes": [
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623984"
   },
   {
     "name": "Yang Jie",
@@ -23212,7 +23589,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・魔力"
+    "aptitudeTendency": "HP・魔力",
+    "game8Boons": [
+      "斧術",
+      "白魔術"
+    ],
+    "game8Banes": [
+      "馬術",
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623985"
   },
   {
     "name": "Majide",
@@ -23621,7 +24007,15 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・力量"
+    "aptitudeTendency": "HP・力量",
+    "game8Boons": [
+      "斧術",
+      "格鬥術"
+    ],
+    "game8Banes": [
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623988"
   },
   {
     "name": "Zarcone",
@@ -24003,7 +24397,16 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "技巧"
+    "aptitudeTendency": "技巧",
+    "game8Boons": [
+      "斧術",
+      "劍術"
+    ],
+    "game8Banes": [
+      "白魔術",
+      "黑魔術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623989"
   },
   {
     "name": "Jasmine",
@@ -24434,7 +24837,17 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "HP・技巧・防禦"
+    "aptitudeTendency": "HP・技巧・防禦",
+    "game8Boons": [
+      "斧術",
+      "重裝術",
+      "槍術"
+    ],
+    "game8Banes": [
+      "飛行術",
+      "劍術"
+    ],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623999"
   },
   {
     "name": "Inyoni",
@@ -24915,7 +25328,13 @@
         "recruitable": true
       }
     ],
-    "aptitudeTendency": "力量"
+    "aptitudeTendency": "力量",
+    "game8Boons": [
+      "斧術",
+      "弓術"
+    ],
+    "game8Banes": [],
+    "game8SkillSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624001"
   },
   {
     "name": "Aswan",
