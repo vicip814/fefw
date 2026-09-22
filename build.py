@@ -72,6 +72,7 @@ avatars=json.loads((root/'avatar-positions.json').read_text(encoding='utf-8'))
 assert set(avatars)=={u['name'] for u in data}
 for unit in data:
     unit['avatar']=avatars[unit['name']]
+additional_avatars=json.loads((root/'additional-avatars.json').read_text(encoding='utf-8')) if (root/'additional-avatars.json').exists() else {}
 personal=json.loads((root/'personal-skills.json').read_text(encoding='utf-8'))
 assert set(personal)=={u['name'] for u in data}
 for unit in data:
@@ -240,6 +241,14 @@ if character_source.exists():
             unit['redfreshet']=match
             unit['recruitmentInfo']=match.get('recruitment')
             quick=match.get('quick_zh') or {}
+            supplements=unit['personalInfo'].get('learnedSupplements') or []
+            if supplements:
+                learned=quick.setdefault('learned_skills',[])
+                existing={x.get('id') or x.get('name_zh') for x in learned if isinstance(x,dict)}
+                learned[:0]=[x for x in supplements if (x.get('id') or x.get('name_zh')) not in existing]
+            source_overrides=unit['personalInfo'].get('learnedSourceOverrides') or {}
+            for skill in quick.get('learned_skills') or []:
+                if skill.get('id') in source_overrides: skill['source_url']=source_overrides[skill['id']]
             source_profs=match.get('skill_proficiencies') or []
             strengths=[prof_zh.get(p.get('name'),p.get('name')) for p in source_profs if isinstance(p,dict) and p.get('trait')=='得意']
             weaknesses=[prof_zh.get(p.get('name'),p.get('name')) for p in source_profs if isinstance(p,dict) and p.get('trait')=='苦手']
@@ -271,7 +280,8 @@ if character_source.exists():
         data.append(dict(
             name=name, tier=rec.get('tier') or '追加', strong=quick.get('aptitude_tendency') or quick.get('summary') or rec.get('aptitude_tendency') or '來源未列能力傾向',
             target=rec.get('recommended_class') or rec.get('target_class') or '未整理', routes=_route_array(rec),
-            url=rec.get('source_url') or 'https://redfreshet.com/game-tools/fe-banshisenko/characters/', avatar=None,
+            url=rec.get('source_url') or 'https://redfreshet.com/game-tools/fe-banshisenko/characters/',
+            avatar=(additional_avatars.get(name) or {}).get('path'), avatarSource=additional_avatars.get(name),
             personalInfo={'zh':rec.get('display_name_zh_tw') or rec.get('display_name_zh') or rec.get('display_name_ja') or '', 'personal':personal_zh.get('effect_zh') or personal_skill.get('effect_zh_tw') or personal_skill.get('effect'),
                 'personalStatus':'documented' if (personal_zh.get('effect_zh') or personal_skill.get('effect')) else 'omitted','crests':[],'crestStatus':'not_listed',
                 'proficiencies':prof_text or None,'source':rec.get('source_url') or character_source.name},
@@ -425,8 +435,36 @@ else:
         n,z,t,r,a,m,v,b,g,p=line.split('|')
         jobs.append(dict(name=n,zh=z,tier=t,req=r,unlock=('Lv.5／名聲1' if t=='初階' else 'Lv.20／名聲4' if t=='專門' else 'Lv.35／名聲8'),ability=a,master=m,skills=[],move=v,bonus=b,growth=g,url='https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/'+p,source='Game8'))
     assert len(jobs)==32
+
+# Build a Chinese proficiency-rank lookup from the per-character Redfreshet
+# learnsets. It only includes rows explicitly tagged as skill-rank rewards;
+# character levels, class skills, combat arts, and magic are kept separate.
+prof_order=['劍術','槍術','斧術','弓術','格鬥術','黑魔術','白魔術','指揮術','步兵術','馬術','重裝術','飛行術']
+prof_slugs={'劍術':'sword','槍術':'lance','斧術':'axe','弓術':'bow','格鬥術':'gauntlet','黑魔術':'black_magic','白魔術':'white_magic','指揮術':'command','步兵術':'infantry','馬術':'riding','重裝術':'armor','飛行術':'flying'}
+prof_name_fixes={'咄嗟的迴避':'緊急閃避','白兵的間合い':'近戰距離','風讀み':'讀風','騎士的先陣':'騎士先鋒'}
+prof_rows={}
+for unit in data:
+    quick=(unit.get('redfreshet') or {}).get('quick_zh') or {}
+    owner=unit.get('personalInfo',{}).get('zh') or quick.get('name') or unit['name']
+    for skill in quick.get('learned_skills') or []:
+        if skill.get('acquisition_method_zh')!='技能等級': continue
+        requirement=skill.get('requirement_zh') or ''
+        match=re.fullmatch(r'(.+術)\s+([A-Z]\+?)',requirement)
+        if not match: continue
+        proficiency,level=match.groups()
+        name=prof_name_fixes.get(skill.get('name_zh'),skill.get('name_zh'))
+        key=(proficiency,level,skill.get('id') or name)
+        row=prof_rows.setdefault(key,dict(
+            proficiency=proficiency, level=level, name=name or '中文名稱待整理',
+            effect=skill.get('effect_zh') or '來源未列出', owners=[],
+            url=f"https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/{prof_slugs.get(proficiency,'')}/",
+        ))
+        if owner not in row['owners']: row['owners'].append(owner)
+rank_order={'E':0,'E+':1,'D':2,'D+':3,'C':4,'C+':5,'B':6,'B+':7,'A':8,'A+':9,'S':10}
+proficiency_skills=sorted(prof_rows.values(),key=lambda x: (prof_order.index(x['proficiency']) if x['proficiency'] in prof_order else 99,rank_order.get(x['level'],99),x['name']))
+(root/'proficiency-skills.json').write_text(json.dumps(proficiency_skills,ensure_ascii=False,indent=2),encoding='utf-8')
 (root/'classes.json').write_text(json.dumps(jobs,ensure_ascii=False,indent=2),encoding='utf-8')
 template=(root/'template.html').read_text(encoding='utf-8')
 template=template.replace('src="recruitment.png"','src="data:image/png;base64,'+base64.b64encode((root/'recruitment.png').read_bytes()).decode('ascii')+'"')
-(root/'index.html').write_text(template.replace('/*DATA*/',json.dumps(data,ensure_ascii=False)).replace('/*CLASSES*/',json.dumps(jobs,ensure_ascii=False)),encoding='utf-8')
+(root/'index.html').write_text(template.replace('/*DATA*/',json.dumps(data,ensure_ascii=False)).replace('/*CLASSES*/',json.dumps(jobs,ensure_ascii=False)).replace('/*PROFICIENCY_SKILLS*/',json.dumps(proficiency_skills,ensure_ascii=False)),encoding='utf-8')
 print(f'Built {len(data)} characters (50 route-chart + {len(data)-50} source additions); route counts 41 / 44 / 44 / 42')

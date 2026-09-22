@@ -428,7 +428,18 @@
     "crestStatus": "not_listed",
     "proficiencies": "槍術、斧術、騎術、飛行術",
     "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-    "checked": "2026-09-18"
+    "checked": "2026-09-18",
+    "learnedSupplements": [
+      {
+        "id": "acceleration",
+        "name_zh": "加速",
+        "effect_zh": "擊破敵人時速度+1，累積上限為10；地圖結束時解除。",
+        "requirement_zh": "Lv.20（依 Serenes 一般習得規律）",
+        "acquisition_method_zh": "角色等級",
+        "is_personal": false,
+        "source_url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/"
+      }
+    ]
   },
   "Mikaela": {
     "zh": "米迦艾拉",
@@ -469,7 +480,10 @@
     "crestStatus": "documented",
     "proficiencies": "劍術、黑魔術、白魔術、指揮術",
     "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-    "checked": "2026-09-18"
+    "checked": "2026-09-18",
+    "learnedSourceOverrides": {
+      "wind_whim_plus": "https://gamewith.jp/fefw/577311"
+    }
   },
   "Tobias": {
     "zh": "托比亞斯",

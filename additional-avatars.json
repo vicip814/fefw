@@ -1,0 +1,80 @@
+{
+  "Aswan": {
+    "path": "assets/avatars/aswan.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816902",
+    "source_image": "https://img.game8.jp/13017452/9321cab9c4db01e9468fd41d1751cdbe.webp/show",
+    "alt": "アスワン画像"
+  },
+  "Bertrand": {
+    "path": "assets/avatars/bertrand.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816882",
+    "source_image": "https://img.game8.jp/13012135/ced674a1d0ad6ea0ff921b218f34bd21.webp/show",
+    "alt": "ベルトラン画像"
+  },
+  "Savior": {
+    "path": "assets/avatars/savior.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816479",
+    "source_image": "https://img.game8.jp/13012151/96813757034e42e03465e3f7f5ae0bf3.webp/show",
+    "alt": "救世主画像"
+  },
+  "Kouka": {
+    "path": "assets/avatars/kouka.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816477",
+    "source_image": "https://img.game8.jp/13012131/4cbfb8b455a7001d2a302b80fe24185f.webp/show",
+    "alt": "コウカ画像"
+  },
+  "Troia": {
+    "path": "assets/avatars/troia.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816478",
+    "source_image": "https://img.game8.jp/13012156/d56c0e1327e460b92c5d112464dc99be.webp/show",
+    "alt": "トロイア画像"
+  },
+  "Talimoon": {
+    "path": "assets/avatars/talimoon.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816883",
+    "source_image": "https://img.game8.jp/13012176/911e71786f1f411865b70ccbb0a80292.webp/show",
+    "alt": "タリムーン画像"
+  },
+  "Orhel": {
+    "path": "assets/avatars/orhel.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816884",
+    "source_image": "https://img.game8.jp/13012128/de6bdafa015aae4b893eb9a40ffda9f4.webp/show",
+    "alt": "オルヘル画像"
+  },
+  "Anatolia": {
+    "path": "assets/avatars/anatolia.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816885",
+    "source_image": "https://img.game8.jp/13012124/7c582bf497cb169bab530dbf7d359feb.webp/show",
+    "alt": "アナトリア画像"
+  },
+  "Centurion": {
+    "path": "assets/avatars/centurion.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816877",
+    "source_image": "https://img.game8.jp/13012147/8827c8d2c2f48d750490216780264d44.webp/show",
+    "alt": "セントリオン画像"
+  },
+  "Kiryk": {
+    "path": "assets/avatars/kiryk.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816910",
+    "source_image": "https://img.game8.jp/13016888/ec091f6050f9301a4ce551a0e204b9b8.webp/show",
+    "alt": "キリーク画像"
+  },
+  "Nathan": {
+    "path": "assets/avatars/nathan.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816909",
+    "source_image": "https://img.game8.jp/13017712/7884c13c0d293c633c4bac196d79c287.webp/show",
+    "alt": "ネイサン画像"
+  },
+  "Tahounia": {
+    "path": "assets/avatars/tahounia.webp",
+    "source_page": "https://game8.jp/fe-banshisenko/816903",
+    "source_image": "https://img.game8.jp/13017454/2abd720babbafe1d265766bfdaadd1dc.webp/show",
+    "alt": "タホウニア画像"
+  },
+  "Klapka": {
+    "path": "assets/avatars/klapka.webp",
+    "source_page": "https://gamewith.jp/fefw/577935",
+    "source_image": "https://img.gamewith.jp/article_tools/fefw/gacha/chara_78.png",
+    "alt": "クラプカ"
+  }
+}

@@ -1,0 +1,318 @@
+[
+  {
+    "proficiency": "劍術",
+    "level": "D+",
+    "name": "劍術Lv.1",
+    "effect": "劍裝備時的命中+3。",
+    "owners": [
+      "凱伊",
+      "迪托利希",
+      "蕾達",
+      "波拿帕爾特",
+      "迪雅各",
+      "哪吒",
+      "伊歐",
+      "亞歷山卓",
+      "魯魯迪婭",
+      "烏修拉",
+      "佩佩",
+      "羅蕾塔",
+      "基羅伊卡",
+      "傑斯塔",
+      "努佐",
+      "古紮嵐",
+      "米迦艾拉",
+      "西洛可"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/sword/"
+  },
+  {
+    "proficiency": "槍術",
+    "level": "D+",
+    "name": "槍術Lv.1",
+    "effect": "槍裝備時的命中+3。",
+    "owners": [
+      "凱伊",
+      "賽奧朵拉",
+      "艾絲梅拉爾達",
+      "妮涅",
+      "伊歐",
+      "亞歷山卓",
+      "西提司",
+      "古紮嵐",
+      "萊桑達",
+      "托比亞斯",
+      "巴卡尼亞"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/lance/"
+  },
+  {
+    "proficiency": "槍術",
+    "level": "C+",
+    "name": "槍術Lv.2",
+    "effect": "槍裝備時，命中+5。",
+    "owners": [
+      "克拉普卡"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/lance/"
+  },
+  {
+    "proficiency": "斧術",
+    "level": "D+",
+    "name": "斧術Lv.1",
+    "effect": "斧裝備時的命中+3。",
+    "owners": [
+      "迪托利希",
+      "賽奧朵拉",
+      "艾絲梅拉爾達",
+      "哥萊亞斯",
+      "大刀",
+      "努蒂奴",
+      "希蒙",
+      "米迦艾拉",
+      "托比亞斯",
+      "巴卡尼亞",
+      "馬吉迪",
+      "劄可捏",
+      "賈斯敏"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/axe/"
+  },
+  {
+    "proficiency": "斧術",
+    "level": "C+",
+    "name": "斧術Lv.2",
+    "effect": "斧裝備時的命中+5。",
+    "owners": [
+      "森特里昂"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/axe/"
+  },
+  {
+    "proficiency": "弓術",
+    "level": "D+",
+    "name": "弓術Lv.1",
+    "effect": "弓裝備時的命中+3。",
+    "owners": [
+      "迪托利希",
+      "蕾達",
+      "皮特魯",
+      "莉利安",
+      "迪雅各",
+      "哈爾溫",
+      "烏修拉",
+      "基羅伊卡",
+      "班迪茲",
+      "易尼奧尼"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/bow/"
+  },
+  {
+    "proficiency": "弓術",
+    "level": "C+",
+    "name": "弓術Lv.2",
+    "effect": "弓裝備時，命中+5。",
+    "owners": [
+      "阿斯旺"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/bow/"
+  },
+  {
+    "proficiency": "格鬥術",
+    "level": "D+",
+    "name": "格鬥術Lv.1",
+    "effect": "拳套裝備時的命中+3。",
+    "owners": [
+      "穆",
+      "諾克裘拉"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/gauntlet/"
+  },
+  {
+    "proficiency": "格鬥術",
+    "level": "C+",
+    "name": "格鬥術Lv.2",
+    "effect": "拳套裝備時，命中+5。",
+    "owners": [
+      "塔霍尼亞"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/gauntlet/"
+  },
+  {
+    "proficiency": "黑魔術",
+    "level": "D+",
+    "name": "黑魔術Lv.1",
+    "effect": "黑魔法裝備時的命中+3。",
+    "owners": [
+      "波拿帕爾特",
+      "丹提",
+      "索緋雅",
+      "媞雅拉",
+      "西洛可",
+      "法畢歐",
+      "奧琳琵婭",
+      "楊界",
+      "塔利穆恩",
+      "安納托利亞"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/black_magic/"
+  },
+  {
+    "proficiency": "白魔術",
+    "level": "D+",
+    "name": "白魔術Lv.1",
+    "effect": "白魔法裝備時的命中+3。",
+    "owners": [
+      "菲亞娜",
+      "波拿帕爾特",
+      "丹提",
+      "索緋雅",
+      "沙蘭",
+      "媞雅拉",
+      "烏爾坦德",
+      "法畢歐",
+      "奧琳琵婭",
+      "楊界"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/white_magic/"
+  },
+  {
+    "proficiency": "指揮術",
+    "level": "D",
+    "name": "威嚇",
+    "effect": "相鄰敵的必殺-5。",
+    "owners": [
+      "艾絲梅拉爾達",
+      "伊歐",
+      "托比亞斯"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/command/"
+  },
+  {
+    "proficiency": "指揮術",
+    "level": "D",
+    "name": "攻擊陣形",
+    "effect": "相鄰友軍的攻擊力+1。",
+    "owners": [
+      "凱伊",
+      "賽奧朵拉",
+      "奧琳琵婭",
+      "貝特朗",
+      "塔利穆恩"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/command/"
+  },
+  {
+    "proficiency": "指揮術",
+    "level": "D",
+    "name": "牽制",
+    "effect": "相鄰敵的迴避-3。",
+    "owners": [
+      "賽奧朵拉",
+      "米迦艾拉"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/command/"
+  },
+  {
+    "proficiency": "步兵術",
+    "level": "D",
+    "name": "射擊安定",
+    "effect": "步兵時弓或魔法裝備時，命中+5。",
+    "owners": [
+      "皮特魯",
+      "莉利安",
+      "基羅伊卡",
+      "法畢歐"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/infantry/"
+  },
+  {
+    "proficiency": "步兵術",
+    "level": "D",
+    "name": "近戰距離掌控",
+    "effect": "步兵時，相鄰敵的移動力-1。",
+    "owners": [
+      "迪托利希",
+      "哪吒",
+      "魯魯迪婭",
+      "古紮嵐",
+      "希蒙",
+      "米迦艾拉",
+      "巴卡尼亞",
+      "諾克裘拉",
+      "貝特朗"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/infantry/"
+  },
+  {
+    "proficiency": "步兵術",
+    "level": "C",
+    "name": "應急迴避",
+    "effect": "步兵受到攻擊時，3%機率迴避+100。",
+    "owners": [
+      "迪托利希",
+      "蕾達",
+      "莉利安",
+      "魯魯迪婭",
+      "傑斯塔"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/infantry/"
+  },
+  {
+    "proficiency": "馬術",
+    "level": "C+",
+    "name": "騎士先鋒",
+    "effect": "騎兵主動攻擊時，防禦力+2。",
+    "owners": [
+      "班迪茲"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/riding/"
+  },
+  {
+    "proficiency": "重裝術",
+    "level": "D",
+    "name": "必殺防禦",
+    "effect": "受到必殺攻擊時，有30%機率使所受傷害減半。",
+    "owners": [
+      "哥萊亞斯",
+      "米迦艾拉"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/armor/"
+  },
+  {
+    "proficiency": "重裝術",
+    "level": "D",
+    "name": "防槍術",
+    "effect": "重裝時，面對使用槍的敵人，防禦力+5。",
+    "owners": [
+      "伊歐"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/armor/"
+  },
+  {
+    "proficiency": "重裝術",
+    "level": "C",
+    "name": "防弓術",
+    "effect": "重裝時，面對使用弓的敵人，防禦力+5。",
+    "owners": [
+      "艾絲梅拉爾達"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/armor/"
+  },
+  {
+    "proficiency": "飛行術",
+    "level": "D",
+    "name": "讀風",
+    "effect": "面對使用弓的敵人時，迴避+10。",
+    "owners": [
+      "卡塔妮雅",
+      "亞歷山卓",
+      "西提司",
+      "羅蕾塔",
+      "努蒂奴",
+      "萊桑達",
+      "巴卡尼亞"
+    ],
+    "url": "https://redfreshet.com/game-tools/fe-banshisenko/proficiencies/flying/"
+  }
+]

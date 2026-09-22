@@ -18076,7 +18076,18 @@
       "crestStatus": "not_listed",
       "proficiencies": "槍術、斧術、騎術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "learnedSupplements": [
+        {
+          "id": "acceleration",
+          "name_zh": "加速",
+          "effect_zh": "擊破敵人時速度+1，累積上限為10；地圖結束時解除。",
+          "requirement_zh": "Lv.20（依 Serenes 一般習得規律）",
+          "acquisition_method_zh": "角色等級",
+          "is_personal": false,
+          "source_url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/"
+        }
+      ]
     },
     "combatNotes": "力量40%、技巧35%；個人技不補命中及火力",
     "proficiencies": "槍術、斧術、馬術、飛行術",
@@ -18336,6 +18347,15 @@
           "requirement_zh": "角色固有"
         },
         "learned_skills": [
+          {
+            "id": "acceleration",
+            "name_zh": "加速",
+            "effect_zh": "擊破敵人時速度+1，累積上限為10；地圖結束時解除。",
+            "requirement_zh": "Lv.20（依 Serenes 一般習得規律）",
+            "acquisition_method_zh": "角色等級",
+            "is_personal": false,
+            "source_url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/"
+          },
           {
             "id": "acceleration_plus",
             "name_zh": "加速+",
@@ -19486,7 +19506,10 @@
       "crestStatus": "documented",
       "proficiencies": "劍術、黑魔術、白魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "learnedSourceOverrides": {
+        "wind_whim_plus": "https://gamewith.jp/fefw/577311"
+      }
     },
     "combatNotes": "魔力較專門輸出法師低；回血不提高火力",
     "proficiencies": "劍術、黑魔術、白魔術、指揮術",
@@ -19775,7 +19798,8 @@
             "effect_zh": "戰鬥中，迴避隨機增加1、5、20或30。",
             "requirement_zh": "Lv：35",
             "acquisition_method_zh": "角色等級",
-            "is_personal": false
+            "is_personal": false,
+            "source_url": "https://gamewith.jp/fefw/577311"
           },
           {
             "id": "black_magic_lv1",
@@ -25384,7 +25408,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/aswan/",
-    "avatar": null,
+    "avatar": "assets/avatars/aswan.webp",
+    "avatarSource": {
+      "path": "assets/avatars/aswan.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816902",
+      "source_image": "https://img.game8.jp/13017452/9321cab9c4db01e9468fd41d1751cdbe.webp/show",
+      "alt": "アスワン画像"
+    },
     "personalInfo": {
       "zh": "阿斯旺",
       "personal": "弓裝備時，命中+20。",
@@ -25595,7 +25625,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/bertrand/",
-    "avatar": null,
+    "avatar": "assets/avatars/bertrand.webp",
+    "avatarSource": {
+      "path": "assets/avatars/bertrand.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816882",
+      "source_image": "https://img.game8.jp/13012135/ced674a1d0ad6ea0ff921b218f34bd21.webp/show",
+      "alt": "ベルトラン画像"
+    },
     "personalInfo": {
       "zh": "貝特朗",
       "personal": "戰鬥時，有5%機率無視攻速差發動追擊。",
@@ -25856,7 +25892,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/char_001/",
-    "avatar": null,
+    "avatar": "assets/avatars/savior.webp",
+    "avatarSource": {
+      "path": "assets/avatars/savior.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816479",
+      "source_image": "https://img.game8.jp/13012151/96813757034e42e03465e3f7f5ae0bf3.webp/show",
+      "alt": "救世主画像"
+    },
     "personalInfo": {
       "zh": "救世主",
       "personal": "使周圍2格內敵人的「冥府加護」無效。",
@@ -26037,7 +26079,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/char_002/",
-    "avatar": null,
+    "avatar": "assets/avatars/kouka.webp",
+    "avatarSource": {
+      "path": "assets/avatars/kouka.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816477",
+      "source_image": "https://img.game8.jp/13012131/4cbfb8b455a7001d2a302b80fe24185f.webp/show",
+      "alt": "コウカ画像"
+    },
     "personalInfo": {
       "zh": "煌華",
       "personal": "魔法裝備時的命中+10。",
@@ -26260,7 +26308,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/char_003/",
-    "avatar": null,
+    "avatar": "assets/avatars/troia.webp",
+    "avatarSource": {
+      "path": "assets/avatars/troia.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816478",
+      "source_image": "https://img.game8.jp/13012156/d56c0e1327e460b92c5d112464dc99be.webp/show",
+      "alt": "トロイア画像"
+    },
     "personalInfo": {
       "zh": "特洛伊亞",
       "personal": "拳套裝備時的命中+10。",
@@ -26490,7 +26544,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/char_054/",
-    "avatar": null,
+    "avatar": "assets/avatars/talimoon.webp",
+    "avatarSource": {
+      "path": "assets/avatars/talimoon.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816883",
+      "source_image": "https://img.game8.jp/13012176/911e71786f1f411865b70ccbb0a80292.webp/show",
+      "alt": "タリムーン画像"
+    },
     "personalInfo": {
       "zh": "塔利穆恩",
       "personal": "幸運+3。",
@@ -26913,7 +26973,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/char_055/",
-    "avatar": null,
+    "avatar": "assets/avatars/orhel.webp",
+    "avatarSource": {
+      "path": "assets/avatars/orhel.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816884",
+      "source_image": "https://img.game8.jp/13012128/de6bdafa015aae4b893eb9a40ffda9f4.webp/show",
+      "alt": "オルヘル画像"
+    },
     "personalInfo": {
       "zh": "奧爾赫爾",
       "personal": "防禦+5並視為重裝，但無法轉職為騎兵或飛行職業。",
@@ -27271,7 +27337,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/char_056/",
-    "avatar": null,
+    "avatar": "assets/avatars/anatolia.webp",
+    "avatarSource": {
+      "path": "assets/avatars/anatolia.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816885",
+      "source_image": "https://img.game8.jp/13012124/7c582bf497cb169bab530dbf7d359feb.webp/show",
+      "alt": "アナトリア画像"
+    },
     "personalInfo": {
       "zh": "安納托利亞",
       "personal": "迴避+3。",
@@ -27784,7 +27856,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/char_057/",
-    "avatar": null,
+    "avatar": "assets/avatars/centurion.webp",
+    "avatarSource": {
+      "path": "assets/avatars/centurion.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816877",
+      "source_image": "https://img.game8.jp/13012147/8827c8d2c2f48d750490216780264d44.webp/show",
+      "alt": "セントリオン画像"
+    },
     "personalInfo": {
       "zh": "森特里昂",
       "personal": "敵方階段的首次戰鬥中，攻擊造成的傷害減半。",
@@ -28165,7 +28243,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/kiryk/",
-    "avatar": null,
+    "avatar": "assets/avatars/kiryk.webp",
+    "avatarSource": {
+      "path": "assets/avatars/kiryk.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816910",
+      "source_image": "https://img.game8.jp/13016888/ec091f6050f9301a4ce551a0e204b9b8.webp/show",
+      "alt": "キリーク画像"
+    },
     "personalInfo": {
       "zh": "基里克",
       "personal": "後手時，攻速+3、迴避+10。",
@@ -28386,7 +28470,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/klapka/",
-    "avatar": null,
+    "avatar": "assets/avatars/klapka.webp",
+    "avatarSource": {
+      "path": "assets/avatars/klapka.webp",
+      "source_page": "https://gamewith.jp/fefw/577935",
+      "source_image": "https://img.gamewith.jp/article_tools/fefw/gacha/chara_78.png",
+      "alt": "クラプカ"
+    },
     "personalInfo": {
       "zh": "克拉普卡",
       "personal": "戰鬥後，有等同防禦值的百分比機率使防禦+1，累積上限為10；持續至地圖結束。",
@@ -28565,7 +28655,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/nathan/",
-    "avatar": null,
+    "avatar": "assets/avatars/nathan.webp",
+    "avatarSource": {
+      "path": "assets/avatars/nathan.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816909",
+      "source_image": "https://img.game8.jp/13017712/7884c13c0d293c633c4bac196d79c287.webp/show",
+      "alt": "ネイサン画像"
+    },
     "personalInfo": {
       "zh": "內森",
       "personal": "主動攻擊時，攻速+3、命中+10。",
@@ -28786,7 +28882,13 @@
       "N/A"
     ],
     "url": "https://redfreshet.com/game-tools/fe-banshisenko/characters/tahounia/",
-    "avatar": null,
+    "avatar": "assets/avatars/tahounia.webp",
+    "avatarSource": {
+      "path": "assets/avatars/tahounia.webp",
+      "source_page": "https://game8.jp/fe-banshisenko/816903",
+      "source_image": "https://img.game8.jp/13017454/2abd720babbafe1d265766bfdaadd1dc.webp/show",
+      "alt": "タホウニア画像"
+    },
     "personalInfo": {
       "zh": "塔霍尼亞",
       "personal": "使用拳套戰技時，有15%機率無視攻速差發動追擊。",
