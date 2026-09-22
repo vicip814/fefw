@@ -139,8 +139,75 @@ def _char_condition_zh(value):
         'クリア':'通關','スカウト':'招募','すべて':'全部','選ぶ':'選擇','賴み':'委託',
         'キャラ':'角色','話，かけ':'對話','倒す及加入，ない':'擊倒則不會加入','写，':'拓本',
     }
-    for old,new in replacements.items(): text=text.replace(old,new)
+    for old,new in sorted(replacements.items(),key=lambda x:len(x[0]),reverse=True): text=text.replace(old,new)
     return text.replace('，，','，').replace('，。','。')
+
+def _display_zh(value):
+    """Clean machine-translated display text; raw Japanese remains in source fields only."""
+    text=str(value or '')
+    replacements={
+        '鋭く小さな短劍':'鋒利小短劍','馬的お手入れ道具':'馬匹保養工具','儀礼用的鋭い槍':'儀式用鋒利長槍',
+        '若い戈修':'年輕戈修','達古札ヒゲシバ':'達古札鬍鬚草','髭飾り':'鬍鬚飾品',
+        '若い索修':'年輕索修','鋭い釣り針':'鋒利釣鉤',
+        '白兵的間合い':'近戰距離掌控','泰夫入り焼き菓子':'泰夫夾心烤點心','少，甘い焼き菓子':'微甜烤點心',
+        '素朴な焼き菓子':'樸素烤點心','香ば，い焼き菓子':'香酥烤點心','銀吉入り塞爾維':'銀吉風味塞爾維',
+        '盾たち的肖像画':'眾盾衛的肖像畫','ユ・ファス的肖像':'柳華秀肖像','オーガス的泰夫':'奧加斯的泰夫',
+        '派手すぎ腕輪':'華麗手鐲','闇討ち':'暗襲','槍投げ的達人':'投槍達人','，なやかな釣り竿':'柔韌釣竿',
+        '魚的内臓的塩漬け':'鹽漬魚內臟','蜂蜜入り焼き菓子':'蜂蜜烤點心','ダンテ戯曲全集':'丹提戲曲全集',
+        'フォドラ的紅茶':'芙朵拉紅茶','入れ知恵':'獻策','海的向こう的古書':'海外古書','狙い射ち':'精準射擊',
+        '陣取り':'佔據陣地','薄い塞爾維':'清淡塞爾維','珍，い香辛料':'稀有香辛料','東方的耳飾り':'東方耳飾',
+        'ジャーメル的乳':'賈梅爾乳','濃い塞爾維':'濃郁塞爾維','精霊的導き':'精靈引導','淡い色的画材':'淡色畫材',
+        '村的素朴な料理集':'鄉村料理集','俺止まらねぇ':'勢不可擋','野菜的鉢植え':'蔬菜盆栽','風讀み':'讀風',
+        'よく切れ彫刻刀':'鋒利雕刻刀','抑えつけ':'壓制','刺激的な戈修':'刺激風味戈修','素朴な戈修':'樸素戈修',
+        '見切り':'看破','足止め':'阻滯','ニーザ産加爾姆':'尼薩產加爾姆','野菜的酢漬け':'醃漬蔬菜',
+        '高級八卦占い道具':'高級八卦占卜工具','サラミス的菓子':'薩拉米斯點心','實用的な裁縫道具':'實用裁縫工具',
+        '狩人的待ち伏せ':'獵人伏擊','ヤク的乳':'犛牛乳','蜂蜜入り的乳':'蜂蜜乳','風裂き的矢羽根':'裂風箭羽',
+        '芳醇な索修':'芳醇索修','死於そびれ':'九死一生','致命避け':'致命迴避','引き留め役':'阻留者',
+        '軽妙な索修':'輕快索修','無事的祈り':'平安祈禱','風任せ':'隨風','負けず嫌い':'不服輸',
+        '情動的リザイア':'情動吸星術','リザイア':'吸星術','戰車乘り':'戰車騎手','暴れ斧':'狂斧',
+        '恐れ知らず':'無所畏懼','強弓使い':'強弓手','美，い飾り矢':'美麗裝飾箭',
+        '守護騎士的努め':'守護騎士的職責','弓姫':'弓姬','獣的衝動':'獸之衝動','歴戰的強者':'歷戰強者',
+        '絶好調':'絕佳狀態','絶對防禦':'絕對防禦','闇的秘術':'暗之秘術','銀的精神':'白銀精神',
+        '精霊的盤上遊戯':'精靈桌上遊戲','東方的盤上遊戯':'東方桌上遊戲','闘技場物語的写本':'鬥技場故事抄本',
+        '軍略書的写本':'軍略書抄本','南方的薫泰夫':'南方芳香泰夫','南洋冒険奇譚':'南洋冒險奇譚',
+        '子猫的置物':'小貓擺件','巨大魚的目玉':'巨魚眼珠','旅的老師的口伝録':'旅居老師口述錄',
+        '東方恋愛見聞録':'東方戀愛見聞錄','莫爾菲斯歳時記':'莫爾菲斯歲時記','薬草料理大全':'藥草料理大全',
+        '鍛錬用的装飾腕輪':'鍛鍊用裝飾手鐲','飛馬的風景画':'飛馬風景畫','熟成干，塞爾維':'熟成乾塞爾維',
+        '秘伝的戈修':'秘傳戈修','世界的名詩集':'世界名詩集','火的山的戈修':'火山戈修',
+        '大粒的泰夫':'大粒泰夫','小粒的泰夫':'小粒泰夫','東方的漆黑絹':'東方漆黑絹',
+        '格闘術':'格鬥術','精霊':'精靈',
+        '冒険王的英運':'冒險王的英運','冷静沈着':'冷靜沉著','先的先':'先發制人','後的先':'後發先至',
+        '容赦無，':'毫不留情','怒涛':'怒濤','愛馬與連携':'愛馬協同','成長的兆，':'成長徵兆',
+        '氣分上々':'興致高昂','氣分屋':'善變','疾駆':'疾馳','身躱，':'閃身','返礼':'回禮','風友軍於':'與風同行',
+        '猪突猛進':'豬突猛進','白銀的乙女':'白銀少女','用心棒':'護衛','助太刀':'援護',
+        '咄嗟的迴避':'應急迴避','補足説明':'補充說明','活發':'活潑','本氣的一發':'全力一擊',
+        '好機':'良機','心的余裕':'從容心境','騎士的先陣':'騎士先鋒','騎士的感覺':'騎士直覺',
+        'カイ篇':'凱伊篇','ディートリヒ篇':'迪托利希篇','セオドラ篇':'賽奧朵拉篇','レダ篇':'蕾達篇',
+        'ディートリヒ':'迪托利希','レダ':'蕾達',
+        'セントリオンから的救援要請':'森特里昂的救援請求','森特里昂から的救援要請':'森特里昂的救援請求',
+        'エスメラルダ':'艾絲梅拉爾達','ダマセン':'達馬森','ピーテル':'彼得','アイギーナ':'艾吉娜',
+        'グルマオサ':'古爾馬歐薩','オルヘル':'奧爾赫爾','カガヤキウオ':'輝光魚','ルルディヤー':'露露迪亞',
+        'セテス':'塞特斯','デーツ':'椰棗','タリムーン':'塔利穆恩','ベルトラン':'貝特朗','コーシャルーガー':'科夏爾魯加',
+        'ジェスター':'傑斯特','シロッコ':'西洛可','ウルタンド':'烏爾坦德','コロイオス':'科羅伊奧斯',
+        'オリンピア':'奧林匹亞','コイントス':'擲硬幣','アナトリア':'安納托利亞','サラミス':'薩拉米斯',
+        'ダ・ミナ':'達米娜','ネイサン':'內森','キリーク':'基里克','セントリオン':'森特里昂',
+        '交渉的質問全部「い」':'交涉時所有問題皆選「是」','提示斷り':'提示全部拒絕',
+        '全部的条件':'全部條件','条件':'條件','から出現':'起出現','満た，て':'符合後','交渉':'交涉',
+        '贈り物':'禮物','増援':'增援','主人公':'主角','加入，ない':'不會加入','倒す':'擊敗',
+        '亡き妹的装身具':'亡妹的飾品','わかった':'明白了','必要だ':'有必要','ど的選択肢時也よい':'任何選項皆可',
+        '写，':'拓本','満月':'滿月','お手入れ':'保養','鋭い':'鋒利','素朴な':'樸素','刺激的な':'刺激風味',
+        '速さ':'速度','守備':'防禦',
+    }
+    for old,new in sorted(replacements.items(),key=lambda x:len(x[0]),reverse=True): text=text.replace(old,new)
+    text=text.replace('，，','，').replace('，。','。')
+    return text.translate(str.maketrans('体気戦剣歩黒軽撃応発学変対辺処帰伝絶歴姫獣霊写薫険猫歳薬錬画恋闘装広図会国実済旧児号竜鉄専権将',
+                                        '體氣戰劍步黑輕擊應發學變對邊處歸傳絕歷姬獸靈寫薰險貓歲藥鍊畫戀鬥裝廣圖會國實濟舊兒號龍鐵專權將'))
+
+def _clean_display_tree(value):
+    if isinstance(value,str): return _display_zh(value)
+    if isinstance(value,list): return [_clean_display_tree(x) for x in value]
+    if isinstance(value,dict): return {k:_clean_display_tree(v) for k,v in value.items()}
+    return value
 
 # Optional Redfreshet character details are merged without replacing route/tier/editorial data.
 # Preferred schema is {"characters": [{"name": "Cai", ...}]}; an object keyed by
@@ -151,10 +218,18 @@ if character_source.exists():
     red_payload=json.loads(character_source.read_text(encoding='utf-8'))
     red_records=_records(red_payload,'characters')
     for rec in red_records:
+        if rec.get('quick_zh'): rec['quick_zh']=_clean_display_tree(rec['quick_zh'])
+        quick=rec.get('quick_zh') or {}
+        if quick.get('aptitude_tendency'):
+            stat_map={'力':'力量','技':'技巧','魔防':'魔法防禦'}
+            quick['aptitude_tendency']='・'.join(stat_map.get(x,x) for x in quick['aptitude_tendency'].split('・'))
         for row in rec.get('recruitment') or []:
-            if row.get('condition_zh'): row['condition_zh']=_char_condition_zh(row['condition_zh'])
+            if row.get('route',{}).get('name_zh'): row['route']['name_zh']=_display_zh(row['route']['name_zh'])
+            if row.get('join_type_zh'): row['join_type_zh']=_display_zh(row['join_type_zh'])
+            if row.get('timing_zh'): row['timing_zh']=_display_zh(row['timing_zh'])
+            if row.get('condition_zh'): row['condition_zh']=_display_zh(_char_condition_zh(row['condition_zh']))
             if row.get('condition_items_zh'):
-                row['condition_items_zh']=[_char_condition_zh(x) for x in row['condition_items_zh']]
+                row['condition_items_zh']=[_display_zh(_char_condition_zh(x)) for x in row['condition_items_zh']]
     red_index={}
     for rec in red_records:
         for field in ('name','english_name','name_en','display_name_en','id','slug'):
@@ -225,6 +300,9 @@ def _format_req_tree(node):
 def _zh_text(value):
     text=str(value)
     replacements={
+        'ディートリヒ篇で戰技強化を10回以上行い、スミルノス神殿の受付に話しかける。':'迪托利希篇中，強化戰技至少10次後，與斯米爾諾斯神殿櫃檯人員交談。',
+        '救世篇 第2区分の残り1ターンで發生する':'救世篇第2區段剩餘1回合時發生的',
+        'カイ篇・名聲Lv10で':'凱伊篇・名聲Lv10時，',
         'カイ篇':'凱伊篇','ディートリヒ篇':'迪托利希篇','セオドラ篇':'賽奧朵拉篇','レダ篇':'蕾達篇',
         '救世篇':'救世篇','カストールの稽古':'卡斯托爾的訓練','アウロラの稽古':'奧羅拉的訓練',
         '父からの秘密の委託':'父親的秘密委託','母からの特別な委託':'母親的特別委託',
@@ -236,12 +314,14 @@ def _zh_text(value):
         'の受付':'的櫃檯','の挑戰状':'的挑戰書','第1区分':'第1區段','第2区分':'第2區段','第3区分':'第3區段',
         '天冠の神殿':'天冠神殿','アウロラの委託':'奧羅拉的委託','第2區段の':'第2區段的',
         '飛槍のイル・イラ':'飛槍・伊爾伊拉','必滅のオウコ':'必滅・歐科',
+        'クレール神殿':'克萊爾神殿','マーズ神殿':'瑪爾斯神殿','スミルノス神殿':'斯米爾諾斯神殿',
+        'カーラ神殿':'卡拉神殿','ジュラ神殿':'朱拉神殿',
         '凱伊篇・名聲Lv10で':'凱伊篇・名聲Lv10時，','迪托利希篇で':'迪托利希篇中，',
         'スミルノス神殿の與櫃檯人員交談':'斯米爾諾斯神殿與櫃檯人員交談',
         '試験手形':'考試證','下級':'初級','中級':'中級','上級':'上級','最高級':'最高級',
     }
-    for old,new in replacements.items(): text=text.replace(old,new)
-    return text
+    for old,new in sorted(replacements.items(),key=lambda x:len(x[0]),reverse=True): text=text.replace(old,new)
+    return _display_zh(text)
 
 def _skill_name_zh(value):
     text=str(value or '未命名技能')
@@ -252,7 +332,7 @@ def _skill_name_zh(value):
     }
     for old,new in replacements.items(): text=text.replace(old,new)
     text=text.replace('の','').replace('黒','黑').replace('剣','劍').replace('黄金','黃金')
-    return {'不退構え':'不退架勢','技冴え':'技巧精進','速さ呪縛':'速度咒縛'}.get(text,text)
+    return _display_zh({'不退構え':'不退架勢','技冴え':'技巧精進','速さ呪縛':'速度咒縛'}.get(text,text))
 
 def _class_from_red(c):
     q=c.get('qualification') or {}
@@ -265,9 +345,9 @@ def _class_from_red(c):
             continue
         skills.append({
             'name':_skill_name_zh(s.get('name_zh_tw') or s.get('name') or s.get('skill_name')),
-            'type':s.get('type_zh_tw') or s.get('type') or s.get('kind') or '技能',
-            'requirement':s.get('level_requirement_zh_tw') or s.get('acquisition_requirement_zh_tw') or s.get('level_requirement') or s.get('requirement') or s.get('acquisition_requirement') or '來源未列等級',
-            'effect':s.get('effect_zh_tw') or s.get('description_zh_tw') or s.get('effect') or s.get('description') or '來源未列出',
+            'type':_display_zh(s.get('type_zh_tw') or s.get('type') or s.get('kind') or '技能'),
+            'requirement':_display_zh(s.get('level_requirement_zh_tw') or s.get('acquisition_requirement_zh_tw') or s.get('level_requirement') or s.get('requirement') or s.get('acquisition_requirement') or '來源未列等級'),
+            'effect':_display_zh(s.get('effect_zh_tw') or s.get('description_zh_tw') or s.get('effect') or s.get('description') or '來源未列出'),
         })
     stat_names={'力':'力量','速さ':'速度','技':'技巧','守備':'防禦','魔防':'魔防','幸運':'幸運','魅力':'魅力','魔力':'魔力','HP':'HP'}
     fixed=[]; growth=[]
@@ -284,10 +364,18 @@ def _class_from_red(c):
     if q.get('exam_ticket_zh_tw') or q.get('exam_ticket'): unlock.append(_zh_text(q.get('exam_ticket_zh_tw') or q.get('exam_ticket')))
     unlock.extend(_zh_text(x) for x in (q.get('unlock_conditions_zh_tw') or q.get('unlock_conditions') or []) if x)
     class_name=c.get('english_name') or c.get('name_en') or c.get('display_name_en') or c.get('name') or '未命名職業'
-    display_name=c.get('name_zh_tw') or c.get('display_name_zh_tw') or c.get('display_name_zh') or c.get('name_zh') or c.get('display_name_ja') or (c.get('name') if c.get('name')!=class_name else '')
+    display_name=_display_zh(c.get('name_zh_tw') or c.get('display_name_zh_tw') or c.get('display_name_zh') or c.get('name_zh') or '')
     aliases=[x for x in (c.get('name'),c.get('display_name_ja'),c.get('name_zh_tw'),c.get('display_name_zh_tw'),c.get('display_name_zh'),c.get('english_name'),c.get('name_en')) if x]
     class_en={'飛駝兵':'Ornius Rider','軽騎兵':'Light Cavalry','バーディンガー':'Bardinger','剣士':'Myrmidon','シドー':'Shido','スナイパー':'Sniper','ヘヴィアーマー':'Dreadnought','ビショップ':'Bishop','ウァテス':'Ovate','ウォーリアー':'Warrior','フォレストナイト':'Forest Knight','ブリガンド':'Brigand','ローグ':'Rogue','アーチャー':'Archer','重装歩兵':'Armored Knight','騎甲駝兵':'Armored Ornius Rider','シャーマン':'Shaman','プリースト':'Priest','セスタス':'Pugilist','闘士':'Gladiator','兵士':'Soldier','呪い師':'Diviner','猟兵':'Hunter','戦車兵':'Charioteer','天翼兵':'Wing Soldier','カラドリオス':'Caladrius','ドラグーン':'Dragoon','トルバドール':'Troubadour','カタフラクト':'Cataphract','戦象兵':'Elephant Rider','バトルモンク':'War Monk'}
     if c.get('name') in class_en: aliases.append(class_en[c['name']])
+    class_prof_zh={'剣術':'劍術','槍術':'槍術','斧術':'斧術','弓術':'弓術','格闘術':'格鬥術','白魔術':'白魔術','黒魔術':'黑魔術','指揮術':'指揮術','歩兵術':'步兵術','馬術':'馬術','重装術':'重裝術','飛行術':'飛行術'}
+    exp_bonuses=[]
+    for bonus_row in c.get('skill_exp_bonuses') or []:
+        if isinstance(bonus_row,dict):
+            bonus_row=dict(bonus_row)
+            for key in ('skill','name'):
+                if bonus_row.get(key): bonus_row[key]=class_prof_zh.get(bonus_row[key],bonus_row[key])
+        exp_bonuses.append(bonus_row)
     return dict(
         name=class_name, zh=display_name or '', tier=c.get('rank_zh_tw') or c.get('rank') or c.get('tier') or '未分類',
         req=_format_req_tree(q.get('requirements_tree_zh_tw') or q.get('requirements_tree')) or '無技能門檻（僅特殊解鎖）',
@@ -297,7 +385,7 @@ def _class_from_red(c):
         skills=skills, move=c.get('movement') or '來源未列出',
         bonus='、'.join(fixed) or '來源未列出', growth='、'.join(growth) or '來源未列出',
         weapons=c.get('equippable_weapons_zh_tw') or c.get('equippable_weapons') or [], usableSkills=c.get('usable_skills_zh_tw') or c.get('usable_skills') or [],
-        skillExpBonuses=c.get('skill_exp_bonuses') or [], aliases=aliases,
+        skillExpBonuses=exp_bonuses, aliases=aliases,
         url=c.get('source_url') or c.get('url') or 'https://redfreshet.com/game-tools/fe-banshisenko/classes/',
         source='Redfreshet', redfreshet=c,
     )
