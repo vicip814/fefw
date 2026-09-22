@@ -51,3 +51,9 @@
 - 「隱藏／追加」tab與原可招募下拉選單使用同一狀態；瀏覽器實測顯示13/63人。隱藏＋劍術＋速度組合只顯示Kiryk，證明三組條件同時生效。
 - 原50人武器tab使用Game8 Boons；追加角色使用Redfreshet標為「得意」的技能，不把一般可用武器誤當成擅長。能力tab使用Redfreshet能力成長傾向。
 - 390px viewport實測頁面body/document scroll寬375、tab面板347，沒有頁面橫向溢出；tab按鈕自動換行。
+
+## Serenes Forest 個人能力補充 — 2026-09-22
+
+- 比對Serenes Forest個人能力表與現有Entertainment14／Redfreshet資料；該表列出固有能力及後續能力，但自稱仍在整理中，且沒有逐項標示確切習得等級。
+- 只用可明確對應的內容補足6個固有技能缺口：Gaitz、Jasmine、Ultand、Nuzzuo、Inyoni、Sha Lan；沒有依表格排列自行猜測Lv.20／Lv.35。
+- Nuzzuo補為特效時攻擊力+3；Inyoni補為裝備弓時力量+3；Sha Lan補充Draw Back的移位方式，以及使用後可接輔助魔法。

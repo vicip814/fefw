@@ -14090,7 +14090,13 @@
       "crestStatus": "not_listed",
       "proficiencies": "劍術、弓術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "serenesSupplement": {
+        "name": "Har Hali Wisdom",
+        "effect": "對敵人造成特效時，該場戰鬥攻擊力+3。",
+        "source": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+        "checked": "2026-09-22"
+      }
     },
     "combatNotes": "個人技只對能造成特效傷害的目標生效",
     "proficiencies": "劍術、弓術",
@@ -16646,7 +16652,13 @@
       "crestStatus": "not_listed",
       "proficiencies": "槍術、白魔術、指揮術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "serenesSupplement": {
+        "name": "Cooler Heads",
+        "effect": "使用支援戰技 Draw Back（拉回：自己後退1格，讓相鄰友軍移至自己原本位置）後，可以接著使用輔助魔法。",
+        "source": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+        "checked": "2026-09-22"
+      }
     },
     "combatNotes": "需先使用Draw Back才能觸發個人技支援魔法效果",
     "proficiencies": "槍術、白魔術、指揮術",
@@ -17500,7 +17512,13 @@
       "crestStatus": "not_listed",
       "proficiencies": null,
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "serenesSupplement": {
+        "name": "Brave Assist",
+        "effect": "相鄰友軍的防禦+3。",
+        "source": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+        "checked": "2026-09-22"
+      }
     },
     "combatNotes": "缺重甲專長；個人技不增加自身防禦",
     "proficiencies": "槍術、斧術、馬術",
@@ -19021,7 +19039,13 @@
       "crestStatus": "not_listed",
       "proficiencies": "槍術、白魔術、飛行術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "serenesSupplement": {
+        "name": "Patch Up",
+        "effect": "相鄰友軍完成戰鬥後，為該友軍恢復少量HP；來源沒有列出確切恢復量。",
+        "source": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+        "checked": "2026-09-22"
+      }
     },
     "combatNotes": "治療量較低，戰後回血範圍小且依賴站位",
     "proficiencies": "槍術、白魔術、飛行術",
@@ -24432,7 +24456,13 @@
       "crestStatus": "not_listed",
       "proficiencies": null,
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "serenesSupplement": {
+        "name": "Expert Counter",
+        "effect": "敵人先攻時，該場戰鬥命中+20。",
+        "source": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+        "checked": "2026-09-22"
+      }
     },
     "combatNotes": "力量40%、HP50%、防禦45%不突出；反擊命中不增傷及防禦",
     "proficiencies": "槍術、重裝術",
@@ -24873,7 +24903,13 @@
       "crestStatus": "not_listed",
       "proficiencies": "斧術、弓術",
       "source": "https://www.entertainment14.net/blog/post/111011676-fire-emblem-%E8%90%AC%E7%B8%B7%E5%8D%83%E7%B5%B2-%E8%A7%92%E8%89%B2%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86",
-      "checked": "2026-09-18"
+      "checked": "2026-09-18",
+      "serenesSupplement": {
+        "name": "Heavy-Bow User",
+        "effect": "裝備弓時，力量+3。",
+        "source": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+        "checked": "2026-09-22"
+      }
     },
     "combatNotes": "技巧40%、速度35%；個人技不補命中及速度",
     "proficiencies": "斧術、弓術",
