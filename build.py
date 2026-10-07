@@ -468,6 +468,31 @@ if proficiency_source.exists():
 (root/'proficiency-skills.json').write_text(json.dumps(proficiency_skills,ensure_ascii=False,indent=2),encoding='utf-8')
 (root/'classes.json').write_text(json.dumps(jobs,ensure_ascii=False,indent=2),encoding='utf-8')
 template=(root/'template.html').read_text(encoding='utf-8')
+template=template.replace('核對日期 2026.09.22','核對日期 2026.10.07')
+template=template.replace(
+    '<a href="#proficiency">熟練度習得</a><a href="#weapon">武器與培養</a>',
+    '<a href="#proficiency">熟練度習得</a><a href="learnsets.html">角色習得反查</a><a href="#weapon">武器與培養</a>'
+)
+template=template.replace(
+    '<summary>本頁來源與更新時間</summary><ul>',
+    '<summary>本頁來源與更新時間</summary><ul><li><a href="learnsets.html">角色熟練度習得反查頁</a>：依 Community Spreadsheet 於2026-10-07擷取63名角色、12類熟練度，可按角色查看或按技能反查可習得角色；中文為暫譯並保留英文原名。</li>'
+)
+template=template.replace(
+    '<a href="https://github.com/vicip814/fefw">GitHub / fefw</a><a href="characters.json">角色資料 JSON</a>',
+    '<a href="https://github.com/vicip814/fefw">GitHub / fefw</a><a href="learnsets.html">角色習得反查</a><a href="characters.json">角色資料 JSON</a>'
+)
 template=template.replace('src="recruitment.png"','src="data:image/png;base64,'+base64.b64encode((root/'recruitment.png').read_bytes()).decode('ascii')+'"')
 (root/'index.html').write_text(template.replace('/*DATA*/',json.dumps(data,ensure_ascii=False)).replace('/*CLASSES*/',json.dumps(jobs,ensure_ascii=False)).replace('/*PROFICIENCY_SKILLS*/',json.dumps(proficiency_skills,ensure_ascii=False)),encoding='utf-8')
+learnset_source=root/'character-learnsets.json'
+learnset_template=root/'learnsets-template.html'
+if learnset_source.exists() and learnset_template.exists():
+    learnset_payload=json.loads(learnset_source.read_text(encoding='utf-8'))
+    if learnset_payload.get('unmapped_translations'):
+        raise ValueError('character-learnsets.json contains untranslated skill names')
+    (root/'learnsets.html').write_text(
+        learnset_template.read_text(encoding='utf-8').replace(
+            '/*LEARNSETS*/',json.dumps(learnset_payload,ensure_ascii=False)
+        ),encoding='utf-8'
+    )
+    print(f"Built character learnsets: {learnset_payload['metadata']['entry_count']} entries")
 print(f'Built {len(data)} characters (50 route-chart + {len(data)-50} source additions); route counts 41 / 44 / 44 / 42')

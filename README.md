@@ -13,6 +13,7 @@
 - 個人技能及血印內容、來源中文名可搜尋；已校正Fabio／Dante／Io的必殺迴避、Kiroc必殺增益、Loretta半血條件及Buccar傷害×90%語義。
 - 60個職業：轉職所需武器技能、推薦等級、名聲、考試證與特殊解鎖條件，並列固定能力、成長修正、可用武器、職業技能及精通獎勵。
 - 熟練度習得表彙整72筆Redfreshet明列的技能、戰技與魔法，可按熟練項目及種類搜尋／篩選，並列要求等級、效果及已確認習得角色；來源未公開確切門檻時明示「來源未列等級」。
+- 角色熟練度習得反查頁依Community Spreadsheet整理63名角色、12類熟練度及逾2,100筆角色習得記錄；可按角色查看完整學習表，也可用技能、熟練度、等級或全文搜尋反查可習得角色。中文名稱為暫譯並保留英文原名，原表帶問號的項目標為待確認。
 - 主角Lord獨立分類，不將其當作S級以上；招募依使用者附圖，tier及角色／職業解釋依Game8 2026-09-18快照。
 - 編者推論、來源矛盾與TBD均在頁面標明。沒有實機測試，未宣稱挑戰模式最優解。
 
@@ -24,7 +25,7 @@
 python build.py
 ```
 
-會產生 `characters.json`、`classes.json`、`proficiency-skills.json` 與完整 `index.html`。`redfreshet-proficiencies.json` 是繁中熟練度習得快照，可用 `python scrape-redfreshet-proficiencies.py` 更新。`recruitment.png` 是使用者提供的招募原圖，build時內嵌到HTML，頁內可展開對照。追加角色頭像放在 `assets/avatars/`；所有資料來源連結均在頁內或來源JSON內。
+會產生 `characters.json`、`classes.json`、`proficiency-skills.json`、`index.html` 與 `learnsets.html`。`redfreshet-proficiencies.json` 是繁中熟練度習得快照，可用 `python scrape-redfreshet-proficiencies.py` 更新。`character-learnsets.json` 是Community Spreadsheet的角色習得快照，可用 `python scrape-google-learnsets.py` 更新。`recruitment.png` 是使用者提供的招募原圖，build時內嵌到HTML，頁內可展開對照。追加角色頭像放在 `assets/avatars/`；所有資料來源連結均在頁內或來源JSON內。
 
 `personal-skills.json`維護個人技／血印及缺資料狀態。可用選用匯入工具 `python import-personal-source.py source-entertainment14.html` 從指定文章HTML快照擷取欄位（需beautifulsoup4）；完整來源網頁不提交。血印名稱未在文章提供，本站呈現其觸發與效果。Redfreshet兩份JSON保留逐頁資料及來源網址，方便追溯。
 

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="《萬縷千絲》63 位角色、12 類熟練度的繁體中文習得技能反查表。">
+<link rel="icon" href="data:,">
+<title>角色熟練度習得表｜萬縷千絲</title>
+<style>
+:root{color-scheme:dark;--bg:#09111d;--panel:#111d2d;--panel2:#17263a;--text:#eef5ff;--muted:#9fb0c6;--line:#2a3b51;--accent:#77b7ff;--accent2:#9ee6ca;--warn:#ffd48a;--shadow:0 18px 46px #0007}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,#18345a 0,transparent 35rem),var(--bg);color:var(--text);font:15px/1.65 system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif}a{color:var(--accent)}main{width:min(1180px,calc(100% - 28px));margin:auto;padding:28px 0 72px}header{padding:26px 0 20px}.eyebrow{color:var(--accent2);font-size:12px;letter-spacing:.16em;font-weight:800}h1{font-size:clamp(34px,7vw,66px);line-height:1.02;margin:8px 0 14px;letter-spacing:-.04em}header p{max-width:760px;color:#c6d3e3;font-size:16px}.topnav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.topnav a,.mode button,.reset{border:1px solid var(--line);background:#102035;color:var(--text);padding:9px 14px;border-radius:999px;text-decoration:none;font-weight:700;cursor:pointer}.topnav a:hover,.mode button:hover,.reset:hover{border-color:var(--accent)}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 26px}.summary div{background:linear-gradient(145deg,#15253a,#0f1928);border:1px solid var(--line);border-radius:16px;padding:16px}.summary strong{display:block;font-size:28px}.summary span{color:var(--muted);font-size:12px}.toolbar{position:sticky;top:8px;z-index:3;background:#0c1624ed;border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(14px);border-radius:18px;padding:14px;margin-bottom:20px}.mode{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.mode button[aria-pressed="true"]{background:var(--accent);color:#06101c;border-color:var(--accent)}.filters{display:grid;grid-template-columns:2fr repeat(4,1fr) auto;gap:9px}.filters input,.filters select{min-width:0;width:100%;background:#0d1828;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px}.filters input:focus,.filters select:focus{outline:2px solid var(--accent);outline-offset:1px}.resultline{color:var(--muted);margin:10px 2px 0}.group{background:linear-gradient(145deg,var(--panel),#0e1827);border:1px solid var(--line);border-radius:18px;margin:14px 0;overflow:hidden;box-shadow:0 8px 28px #0003}.grouphead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:18px 20px;background:#142238}.grouphead h2{font-size:20px;margin:0}.grouphead small{display:block;color:var(--muted);font-weight:500}.count{white-space:nowrap;color:var(--accent2);font-size:12px}.tablewrap{overflow:auto}.learnset{width:100%;border-collapse:collapse;min-width:720px}.learnset th,.learnset td{text-align:left;padding:11px 15px;border-top:1px solid var(--line);vertical-align:top}.learnset th{color:#aebdd1;font-size:11px;letter-spacing:.05em;text-transform:uppercase;background:#0d1725}.rank,.prof,.status{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 8px;white-space:nowrap;font-size:12px}.rank{color:var(--accent2)}.prof{color:var(--accent)}.status.pending{border-color:#79613a;color:var(--warn)}.english{color:var(--muted);font-size:12px}.skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:10px;padding:14px}.person{border:1px solid var(--line);background:#0e1928;border-radius:12px;padding:11px}.person strong,.person small{display:block}.person small{color:var(--muted)}.empty,.source{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:18px}.source{margin-top:28px;color:#c6d3e3}.source h2{margin-top:0}.source li{margin:7px 0}.foot{color:var(--muted);font-size:12px;margin-top:26px}.toplink{position:fixed;right:15px;bottom:15px;border:1px solid var(--line);background:#102035;color:var(--text);padding:8px 12px;border-radius:999px;text-decoration:none}@media(max-width:850px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.reset{width:100%}.summary{grid-template-columns:1fr}.toolbar{position:static}}@media(max-width:520px){main{width:min(100% - 18px,1180px);padding-top:12px}.filters{grid-template-columns:1fr}.filters input{grid-column:auto}.grouphead{padding:14px}.skillgrid{grid-template-columns:1fr}.summary strong{font-size:23px}}
+</style>
+</head>
+<body>
+<main id="top">
+<header>
+<div class="eyebrow">FORTUNE'S WEAVE · CHARACTER LEARNSETS</div>
+<h1>角色熟練度<br>習得技能反查</h1>
+<p>繁體中文整理 63 位角色在 12 類熟練度各等級的習得內容。可以按角色查看完整學習表，也可以選一個技能，反查哪些角色能學到。</p>
+<nav class="topnav" aria-label="網站導覽"><a href="index.html">返回四線角色・職業速查</a><a href="#source">資料來源與限制</a><a href="character-learnsets.json">下載 JSON</a></nav>
+<div class="summary"><div><strong id="character-total">—</strong><span>來源角色</span></div><div><strong id="proficiency-total">—</strong><span>熟練度類別</span></div><div><strong id="entry-total">—</strong><span>角色習得記錄</span></div></div>
+</header>
+<section class="toolbar" aria-label="習得表篩選器">
+<div class="mode" role="group" aria-label="檢視方式"><button type="button" data-mode="character" aria-pressed="true">按角色查看</button><button type="button" data-mode="skill" aria-pressed="false">按技能反查角色</button></div>
+<div class="filters"><input id="query" type="search" placeholder="搜尋角色、中文技能或英文原名…" aria-label="全文搜尋"><select id="character" aria-label="角色"><option value="">全部角色</option></select><select id="skill" aria-label="技能"><option value="">全部技能</option></select><select id="proficiency" aria-label="熟練度"><option value="">全部熟練度</option></select><select id="rank" aria-label="等級"><option value="">全部等級</option></select><button class="reset" id="reset" type="button">清除篩選</button></div>
+<p class="resultline" id="result-count" aria-live="polite"></p>
+</section>
+<section id="results" aria-label="篩選結果"></section>
+<section class="source" id="source"><h2>資料來源與核實邊界</h2><ul id="source-notes"></ul><p>資料依據：<a href="https://docs.google.com/spreadsheets/d/1YW5AdvPUbLPr1RAGlnotcRaNTFCQPTKiIgshwrcdUtE/htmlview#gid=1696867101" target="_blank" rel="noopener">Community Spreadsheet（Google Sheets）</a>，擷取日期 2026-10-07。熟練度分頁包括劍、槍、斧、弓、格鬥、白魔法、黑魔法、指揮、步兵、騎術、重裝及飛行。</p><p>中文技能名是本站為方便查閱所作的暫譯，英文原名一併保留。原表空白只代表沒有列資料，不應推斷角色必定不能學；原表帶「?」的項目會顯示「待確認」。</p></section>
+<footer class="foot">《萬縷千絲》繁體中文非官方研究整理。實際技能名稱與判定以遊戲內文字為準。</footer>
+</main>
+<a class="toplink" href="#top">返回頂部</a>
+<script>
+'use strict';
+const payload=/*LEARNSETS*/;
+const entries=payload.entries;
+const $=id=>document.getElementById(id);
+const safe=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+const rankOrder=['基礎','D','D+','C','C+','B','B+','A','A+','S','S+','角色 Lv.45','角色 Lv.48'];
+let mode='character';
+function label(entry){return entry.skill_zh?`${entry.skill_zh}（${entry.skill_en}）`:entry.skill_en}
+function unique(values){return [...new Set(values)].sort((a,b)=>String(a).localeCompare(String(b),'zh-Hant'))}
+function option(value,text){return `<option value="${safe(value)}">${safe(text)}</option>`}
+function setup(){
+  $('character-total').textContent=payload.metadata.character_count;
+  $('proficiency-total').textContent=payload.metadata.proficiency_count;
+  $('entry-total').textContent=payload.metadata.entry_count.toLocaleString();
+  const people=new Map(entries.map(x=>[x.character,`${x.character_zh} · ${x.character}`]));
+  $('character').innerHTML='<option value="">全部角色</option>'+[...people].sort((a,b)=>a[1].localeCompare(b[1],'zh-Hant')).map(([v,t])=>option(v,t)).join('');
+  const skills=new Map(entries.map(x=>[x.skill_en,label(x)]));
+  $('skill').innerHTML='<option value="">全部技能</option>'+[...skills].sort((a,b)=>a[1].localeCompare(b[1],'zh-Hant')).map(([v,t])=>option(v,t)).join('');
+  $('proficiency').innerHTML='<option value="">全部熟練度</option>'+payload.proficiencies.map(x=>option(x,x)).join('');
+  $('rank').innerHTML='<option value="">全部等級</option>'+unique(entries.map(x=>x.rank)).sort((a,b)=>rankOrder.indexOf(a)-rankOrder.indexOf(b)).map(x=>option(x,x)).join('');
+  $('source-notes').innerHTML=payload.metadata.notes_zh.map(x=>`<li>${safe(x)}</li>`).join('');
+}
+function filtered(){const q=$('query').value.trim().toLocaleLowerCase(),person=$('character').value,skill=$('skill').value,prof=$('proficiency').value,rank=$('rank').value;return entries.filter(x=>(!person||x.character===person)&&(!skill||x.skill_en===skill)&&(!prof||x.proficiency===prof)&&(!rank||x.rank===rank)&&(!q||JSON.stringify(x).toLocaleLowerCase().includes(q)))}
+function groupRows(rows,key){const grouped=new Map();for(const row of rows){const value=row[key];if(!grouped.has(value))grouped.set(value,[]);grouped.get(value).push(row)}return grouped}
+function renderCharacter(rows){const groups=[...groupRows(rows,'character')].sort((a,b)=>a[1][0].character_zh.localeCompare(b[1][0].character_zh,'zh-Hant'));return groups.map(([name,list])=>{const first=list[0];list.sort((a,b)=>payload.proficiencies.indexOf(a.proficiency)-payload.proficiencies.indexOf(b.proficiency)||rankOrder.indexOf(a.rank)-rankOrder.indexOf(b.rank)||a.skill_en.localeCompare(b.skill_en));return `<article class="group"><header class="grouphead"><h2>${safe(first.character_zh)}<small>${safe(name)}${first.source_character!==name?` · 原表：${safe(first.source_character)}`:''}</small></h2><span class="count">${list.length} 項</span></header><div class="tablewrap"><table class="learnset"><thead><tr><th>熟練度</th><th>等級</th><th>中文暫譯</th><th>英文原名</th><th>來源狀態</th></tr></thead><tbody>${list.map(x=>`<tr><td><span class="prof">${safe(x.proficiency)}</span></td><td><span class="rank">${safe(x.rank)}</span></td><td><strong>${safe(x.skill_zh||'中文暫缺')}</strong></td><td class="english">${safe(x.skill_en)}</td><td>${x.uncertain?'<span class="status pending">待確認</span>':'<span class="status">原表已列</span>'}</td></tr>`).join('')}</tbody></table></div></article>`}).join('')}
+function renderSkill(rows){const groups=[...groupRows(rows,'skill_en')].sort((a,b)=>label(a[1][0]).localeCompare(label(b[1][0]),'zh-Hant'));return groups.map(([name,list])=>{const first=list[0];list.sort((a,b)=>a.character_zh.localeCompare(b.character_zh,'zh-Hant')||payload.proficiencies.indexOf(a.proficiency)-payload.proficiencies.indexOf(b.proficiency)||rankOrder.indexOf(a.rank)-rankOrder.indexOf(b.rank));const people=unique(list.map(x=>x.character)).length;return `<article class="group"><header class="grouphead"><h2>${safe(first.skill_zh||name)}<small>${safe(name)}</small></h2><span class="count">${people} 位角色 · ${list.length} 筆</span></header><div class="skillgrid">${list.map(x=>`<div class="person"><strong>${safe(x.character_zh)}</strong><small>${safe(x.character)} · ${safe(x.proficiency)} · ${safe(x.rank)}${x.uncertain?' · 待確認':''}</small></div>`).join('')}</div></article>`}).join('')}
+function render(){const rows=filtered();const people=unique(rows.map(x=>x.character)).length,skills=unique(rows.map(x=>x.skill_en)).length;$('result-count').textContent=`符合 ${rows.length} 筆，涉及 ${people} 位角色、${skills} 個技能`;$('results').innerHTML=rows.length?(mode==='character'?renderCharacter(rows):renderSkill(rows)):'<div class="empty">沒有符合條件的資料。可清除篩選再試。</div>'}
+document.querySelector('.mode').addEventListener('click',event=>{const button=event.target.closest('[data-mode]');if(!button)return;mode=button.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>x.setAttribute('aria-pressed',String(x===button)));render()});
+['query','character','skill','proficiency','rank'].forEach(id=>$(id).addEventListener('input',render));
+$('reset').addEventListener('click',()=>{['query','character','skill','proficiency','rank'].forEach(id=>$(id).value='');render()});
+setup();render();
+</script>
+</body>
+</html>
